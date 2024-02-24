@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api, use_build_context_synchronously
+
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -40,18 +42,17 @@ class _ReadChapterState extends State<ReadChapter> {
         throw Exception('Failed to load manga: ${response.statusCode}');
       }
     } catch (error) {
-      print('Error fetching manga: $error');
       showDialog(
         context: context,
         builder: (context) => AlertDialog(
-          title: Text('Error'),
-          content: Text('Failed to load manga. Please try again later.'),
+          title: const Text('Error'),
+          content: const Text('Failed to load manga. Please try again later.'),
           actions: <Widget>[
             TextButton(
               onPressed: () {
                 Navigator.of(context).pop();
               },
-              child: Text('OK'),
+              child: const Text('OK'),
             ),
           ],
         ),
@@ -64,7 +65,7 @@ class _ReadChapterState extends State<ReadChapter> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('Manga Read'),
+        title: const Text('Manga Read'),
       ),
       body: ListView.builder(
         itemCount: mangaImages.length,
@@ -73,8 +74,8 @@ class _ReadChapterState extends State<ReadChapter> {
           return Column(
             children: [
               Text(
-                'Page : ${index}',
-                style: TextStyle(fontSize: 30, color: Colors.white),
+                'Page : $index',
+                style: const TextStyle(fontSize: 30, color: Colors.white),
               ),
               GestureDetector(
                 onTap: () {
@@ -97,7 +98,7 @@ class _ReadChapterState extends State<ReadChapter> {
                       Image.network(
                         imageUrl,
                         fit: BoxFit.contain,
-                        headers: {
+                        headers: const {
                           'User-Agent':
                               'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:123.0) Gecko/20100101 Firefox/123.0',
                           'Accept': 'image/avif,image/webp,*/*',

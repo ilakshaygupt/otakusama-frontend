@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_unnecessary_containers
+
 import 'package:flutter/material.dart';
 import 'package:otakusama/feature/manga_full_preview/manga_full_preview.dart';
 import 'package:otakusama/models/manga_model.dart';
@@ -49,7 +51,7 @@ class MangaShortPreview extends StatelessWidget {
               child: Container(
                 child: Column(children: [
                   Container(
-                    padding: EdgeInsets.all(10),
+                    padding: const EdgeInsets.all(10),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -64,7 +66,7 @@ class MangaShortPreview extends StatelessWidget {
                               ),
                               TextSpan(
                                 text: manga.title,
-                                style: TextStyle(color: Colors.white),
+                                style: const TextStyle(color: Colors.white),
                               ),
                             ],
                           ),
@@ -81,7 +83,7 @@ class MangaShortPreview extends StatelessWidget {
                               ),
                               TextSpan(
                                 text: manga.author,
-                                style: TextStyle(color: Colors.white),
+                                style: const TextStyle(color: Colors.white),
                               ),
                             ],
                           ),
@@ -98,7 +100,7 @@ class MangaShortPreview extends StatelessWidget {
                               ),
                               TextSpan(
                                 text: manga.lastChapter,
-                                style: TextStyle(color: Colors.white),
+                                style: const TextStyle(color: Colors.white),
                               ),
                             ],
                           ),
@@ -115,7 +117,7 @@ class MangaShortPreview extends StatelessWidget {
                               ),
                               TextSpan(
                                 text: manga.updatedTime,
-                                style: TextStyle(color: Colors.white),
+                                style: const TextStyle(color: Colors.white),
                               ),
                             ],
                           ),

@@ -1,3 +1,4 @@
+
 class Manga {
   final String author;
   final String updatedTime;

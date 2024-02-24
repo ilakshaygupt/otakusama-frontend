@@ -1,5 +1,7 @@
+// ignore_for_file: use_key_in_widget_constructors
+
 import 'package:flutter/material.dart';
-import 'package:otakusama/feature/homepage/manga_short_preview/manga_short_preview_screen.dart';
+import 'package:otakusama/feature/manga_short_preview/manga_short_preview_screen.dart';
 import 'package:otakusama/models/manga_model.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -69,20 +71,21 @@ class _HomePageState extends State<HomePage> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: TextField(
-              style: TextStyle(color: Colors.white),
+              style: const TextStyle(color: Colors.white),
               controller: searchController,
               onSubmitted: (value) {
                 searchManga(value);
               },
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Search Manga',
+                labelStyle: TextStyle(color: Colors.white),
                 border: OutlineInputBorder(),
               ),
             ),
           ),
           Expanded(
             child: mangaList.isEmpty
-                ? Center(
+                ? const Center(
                     child: CircularProgressIndicator(),
                   )
                 : ListView.builder(

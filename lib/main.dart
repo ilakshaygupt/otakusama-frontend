@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:otakusama/feature/homepage/homepage_screen.dart';
+import 'package:otakusama/feature/homepage/screens/homepage_screen.dart';
 
 void main() {
   runApp(const MyApp());
