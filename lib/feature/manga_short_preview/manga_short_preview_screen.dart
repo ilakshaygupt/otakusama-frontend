@@ -25,7 +25,7 @@ class MangaShortPreview extends StatelessWidget {
         padding: const EdgeInsets.all(10),
         margin: const EdgeInsets.all(10),
         decoration: BoxDecoration(
-          color: const Color.fromARGB(255, 86, 21, 17),
+          color: const Color(0xff191a1f),
           borderRadius: BorderRadius.circular(20),
         ),
         child: Row(

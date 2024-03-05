@@ -2,7 +2,6 @@
 
 import 'dart:convert';
 import 'dart:math';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:otakusama/feature/read_chapter/read_chapter_screen.dart';
 import 'package:otakusama/models/manga_chapter_model.dart';
@@ -212,7 +211,9 @@ class _MangaFullPreviewState extends State<MangaFullPreview> {
                                               iconSize:
                                                   MaterialStateProperty.all(
                                                       30)),
-                                          onPressed: () {},
+                                          onPressed: () {
+                                            
+                                          },
                                         ),
                                         IconButton(
                                           icon: const Icon(Icons.share),
@@ -398,13 +399,14 @@ class _MangaFullPreviewState extends State<MangaFullPreview> {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20),
                                   border: Border.all(
-                                    color: Color.fromARGB(255, 96, 97, 98),
+                                    color:
+                                        const Color.fromARGB(255, 96, 97, 98),
                                   ),
                                 ),
                                 child: Row(
                                   children: [
                                     IconButton(
-                                        icon: Icon(Icons.search),
+                                        icon: const Icon(Icons.search),
                                         onPressed: () {}),
                                     Container(
                                       width: MediaQuery.of(context).size.width *
@@ -413,7 +415,8 @@ class _MangaFullPreviewState extends State<MangaFullPreview> {
                                         borderRadius: BorderRadius.zero,
                                       ),
                                       child: TextField(
-                                        style: TextStyle(color: Colors.white),
+                                        style: const TextStyle(
+                                            color: Colors.white),
                                         decoration: const InputDecoration(
                                           border: InputBorder.none,
                                           hintText: 'Search...',
@@ -437,14 +440,21 @@ class _MangaFullPreviewState extends State<MangaFullPreview> {
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Row(
-                        children: filteredMangaList.map((genre) {
+                        children:
+                            filteredMangaList.asMap().entries.map((entry) {
+                          final int index = entry.key;
+                          final mangaChapter = entry.value;
+
                           return GestureDetector(
                             onTap: () {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => ReadChapter(
-                                    accessLink: genre.mangaLink,
+                                    mangaChapterList:
+                                        mangaDescription!.mangaList,
+                                    accessLink: mangaChapter.mangaLink,
+                                    chapterId: index,
                                   ),
                                 ),
                               );
@@ -456,15 +466,11 @@ class _MangaFullPreviewState extends State<MangaFullPreview> {
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 10, vertical: 5),
                               decoration: BoxDecoration(
-                                // image: DecorationImage(
-                                //     image: CachedNetworkImageProvider(mangaDescription!.imageLink),
-                                //     opacity: 0.7,
-                                //     fit: BoxFit.cover),
                                 color: Colors.grey[800],
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               child: Text(
-                                genre.mangaText,
+                                mangaChapter.mangaText,
                                 style: const TextStyle(
                                   color: Colors.white,
                                   fontSize: 12,
@@ -511,7 +517,8 @@ class _MangaFullPreviewState extends State<MangaFullPreview> {
                               decoration: BoxDecoration(
                                 image: DecorationImage(
                                     image: FadeInImage.assetNetwork(
-                                      placeholder: 'assets/downloaded_image.jpg',
+                                      placeholder:
+                                          'assets/downloaded_image.jpg',
                                       image: manga.image,
                                       fit: BoxFit.cover,
                                       height: 240,
