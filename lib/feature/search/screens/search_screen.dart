@@ -14,8 +14,8 @@ class SearchScreen extends StatefulWidget {
 class _SearchScreenState extends State<SearchScreen> {
   List<Manga> mangaList = [];
   Future<void> fetchData() async {
-    final response = await http
-        .get(Uri.parse('https://mangaka.onrender.com/manga/top_manga/'));
+    final response =
+        await http.get(Uri.parse('https://weblakshay.tech/manga/top_manga/'));
 
     if (response.statusCode == 200) {
       setState(() {
@@ -34,7 +34,7 @@ class _SearchScreenState extends State<SearchScreen> {
       return;
     }
     final response = await http.post(
-      Uri.parse('https://mangaka.onrender.com/manga/search/'),
+      Uri.parse('https://weblakshay.tech/manga/search/'),
       body: jsonEncode({'text': searchText}),
       headers: {'Content-Type': 'application/json'},
     );

@@ -36,8 +36,8 @@ class _MangaFullPreviewState extends State<MangaFullPreview> {
   }
 
   Future<void> fetchSimilar() async {
-    final response = await http
-        .get(Uri.parse('https://mangaka.onrender.com/manga/top_manga/'));
+    final response =
+        await http.get(Uri.parse('https://weblakshay.tech/manga/top_manga/'));
 
     if (response.statusCode == 200) {
       setState(() {
@@ -66,7 +66,7 @@ class _MangaFullPreviewState extends State<MangaFullPreview> {
   Future<void> fetchData() async {
     try {
       final response = await http.post(
-        Uri.parse('https://mangaka.onrender.com/manga/manga_list/'),
+        Uri.parse('https://weblakshay.tech/manga/manga_list/'),
         body: jsonEncode({'url': widget.accessLink}),
         headers: {'Content-Type': 'application/json'},
       );
@@ -211,9 +211,7 @@ class _MangaFullPreviewState extends State<MangaFullPreview> {
                                               iconSize:
                                                   MaterialStateProperty.all(
                                                       30)),
-                                          onPressed: () {
-                                            
-                                          },
+                                          onPressed: () {},
                                         ),
                                         IconButton(
                                           icon: const Icon(Icons.share),

@@ -36,7 +36,7 @@ class _ReadChapterState extends State<ReadChapter> {
   Future<void> fetchData() async {
     try {
       final response = await http.post(
-        Uri.parse('https://mangaka.onrender.com/manga/manga_detail/'),
+        Uri.parse('https://weblakshay.tech/manga/manga_detail/'),
         body: jsonEncode({'url': widget.accessLink}),
         headers: {'Content-Type': 'application/json'},
       );
