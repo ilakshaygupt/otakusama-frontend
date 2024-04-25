@@ -211,7 +211,9 @@ class _MangaFullPreviewState extends State<MangaFullPreview> {
                                               iconSize:
                                                   MaterialStateProperty.all(
                                                       30)),
-                                          onPressed: () {},
+                                          onPressed: () {
+                                            print(widget.accessLink);
+                                          },
                                         ),
                                         IconButton(
                                           icon: const Icon(Icons.share),

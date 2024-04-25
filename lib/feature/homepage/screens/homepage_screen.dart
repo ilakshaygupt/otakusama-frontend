@@ -3,18 +3,25 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:http/http.dart' as http;
 import 'package:otakusama/feature/manga_full_preview/manga_full_preview.dart';
+import 'package:otakusama/feature/profile/screens/profileScreen.dart';
 import 'package:otakusama/models/manga_model.dart';
 import 'package:otakusama/feature/search/screens/search_screen.dart';
 import 'package:otakusama/feature/viewallmanga/screens/viewallscreens.dart';
 
-class HomePage extends StatefulWidget {
+class HomePage extends ConsumerStatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
+
   @override
-  _HomePageState createState() => _HomePageState();
+  ConsumerState<HomePage> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageState extends ConsumerState<HomePage> {
+
+
+  
   int _selectedIndex = 0;
   List<Manga> topAiring = [];
   List<Manga> topLatest = [];
@@ -42,10 +49,12 @@ class _HomePageState extends State<HomePage> {
     const Duration duration = Duration(seconds: 2);
     _timer = Timer.periodic(duration, (Timer timer) {
       if (_pageController.page == topAiring.length - 1) {
-        _pageController.animateToPage(0,
-            duration: const Duration(milliseconds: 700), curve: Curves.ease,);
+        _pageController.animateToPage(
+          0,
+          duration: const Duration(milliseconds: 700),
+          curve: Curves.ease,
+        );
       } else {
-    
         _pageController.nextPage(
             duration: const Duration(milliseconds: 700), curve: Curves.ease);
       }
@@ -61,7 +70,7 @@ class _HomePageState extends State<HomePage> {
         topLatest = (jsonDecode(response.body) as List)
             .map((item) => Manga.fromJson(item))
             .toList();
-            print(topLatest[0].author);
+        print(topLatest[0].author);
       });
     } else {
       throw Exception('Failed to load manga');
@@ -88,9 +97,11 @@ class _HomePageState extends State<HomePage> {
       _selectedIndex = index;
     });
   }
+  
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       extendBodyBehindAppBar: true,
       backgroundColor: Colors.black,
@@ -152,6 +163,10 @@ class _HomePageState extends State<HomePage> {
     switch (index) {
       case 0:
         return _buildHomeScreen();
+      case 1:
+        return Container();
+      case 2:
+        return ProfilePage();
       default:
         return Container();
     }
@@ -161,7 +176,7 @@ class _HomePageState extends State<HomePage> {
     return topAiring.isEmpty
         ? const Center(child: CircularProgressIndicator())
         : SingleChildScrollView(
-          child: Column(
+            child: Column(
               children: [
                 SizedBox(
                   height: 380,
@@ -220,7 +235,8 @@ class _HomePageState extends State<HomePage> {
                       },
                       child: const Text(
                         'View All',
-                        style: TextStyle(color: Color(0xffc6303c), fontSize: 15),
+                        style:
+                            TextStyle(color: Color(0xffc6303c), fontSize: 15),
                       ),
                     ),
                   ],
@@ -244,11 +260,9 @@ class _HomePageState extends State<HomePage> {
                           );
                         },
                         child: Container(
-                          
                           padding: const EdgeInsets.all(10),
                           height: 230,
                           width: 150,
-                          
                           child: FadeInImage.assetNetwork(
                             placeholder: 'assets/downloaded_image.jpg',
                             image: manga.image,
@@ -286,7 +300,8 @@ class _HomePageState extends State<HomePage> {
                       },
                       child: const Text(
                         'View All',
-                        style: TextStyle(color: Color(0xffc6303c), fontSize: 15),
+                        style:
+                            TextStyle(color: Color(0xffc6303c), fontSize: 15),
                       ),
                     ),
                   ],
@@ -325,6 +340,6 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
-        );
+          );
   }
 }

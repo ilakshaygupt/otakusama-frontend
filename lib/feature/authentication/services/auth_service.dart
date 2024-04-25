@@ -11,7 +11,13 @@ import 'package:otakusama/main.dart';
 import 'package:otakusama/models/user_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+final userProvider = StateProvider<User?>((ref) => null);
+final authServiceProvider = Provider((ref) => AuthService(ref: ref));
+
 class AuthService {
+  final Ref _ref;
+  AuthService({required Ref ref}) : _ref = ref;
+
   void signUpUser({
     required BuildContext context,
     required String email,
@@ -22,9 +28,10 @@ class AuthService {
       var user = {"email": email, "password": password, "username": username};
 
       http.Response res = await http.post(
-        Uri.parse('https://weblakshay.tech/admin/register/'),
+        Uri.parse('https://weblakshay.tech/auth/register/'),
         body: user,
       );
+
       httpErrorHandle(
         response: res,
         context: context,
@@ -45,7 +52,7 @@ class AuthService {
       required WidgetRef ref}) async {
     try {
       http.Response res = await http.post(
-        Uri.parse('https://weblakshay.tech/admin/login'),
+        Uri.parse('https://weblakshay.tech/auth/login/'),
         body: jsonEncode({
           'email': email,
           'password': password,
@@ -54,26 +61,33 @@ class AuthService {
           'Content-Type': 'application/json; charset=UTF-8',
         },
       );
-      // ignore: use_build_context_synchronously
+
       httpErrorHandle(
           response: res,
           context: context,
           onSuccess: () async {
             final user = res.body;
+
             ref.read(userProvider.notifier).update(
                   (state) => User.fromJson(user),
                 );
+            print(res);
             SharedPreferences pref = await SharedPreferences.getInstance();
-            await pref.setString('x-auth-token', jsonDecode(res.body)['token']);
-            Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => HomePage()));
+            await pref.setString(
+                'x-auth-token', jsonDecode(res.body)['access_token']);
+
+            Navigator.of(context).pushAndRemoveUntil(
+              MaterialPageRoute(builder: (context) => HomePage()),
+              (route) => false,
+            );
           });
     } catch (e) {
+      print(e.toString());
       showSnackBar(context, e.toString());
     }
   }
 
-  void getUserData(BuildContext context, WidgetRef ref) async {
+  Future<void> getUserData(BuildContext context) async {
     try {
       SharedPreferences pref = await SharedPreferences.getInstance();
       String? token = pref.getString('x-auth-token');
@@ -81,26 +95,20 @@ class AuthService {
         pref.setString('x-auth-token', '');
       }
 
-      var tokenRes = await http.post(
-          Uri.parse('https://weblakshay.tech/tokenIsValid/'),
+      var tokenRes = await http.get(
+          Uri.parse('https://weblakshay.tech/auth/user'),
           headers: <String, String>{
             'Content-Type': 'application/json; charset=UTF-8',
-            'x-auth-token': token!
+            'Authorization': 'Bearer $token'
           });
-      var response = jsonDecode(tokenRes.body);
-      if (response == true) {
-        http.Response userRes = await http.get(
-            Uri.parse('https://weblakshay.tech/user/'),
-            headers: <String, String>{
-              'Content-Type': 'application/json; charset=UTF-8',
-              'x-auth-token': token
-            });
-        ref.read(userProvider.notifier).update(
-              (state) => User.fromJson(userRes.body),
-            );
-      }
+
+      _ref.read(userProvider.notifier).update(
+            (state) => User.fromJson(tokenRes.body),
+          );
     } catch (e) {
       // showSnackBar(context, e.toString());
+
+      print(e.toString());
     }
   }
 }
