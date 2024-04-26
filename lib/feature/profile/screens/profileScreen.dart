@@ -18,17 +18,18 @@ class _ProfilePageState extends ConsumerState<ProfilePage> {
         title: const Text('Profile'),
       ),
       body: Center(
-        child: Column(
-          children: [
-            const SizedBox(height: 20),
-            Text('Username: ${user!.username}'),
-            const SizedBox(height: 20),
-            Text('Email: ${user!.email}'),
-            const SizedBox(height: 20),
-            const SizedBox(height: 20),
-          ],
-        ),
-      ),
+          child: user != null
+              ? Column(
+                  children: [
+                    const SizedBox(height: 20),
+                    Text('Username: ${user!.username}'),
+                    const SizedBox(height: 20),
+                    Text('Email: ${user!.email}'),
+                    const SizedBox(height: 20),
+                    const SizedBox(height: 20),
+                  ],
+                )
+              : const Placeholder()),
     );
   }
 }

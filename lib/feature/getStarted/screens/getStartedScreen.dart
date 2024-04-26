@@ -16,6 +16,7 @@ class GetStartedScreen extends ConsumerStatefulWidget {
 }
 
 class _GetStartedScreenState extends ConsumerState<GetStartedScreen> {
+  
   Widget build(BuildContext context) {
     final user = ref.watch(userProvider);
     return Scaffold(
