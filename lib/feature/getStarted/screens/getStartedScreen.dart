@@ -16,15 +16,17 @@ class GetStartedScreen extends ConsumerStatefulWidget {
 }
 
 class _GetStartedScreenState extends ConsumerState<GetStartedScreen> {
+
+
   
   Widget build(BuildContext context) {
     final user = ref.watch(userProvider);
     return Scaffold(
       body: DecoratedBox(
-        decoration: const BoxDecoration(
+        decoration:const BoxDecoration(
           image: DecorationImage(
+            fit: BoxFit.cover,
             image: AssetImage('assets/perf.png'),
-            fit: BoxFit.fitHeight,
           ),
         ),
         child: Center(
@@ -34,7 +36,7 @@ class _GetStartedScreenState extends ConsumerState<GetStartedScreen> {
                 SizedBox(height: MediaQuery.of(context).size.height * 0.68),
                 Container(
                   padding: const EdgeInsets.only(right: 130),
-                  child: Column(
+                  child: const Column(
                     children: [
                       Text(
                         'Welcome to',
@@ -69,7 +71,7 @@ class _GetStartedScreenState extends ConsumerState<GetStartedScreen> {
                         height: 65,
                         width: MediaQuery.of(context).size.width * 0.44,
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 78, 81, 93),
+                          color: const Color.fromARGB(255, 78, 81, 93),
                           borderRadius: BorderRadius.circular(26),
                         ),
                         child: TextButton(
@@ -81,7 +83,7 @@ class _GetStartedScreenState extends ConsumerState<GetStartedScreen> {
                                   )
                                 : Navigator.of(context).pushAndRemoveUntil(
                                     MaterialPageRoute(
-                                        builder: (context) => HomePage()),
+                                        builder: (context) => const HomePage()),
                                     (route) => false,
                                   );
                           },
@@ -106,7 +108,7 @@ class _GetStartedScreenState extends ConsumerState<GetStartedScreen> {
                           onPressed: () async {
                             Navigator.of(context).pushAndRemoveUntil(
                               MaterialPageRoute(
-                                  builder: (context) => HomePage()),
+                                  builder: (context) => const HomePage()),
                               (route) => false,
                             );
                           },

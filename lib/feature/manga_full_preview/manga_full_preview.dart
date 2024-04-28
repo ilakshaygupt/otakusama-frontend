@@ -3,6 +3,8 @@
 import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:otakusama/feature/MyList/service/MyListService.dart';
 import 'package:otakusama/feature/read_chapter/read_chapter_screen.dart';
 import 'package:otakusama/models/manga_chapter_model.dart';
 import 'package:http/http.dart' as http;
@@ -11,17 +13,18 @@ import 'package:marquee/marquee.dart';
 
 import '../../models/manga_model.dart';
 
-class MangaFullPreview extends StatefulWidget {
+class MangaFullPreview extends ConsumerStatefulWidget {
   final String accessLink;
 
   const MangaFullPreview({Key? key, required this.accessLink})
       : super(key: key);
 
   @override
-  _MangaFullPreviewState createState() => _MangaFullPreviewState();
+  ConsumerState<MangaFullPreview> createState() => _MangaFullPreviewState();
 }
 
-class _MangaFullPreviewState extends State<MangaFullPreview> {
+class _MangaFullPreviewState extends ConsumerState<MangaFullPreview> {
+  late bool isFavourite;
   List<MangaChapter> mangaList = [];
   MangaDescription? mangaDescription;
   List<MangaChapter> filteredMangaList = [];
@@ -114,6 +117,9 @@ class _MangaFullPreviewState extends State<MangaFullPreview> {
 
   @override
   Widget build(BuildContext context) {
+    isFavourite = ref
+        .watch(favMangaProvider)
+        .any((manga) => manga.accessLink == widget.accessLink);
     return Scaffold(
       extendBodyBehindAppBar: true,
       backgroundColor: const Color.fromARGB(255, 25, 26, 31),
@@ -206,13 +212,35 @@ class _MangaFullPreviewState extends State<MangaFullPreview> {
                                         IconButton(
                                           icon: const Icon(
                                               Icons.bookmark_outline_rounded),
-                                          color: Colors.white,
+                                          color: isFavourite
+                                              ? Colors.red
+                                              : Colors.white,
                                           style: ButtonStyle(
                                               iconSize:
                                                   MaterialStateProperty.all(
                                                       30)),
                                           onPressed: () {
-                                            print(widget.accessLink);
+                                            if (isFavourite) {
+                                              ref
+                                                  .read(mangaServiceProvider)
+                                                  .removeFromFavManga(context,
+                                                      mangaDescription!.title);
+                                              setState(() {
+                                                isFavourite = !isFavourite;
+                                              });
+                                            } else {
+                                              ref
+                                                  .read(mangaServiceProvider)
+                                                  .addMangaToFav(
+                                                    context,
+                                                    mangaDescription!.title,
+                                                    widget.accessLink,
+                                                    mangaDescription!.imageLink,
+                                                  );
+                                              setState(() {
+                                                isFavourite = !isFavourite;
+                                              });
+                                            }
                                           },
                                         ),
                                         IconButton(
@@ -222,7 +250,6 @@ class _MangaFullPreviewState extends State<MangaFullPreview> {
                                         ),
                                       ],
                                     ),
-                                    // const SizedBox(height: 6),
                                     Row(
                                       children: [
                                         Row(

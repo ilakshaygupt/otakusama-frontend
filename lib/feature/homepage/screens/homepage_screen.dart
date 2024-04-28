@@ -5,6 +5,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:http/http.dart' as http;
+import 'package:otakusama/feature/MyList/Screens/MyListScreen.dart';
 import 'package:otakusama/feature/manga_full_preview/manga_full_preview.dart';
 import 'package:otakusama/feature/profile/screens/profileScreen.dart';
 import 'package:otakusama/models/manga_model.dart';
@@ -164,7 +165,7 @@ class _HomePageState extends ConsumerState<HomePage> {
       case 0:
         return _buildHomeScreen();
       case 1:
-        return Container();
+        return MyListScreen();
       case 2:
         return ProfilePage();
       default:

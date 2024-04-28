@@ -3,7 +3,7 @@
     <application
         android:label="otakusama"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/favv">
         <activity
             android:name=".MainActivity"
             android:exported="true"

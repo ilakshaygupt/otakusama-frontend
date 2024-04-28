@@ -98,6 +98,7 @@ class _RegisterState extends ConsumerState<Register> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: SingleChildScrollView(
@@ -106,45 +107,12 @@ class _RegisterState extends ConsumerState<Register> {
               const SizedBox(height: 20),
               const Center(
                 child: Text(
-                  "Register",
+                  "Sign In",
                   style: TextStyle(
                     fontSize: 28,
                     fontWeight: FontWeight.w700,
                     color: Color(0xFF46474B),
                   ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 30),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Card(
-                      elevation: 5,
-                      margin: const EdgeInsets.symmetric(
-                          horizontal: 10, vertical: 10),
-                      child: SizedBox(
-                        width: 150,
-                        height: 50,
-                        child: Center(
-                          child: ListTile(
-                            contentPadding: const EdgeInsets.only(left: 1),
-                            
-                            title: Text(
-                              "User",
-                              style: TextStyle(
-                                color: selectedOption == 1
-                                    ? Colors.white
-                                    : Colors.black,
-                                fontSize: 18,
-                                fontWeight: FontWeight.w400,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
                 ),
               ),
               const SizedBox(height: 20),
@@ -189,18 +157,11 @@ class _RegisterState extends ConsumerState<Register> {
                   padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
-                    gradient: const LinearGradient(
-                      colors: [
-                        Color(0xFF004D14),
-                        Color(0xFF098904),
-                      ],
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                    ),
+                    color: Color.fromARGB(255, 98, 0, 0),
                   ),
                   child: const Center(
                     child: Text(
-                      'Register',
+                      'Sign IN',
                       style: TextStyle(color: Colors.white, fontSize: 16),
                     ),
                   ),
@@ -211,7 +172,7 @@ class _RegisterState extends ConsumerState<Register> {
                 children: [
                   const Text(
                     "Already Registered? ",
-                    style: TextStyle(fontSize: 16),
+                    style: TextStyle(fontSize: 16,color: Colors.white),
                   ),
                   GestureDetector(
                     onTap: () {
@@ -223,8 +184,7 @@ class _RegisterState extends ConsumerState<Register> {
                     },
                     child: const Text(
                       "Login",
-                      style: TextStyle(
-                          color: Color(0xFF046200), fontSize: 16),
+                      style: TextStyle(color: Color.fromARGB(255, 149, 63, 57), fontSize: 16),
                     ),
                   )
                 ],

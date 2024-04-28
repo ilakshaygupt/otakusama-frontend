@@ -41,10 +41,7 @@ class _LoginState extends ConsumerState<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        systemOverlayStyle:
-            const SystemUiOverlayStyle(statusBarColor: Color(0xFF046200)),
-      ),
+      backgroundColor: Colors.black,
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: SingleChildScrollView(
@@ -76,7 +73,7 @@ class _LoginState extends ConsumerState<LoginScreen> {
               ),
               const SizedBox(height: 20),
               RegisterField(
-                  hintText: "User@gmail.com",
+                  hintText: "example@gmail.com",
                   controller: _emailController,
                   icon: Icons.mail),
               const SizedBox(
@@ -99,14 +96,7 @@ class _LoginState extends ConsumerState<LoginScreen> {
                   padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
-                    gradient: const LinearGradient(
-                      colors: [
-                        Color(0xFF004D14),
-                        Color(0xFF098904),
-                      ],
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                    ),
+                    color: Color.fromARGB(255, 98, 0, 0),
                   ),
                   child: const Center(
                     child: Text(
@@ -121,7 +111,7 @@ class _LoginState extends ConsumerState<LoginScreen> {
                 children: [
                   const Text(
                     "Do not have account? ",
-                    style: TextStyle(fontSize: 16),
+                    style: TextStyle(fontSize: 16, color: Colors.white),
                   ),
                   GestureDetector(
                     onTap: () {
@@ -134,7 +124,7 @@ class _LoginState extends ConsumerState<LoginScreen> {
                     child: const Text(
                       "Register",
                       style: TextStyle(
-                          color: Color(0xFF046200), fontSize: 16),
+                          color: Color.fromARGB(255, 98, 0, 7), fontSize: 16),
                     ),
                   )
                 ],
