@@ -219,9 +219,9 @@ class _MangaFullPreviewState extends ConsumerState<MangaFullPreview> {
                                               iconSize:
                                                   MaterialStateProperty.all(
                                                       30)),
-                                          onPressed: () {
+                                          onPressed: () async {
                                             if (isFavourite) {
-                                              ref
+                                              await ref
                                                   .read(mangaServiceProvider)
                                                   .removeFromFavManga(context,
                                                       mangaDescription!.title);
@@ -229,7 +229,7 @@ class _MangaFullPreviewState extends ConsumerState<MangaFullPreview> {
                                                 isFavourite = !isFavourite;
                                               });
                                             } else {
-                                              ref
+                                              await ref
                                                   .read(mangaServiceProvider)
                                                   .addMangaToFav(
                                                     context,
@@ -471,7 +471,6 @@ class _MangaFullPreviewState extends ConsumerState<MangaFullPreview> {
                             filteredMangaList.asMap().entries.map((entry) {
                           final int index = entry.key;
                           final mangaChapter = entry.value;
-
                           return GestureDetector(
                             onTap: () {
                               Navigator.push(

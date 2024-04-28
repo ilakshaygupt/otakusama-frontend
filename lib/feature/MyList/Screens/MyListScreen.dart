@@ -21,27 +21,28 @@ class _MyListScreenState extends ConsumerState<MyListScreen> {
   @override
   void initState() {
     super.initState();
-    fetchFavManga();
+    // fetchFavManga();
   }
 
-  Future<void> fetchFavManga() async {
-    try {
-      final mangaData = await ref.read(mangaServiceProvider).getFavManga();
-      if (mounted) {
-        // Check if the widget is still mounted
-        setState(() {
-          favManga = mangaData;
+  // Future<void> fetchFavManga() async {
+  //   try {
+  //     final mangaData = await ref.read(mangaServiceProvider).getFavManga();
+  //     if (mounted) {
+  //       // Check if the widget is still mounted
+  //       setState(() {
+  //         favManga = mangaData;
 
-        });
-      }
-    } catch (e) {
-      // Handle error
-      print('Error fetching favorite manga: $e');
-    }
-  }
+  //       });
+  //     }
+  //   } catch (e) {
+  //     // Handle error
+  //     print('Error fetching favorite manga: $e');
+  //   }
+  // }
 
+  @override
   Widget build(BuildContext context) {
-    
+    favManga = ref.watch(favMangaProvider);
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
@@ -54,7 +55,6 @@ class _MyListScreenState extends ConsumerState<MyListScreen> {
                 itemCount: favManga.length,
                 itemBuilder: (context, index) {
                   final manga = favManga[index];
-
                   return Row(
                     children: [
                       GestureDetector(
@@ -66,7 +66,7 @@ class _MyListScreenState extends ConsumerState<MyListScreen> {
                                   accessLink: manga.accessLink,
                                 ),
                               ),
-                            );
+                            ).then((value) => setState(() {}));
                           },
                           child: Container(
                             padding: const EdgeInsets.all(10),
