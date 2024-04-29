@@ -6,7 +6,7 @@ import 'package:otakusama/feature/homepage/screens/homepage_screen.dart';
 
 void main() {
   runApp(
-    ProviderScope(child: const MyApp()),
+    const ProviderScope(child: MyApp()),
   );
 }
 
@@ -43,7 +43,7 @@ class _MyAppState extends ConsumerState<MyApp> {
                 colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
                 useMaterial3: true,
               ),
-              home: user == null ? const GetStartedScreen() : HomePage());
+              home: user == null ? const GetStartedScreen() : const HomePage());
         } else {
           return const Center(child: CircularProgressIndicator());
         }

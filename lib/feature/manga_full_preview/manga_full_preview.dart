@@ -11,7 +11,6 @@ import 'package:otakusama/models/manga_chapter_model.dart';
 import 'package:http/http.dart' as http;
 import 'package:otakusama/models/manga_description_model.dart';
 import 'package:marquee/marquee.dart';
-import 'package:otakusama/models/manga_offline_model.dart';
 
 import '../../models/manga_model.dart';
 

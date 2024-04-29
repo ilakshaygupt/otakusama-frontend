@@ -1,4 +1,4 @@
-// ignore_for_file: use_build_context_synchronously
+// ignore_for_file: use_build_context_synchronously, unused_import
 
 import 'dart:convert';
 
@@ -71,18 +71,17 @@ class AuthService {
             ref.read(userProvider.notifier).update(
                   (state) => User.fromJson(user),
                 );
-            print(res);
             SharedPreferences pref = await SharedPreferences.getInstance();
             await pref.setString(
                 'x-auth-token', jsonDecode(res.body)['access_token']);
 
             Navigator.of(context).pushAndRemoveUntil(
+              // ignore: prefer_const_constructors
               MaterialPageRoute(builder: (context) => HomePage()),
               (route) => false,
             );
           });
     } catch (e) {
-      print(e.toString());
       showSnackBar(context, e.toString());
     }
   }
@@ -108,7 +107,6 @@ class AuthService {
     } catch (e) {
       // showSnackBar(context, e.toString());
 
-      print(e.toString());
     }
   }
 }

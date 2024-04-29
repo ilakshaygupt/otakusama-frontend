@@ -1,3 +1,7 @@
+// ignore: file_names
+// ignore: file_names
+// ignore_for_file: unused_import, file_names, duplicate_ignore
+
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:otakusama/commons/http_error.dart';
@@ -14,8 +18,8 @@ class MangaStorageManager {
     final path = '/storage/emulated/0/Download/OtakuSama/$mangaName/';
     if (!await Directory(path).exists()) {
       await Directory(path).create(recursive: true);
-      print('path: $path');
     } else {
+      // ignore: use_build_context_synchronously
       showSnackBar(context, 'Manga already downloaded.');
     }
 
@@ -40,10 +44,14 @@ class MangaStorageManager {
     final mangaData = {
       'title': mangaDescription.title,
       'description': mangaDescription.description,
+      'author': mangaDescription.authors,
+      'status': mangaDescription.status,
+      'genres': mangaDescription.genres,
+      'rating': mangaDescription.rating,
+      'updatedTime': mangaDescription.updatedTime,
     };
     final mangaDataFile = File('$path/manga_data.json');
     if (await mangaDataFile.exists()) {
-      print('manga_data.json already exists in manga folder.');
     } else {
       final mangaDataJson = json.encode(mangaData);
       final mangaDataFile = File('$path/manga_data.json');
@@ -59,13 +67,11 @@ class MangaStorageManager {
         'Accept-Encoding': 'gzip, deflate, br',
         'Referer': 'https://chapmanganato.to/',
       });
-      print(imageUrls[i]);
 
       // final imageFile = File('$chapterPath/image_$i.jpg');
       File file = File('$chapterPath/image_$i.jpg');
 
       await file.writeAsBytes(response.bodyBytes);
     }
-    print('Chapter saved');
   }
 }

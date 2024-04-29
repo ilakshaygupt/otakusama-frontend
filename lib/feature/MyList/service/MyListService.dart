@@ -1,11 +1,14 @@
+// ignore: file_names
+// ignore: file_names
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:http/http.dart' as http;
+import 'package:shared_preferences/shared_preferences.dart';
+
 import 'package:otakusama/commons/http_error.dart';
 import 'package:otakusama/models/manga_api_model.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 final favMangaProvider = StateProvider<List<MangaApiModel>>((ref) => []);
 final mangaServiceProvider = Provider((ref) => MangaService(ref: ref));

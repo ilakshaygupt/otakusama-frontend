@@ -1,5 +1,5 @@
 // ignore: file_names
-// ignore_for_file: use_build_context_synchronously
+// ignore_for_file: use_build_context_synchronously, file_names, duplicate_ignore
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -19,6 +19,7 @@ class _GetStartedScreenState extends ConsumerState<GetStartedScreen> {
 
 
   
+  @override
   Widget build(BuildContext context) {
     final user = ref.watch(userProvider);
     return Scaffold(

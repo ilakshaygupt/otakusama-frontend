@@ -71,7 +71,6 @@ class _HomePageState extends ConsumerState<HomePage> {
         topLatest = (jsonDecode(response.body) as List)
             .map((item) => Manga.fromJson(item))
             .toList();
-        print(topLatest[0].author);
       });
     } else {
       throw Exception('Failed to load manga');
@@ -165,9 +164,9 @@ class _HomePageState extends ConsumerState<HomePage> {
       case 0:
         return _buildHomeScreen();
       case 1:
-        return MyListScreen();
+        return const MyListScreen();
       case 2:
-        return ProfilePage();
+        return const ProfilePage();
       default:
         return Container();
     }

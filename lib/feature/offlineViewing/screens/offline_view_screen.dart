@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'dart:convert';
 import 'dart:io';
 
@@ -16,6 +18,7 @@ class OfflineViewScreen extends StatefulWidget {
 class _OfflineViewScreenState extends State<OfflineViewScreen> {
   List<dynamic> mangaData = [];
 
+  @override
   void initState() {
     super.initState();
     getMangaData();
@@ -26,27 +29,20 @@ class _OfflineViewScreenState extends State<OfflineViewScreen> {
         Directory('/storage/emulated/0/Download/OtakuSama');
     final List<FileSystemEntity> files = directory.listSync();
     for (final FileSystemEntity file in files) {
-      print(file.path);
       final String mangaDataPath = '${file.path}/manga_data.json';
-      print(mangaDataPath);
       final File mangaDataFile = File(mangaDataPath);
       if (mangaDataFile.existsSync()) {
         // Check if the file exists
         final String mangaDataJson = await mangaDataFile.readAsString();
         final Map<String, dynamic> mangaDataMap = json.decode(mangaDataJson);
-        print(mangaDataJson);
-
         File coverImage = File('${file.path}/cover.jpg');
         if (coverImage.existsSync()) {
-          print('Cover image exists');
         } else {
-          print('Cover image does not exist');
+          
         }
         mangaDataMap['coverImage'] = coverImage;
         mangaData.add(mangaDataMap);
-      } else {
-        print('Manga data file does not exist: $mangaDataPath');
-      }
+      } else {}
     }
     setState(() {}); // Trigger a rebuild after fetching data
   }
@@ -90,8 +86,8 @@ class _OfflineViewScreenState extends State<OfflineViewScreen> {
                               manga['title'],
                               overflow: TextOverflow.ellipsis,
                               maxLines: 3,
-                              style:
-                                  TextStyle(fontSize: 20, color: Colors.black),
+                              style: const TextStyle(
+                                  fontSize: 20, color: Colors.black),
                             ),
                           )
                         ],

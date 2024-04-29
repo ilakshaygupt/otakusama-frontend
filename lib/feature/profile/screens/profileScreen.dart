@@ -23,9 +23,9 @@ class _ProfilePageState extends ConsumerState<ProfilePage> {
               ? Column(
                   children: [
                     const SizedBox(height: 20),
-                    Text('Username: ${user!.username}'),
+                    Text('Username: ${user.username}'),
                     const SizedBox(height: 20),
-                    Text('Email: ${user!.email}'),
+                    Text('Email: ${user.email}'),
                     const SizedBox(height: 20),
                     const SizedBox(height: 20),
                     GestureDetector(
@@ -37,7 +37,7 @@ class _ProfilePageState extends ConsumerState<ProfilePage> {
                           ),
                         );
                       },
-                      child: Icon(
+                      child: const Icon(
                         Icons.offline_bolt,
                         color: Colors.red,
                         size: 30,

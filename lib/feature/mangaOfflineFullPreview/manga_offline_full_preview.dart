@@ -1,8 +1,6 @@
 // ignore_for_file: library_private_types_in_public_api
 
-import 'dart:convert';
 import 'dart:io';
-import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:otakusama/feature/mangaOfflineFullPreview/screens/ReadChapterOffline.dart';
@@ -36,7 +34,6 @@ class _MangaOfflineFullPreviewState
       if (file is Directory) {
         final String chapterName = file.path.split('/').last;
         final String chapterPath = file.path;
-        print(chapterPath);
 
         mangaList.add({
           chapterName: chapterPath,
@@ -93,24 +90,20 @@ class _MangaOfflineFullPreviewState
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: mangaList.asMap().entries.map((entry) {
-                  print(entry);
                   return GestureDetector(
                     onTap: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
                           builder: (context) => ReadChapterOffline(
+
+                            chapterName: entry.value.keys.first as String,
                             chapterPath: entry.value.values.first as String,
                           ),
                         ),
                       );
                     },
                     child: Container(
-                      child: Text(
-                        'Chapter ${entry.key}',
-                        style:
-                            const TextStyle(fontSize: 10, color: Colors.white),
-                      ),
                       height: 100,
                       width: 140,
                       margin: const EdgeInsets.only(right: 10),
@@ -119,6 +112,11 @@ class _MangaOfflineFullPreviewState
                       decoration: BoxDecoration(
                         color: Colors.grey[800],
                         borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Text(
+                        '${entry.value.keys.first}',
+                        style:
+                            const TextStyle(fontSize: 10, color: Colors.white),
                       ),
                     ),
                   );

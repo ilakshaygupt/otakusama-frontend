@@ -116,7 +116,7 @@ class _ReadChapterState extends State<ReadChapter> {
                   },
                 );
               },
-              child: Icon(
+              child: const Icon(
                 Icons.download_rounded,
               )),
           const SizedBox(width: 10),

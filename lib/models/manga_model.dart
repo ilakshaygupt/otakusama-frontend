@@ -1,8 +1,4 @@
-import 'dart:ffi';
-import 'dart:io';
 import 'dart:typed_data';
-import 'package:path_provider/path_provider.dart';
-import 'package:http/http.dart' as http;
 
 class Manga {
   final String author;

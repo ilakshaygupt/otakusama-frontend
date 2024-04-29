@@ -157,7 +157,7 @@ class _RegisterState extends ConsumerState<Register> {
                   padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
-                    color: Color.fromARGB(255, 98, 0, 0),
+                    color: const Color.fromARGB(255, 98, 0, 0),
                   ),
                   child: const Center(
                     child: Text(

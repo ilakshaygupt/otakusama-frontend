@@ -3,7 +3,6 @@ import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
 
-import 'package:otakusama/models/manga_model.dart';
 
 class MangaOfflineModel {
   String title;

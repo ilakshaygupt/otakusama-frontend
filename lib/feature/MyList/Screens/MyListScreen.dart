@@ -1,13 +1,8 @@
-import 'dart:convert';
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:otakusama/feature/MyList/service/MyListService.dart';
 import 'package:otakusama/feature/manga_full_preview/manga_full_preview.dart';
-import 'package:http/http.dart' as http;
-import 'package:otakusama/models/manga_api_model.dart';
-import 'package:otakusama/models/manga_model.dart';
 
 class MyListScreen extends ConsumerStatefulWidget {
   const MyListScreen({Key? key}) : super(key: key);
