@@ -5,11 +5,13 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:otakusama/feature/MyList/service/MyListService.dart';
+import 'package:otakusama/feature/downloadManager/downloadManager.dart';
 import 'package:otakusama/feature/read_chapter/read_chapter_screen.dart';
 import 'package:otakusama/models/manga_chapter_model.dart';
 import 'package:http/http.dart' as http;
 import 'package:otakusama/models/manga_description_model.dart';
 import 'package:marquee/marquee.dart';
+import 'package:otakusama/models/manga_offline_model.dart';
 
 import '../../models/manga_model.dart';
 
@@ -126,6 +128,17 @@ class _MangaFullPreviewState extends ConsumerState<MangaFullPreview> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         shadowColor: const Color.fromARGB(0, 0, 0, 0),
+        leading: IconButton(
+          icon: const Icon(Icons.download_rounded),
+          onPressed: () async {
+            await MangaStorageManager()
+                .saveManga(context, mangaDescription!.title, {
+              'title': mangaDescription!.title,
+              'imageLink': mangaDescription!.imageLink,
+              'mangaList': mangaDescription!.mangaList
+            });
+          },
+        ),
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -477,6 +490,8 @@ class _MangaFullPreviewState extends ConsumerState<MangaFullPreview> {
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => ReadChapter(
+                                    mangaDescription: mangaDescription!,
+                                    chapterName: mangaChapter.mangaText,
                                     mangaChapterList:
                                         mangaDescription!.mangaList,
                                     accessLink: mangaChapter.mangaLink,

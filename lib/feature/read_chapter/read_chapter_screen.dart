@@ -2,19 +2,26 @@
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:otakusama/feature/downloadManager/downloadManager.dart';
 import 'package:otakusama/models/manga_chapter_model.dart';
+import 'package:otakusama/models/manga_description_model.dart';
+import 'package:otakusama/models/manga_offline_model.dart';
 import 'dart:convert';
 
 import 'package:photo_view/photo_view.dart';
 
 // ignore: must_be_immutable
 class ReadChapter extends StatefulWidget {
+  final MangaDescription mangaDescription;
+  final String chapterName;
   final String accessLink;
   final int chapterId;
   List<MangaChapter> mangaChapterList = [];
 
   ReadChapter(
       {Key? key,
+      required this.mangaDescription,
+      required this.chapterName,
       required this.accessLink,
       required this.chapterId,
       required this.mangaChapterList})
@@ -77,6 +84,43 @@ class _ReadChapterState extends State<ReadChapter> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         title: const Text('Manga Read'),
+        actions: [
+          GestureDetector(
+              onTap: () {
+                showDialog(
+                  context: context,
+                  builder: (BuildContext context) {
+                    return AlertDialog(
+                      title: const Text('Download'),
+                      content:
+                          const Text('Do you want to download this chapter?'),
+                      actions: <Widget>[
+                        TextButton(
+                          onPressed: () {
+                            Navigator.of(context).pop();
+                          },
+                          child: const Text('No'),
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            MangaStorageManager().saveChapter(
+                                widget.mangaDescription,
+                                widget.chapterName,
+                                mangaImages);
+                            Navigator.of(context).pop();
+                          },
+                          child: const Text('Yes'),
+                        ),
+                      ],
+                    );
+                  },
+                );
+              },
+              child: Icon(
+                Icons.download_rounded,
+              )),
+          const SizedBox(width: 10),
+        ],
       ),
       body: mangaImages.isEmpty
           ? const Center(
@@ -163,6 +207,8 @@ class _ReadChapterState extends State<ReadChapter> {
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => ReadChapter(
+                                    mangaDescription: widget.mangaDescription,
+                                    chapterName: widget.chapterName,
                                     accessLink: widget
                                         .mangaChapterList[widget.chapterId + 1]
                                         .mangaLink,
@@ -194,6 +240,9 @@ class _ReadChapterState extends State<ReadChapter> {
                                     context,
                                     MaterialPageRoute(
                                       builder: (context) => ReadChapter(
+                                        mangaDescription:
+                                            widget.mangaDescription,
+                                        chapterName: widget.chapterName,
                                         accessLink: widget
                                             .mangaChapterList[
                                                 widget.chapterId - 1]
@@ -233,6 +282,9 @@ class _ReadChapterState extends State<ReadChapter> {
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) => ReadChapter(
+                                            mangaDescription:
+                                                widget.mangaDescription,
+                                            chapterName: widget.chapterName,
                                             accessLink: widget
                                                 .mangaChapterList[
                                                     widget.chapterId - 1]
@@ -266,6 +318,9 @@ class _ReadChapterState extends State<ReadChapter> {
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) => ReadChapter(
+                                            mangaDescription:
+                                                widget.mangaDescription,
+                                            chapterName: widget.chapterName,
                                             accessLink: widget
                                                 .mangaChapterList[
                                                     widget.chapterId + 1]

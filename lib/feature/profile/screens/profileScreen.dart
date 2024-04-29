@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:otakusama/feature/authentication/services/auth_service.dart';
+import 'package:otakusama/feature/offlineViewing/screens/offline_view_screen.dart';
 
 class ProfilePage extends ConsumerStatefulWidget {
   const ProfilePage({super.key});
@@ -27,6 +28,21 @@ class _ProfilePageState extends ConsumerState<ProfilePage> {
                     Text('Email: ${user!.email}'),
                     const SizedBox(height: 20),
                     const SizedBox(height: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const OfflineViewScreen(),
+                          ),
+                        );
+                      },
+                      child: Icon(
+                        Icons.offline_bolt,
+                        color: Colors.red,
+                        size: 30,
+                      ),
+                    ),
                   ],
                 )
               : const Placeholder()),

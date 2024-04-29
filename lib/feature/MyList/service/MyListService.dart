@@ -84,13 +84,12 @@ class MangaService {
     }
   }
 
-  Future<void> removeFromFavManga(
-      BuildContext context, String mangaTitle) async {
+  Future<void> removeFromFavManga(BuildContext context, String mangaTitle) async {
     final favMangaList = _ref.read(favMangaProvider);
 
     if (!favMangaList.any(
         (manga) => manga.title.toLowerCase() == mangaTitle.toLowerCase())) {
-      showSnackBar(context, 'Manga is not in favorites');
+      return;
     }
     SharedPreferences pref = await SharedPreferences.getInstance();
     String? token = pref.getString('x-auth-token');
