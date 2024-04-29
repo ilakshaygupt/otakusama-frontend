@@ -29,22 +29,17 @@ class _OfflineViewScreenState extends State<OfflineViewScreen> {
         Directory('/storage/emulated/0/Download/OtakuSama');
     final List<FileSystemEntity> files = directory.listSync();
     for (final FileSystemEntity file in files) {
-      final String mangaDataPath = '${file.path}/manga_data.json';
-      final File mangaDataFile = File(mangaDataPath);
-      if (mangaDataFile.existsSync()) {
-        // Check if the file exists
-        final String mangaDataJson = await mangaDataFile.readAsString();
-        final Map<String, dynamic> mangaDataMap = json.decode(mangaDataJson);
-        File coverImage = File('${file.path}/cover.jpg');
-        if (coverImage.existsSync()) {
-        } else {
-          
-        }
-        mangaDataMap['coverImage'] = coverImage;
-        mangaData.add(mangaDataMap);
-      } else {}
+      final String mangaPhotoPath = '${file.path}/cover.jpg';
+      final File mangaPhotoFile = File(mangaPhotoPath);
+      final String mangaPhotoBase64 =
+          base64Encode(mangaPhotoFile.readAsBytesSync());
+      mangaData.add({
+        'title': file.path.split('/').last,
+        'photo': mangaPhotoBase64,
+      });
+
+      setState(() {});
     }
-    setState(() {}); // Trigger a rebuild after fetching data
   }
 
   @override
@@ -69,7 +64,18 @@ class _OfflineViewScreenState extends State<OfflineViewScreen> {
                       ).then((value) => setState(() {}));
                     },
                     child: Container(
+                      padding: const EdgeInsets.all(10),
+                      height: 500,
+                      width: 200,
                       decoration: BoxDecoration(
+                        image: manga['photo'] != null
+                            ? DecorationImage(
+                                image: MemoryImage(
+                                  base64Decode(manga['photo']),
+                                ),
+                                fit: BoxFit.fill,
+                              )
+                            : null,
                         border: Border.all(color: Colors.black),
                       ),
                       child: Row(
@@ -80,6 +86,9 @@ class _OfflineViewScreenState extends State<OfflineViewScreen> {
                             width: 150,
                           ),
                           Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.black),
+                            ),
                             padding: const EdgeInsets.all(10),
                             width: MediaQuery.of(context).size.width * 0.5,
                             child: Text(

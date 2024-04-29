@@ -28,8 +28,11 @@ class MangaStorageManager {
     await mangaDataFile.writeAsString(mangaDataJson);
   }
 
-  Future<void> saveChapter(MangaDescription mangaDescription,
-      String chapterTitle, List<String> imageUrls) async {
+  Future<void> saveChapter(
+      BuildContext context,
+      MangaDescription mangaDescription,
+      String chapterTitle,
+      List<String> imageUrls) async {
     chapterTitle = chapterTitle.replaceAll(' ', '_');
     final mangaName = mangaDescription.title.replaceAll(' ', '_');
     final path = '/storage/emulated/0/Download/OtakuSama/$mangaName';
@@ -41,6 +44,7 @@ class MangaStorageManager {
     final response = await http.get(Uri.parse(mangaDescription.imageLink));
     final imageFile = File('$path/cover.jpg');
     imageFile.writeAsBytesSync(response.bodyBytes);
+
     final mangaData = {
       'title': mangaDescription.title,
       'description': mangaDescription.description,
@@ -68,10 +72,11 @@ class MangaStorageManager {
         'Referer': 'https://chapmanganato.to/',
       });
 
-      // final imageFile = File('$chapterPath/image_$i.jpg');
       File file = File('$chapterPath/image_$i.jpg');
 
       await file.writeAsBytes(response.bodyBytes);
+      print('Image $i saved');
     }
+    print('Chapter saved');
   }
 }
