@@ -5,6 +5,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:http/http.dart' as http;
+import 'package:otakusama/commons/contants.dart';
 import 'package:otakusama/feature/MyList/Screens/MyListScreen.dart';
 import 'package:otakusama/feature/manga_full_preview/manga_full_preview.dart';
 import 'package:otakusama/feature/profile/screens/profileScreen.dart';
@@ -20,9 +21,6 @@ class HomePage extends ConsumerStatefulWidget {
 }
 
 class _HomePageState extends ConsumerState<HomePage> {
-
-
-  
   int _selectedIndex = 0;
   List<Manga> topAiring = [];
   List<Manga> topLatest = [];
@@ -63,8 +61,7 @@ class _HomePageState extends ConsumerState<HomePage> {
   }
 
   Future<void> fetchLatestUpdated() async {
-    final response = await http
-        .get(Uri.parse('https://weblakshay.tech/manga/latest_updated/'));
+    final response = await http.get(Uri.parse('$uri/manga/latest_updated/'));
 
     if (response.statusCode == 200) {
       setState(() {
@@ -78,8 +75,7 @@ class _HomePageState extends ConsumerState<HomePage> {
   }
 
   Future<void> fetchTopAiring() async {
-    final response =
-        await http.get(Uri.parse('https://weblakshay.tech/manga/top_manga/'));
+    final response = await http.get(Uri.parse('$uri/manga/top_manga/'));
 
     if (response.statusCode == 200) {
       setState(() {
@@ -97,11 +93,9 @@ class _HomePageState extends ConsumerState<HomePage> {
       _selectedIndex = index;
     });
   }
-  
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       extendBodyBehindAppBar: true,
       backgroundColor: Colors.black,
@@ -222,7 +216,7 @@ class _HomePageState extends ConsumerState<HomePage> {
                     const Spacer(),
                     ElevatedButton(
                       style: ButtonStyle(
-                        backgroundColor: MaterialStateColor.resolveWith(
+                        backgroundColor: WidgetStateColor.resolveWith(
                             (states) => const Color.fromARGB(0, 240, 0, 0)),
                       ),
                       onPressed: () {
@@ -287,7 +281,7 @@ class _HomePageState extends ConsumerState<HomePage> {
                     const Spacer(),
                     ElevatedButton(
                       style: ButtonStyle(
-                        backgroundColor: MaterialStateColor.resolveWith(
+                        backgroundColor: WidgetStateColor.resolveWith(
                             (states) => const Color.fromARGB(0, 240, 0, 0)),
                       ),
                       onPressed: () {

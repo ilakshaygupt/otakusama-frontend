@@ -58,7 +58,7 @@ class _OfflineViewScreenState extends State<OfflineViewScreen> {
                         MaterialPageRoute(
                           builder: (context) => MangaOfflineFullPreview(
                             mangaPath:
-                                '/storage/emulated/0/Download/OtakuSama/${manga['title'].toString().replaceAll(' ', '_')}',
+                                '/storage/emulated/0/Download/OtakuSama/${manga['title'].toString().replaceAll(' ', '_').replaceAll(':', '_')}',
                           ),
                         ),
                       ).then((value) => setState(() {}));
@@ -92,7 +92,7 @@ class _OfflineViewScreenState extends State<OfflineViewScreen> {
                             padding: const EdgeInsets.all(10),
                             width: MediaQuery.of(context).size.width * 0.5,
                             child: Text(
-                              manga['title'],
+                              manga['title'].toString().replaceAll('_', ' '),
                               overflow: TextOverflow.ellipsis,
                               maxLines: 3,
                               style: const TextStyle(

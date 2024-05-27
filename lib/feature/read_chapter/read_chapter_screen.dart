@@ -2,13 +2,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:otakusama/commons/contants.dart';
 import 'package:otakusama/feature/downloadManager/downloadManager.dart';
 import 'package:otakusama/models/manga_chapter_model.dart';
 import 'package:otakusama/models/manga_description_model.dart';
-import 'package:otakusama/models/manga_offline_model.dart';
 import 'dart:convert';
-
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:photo_view/photo_view.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 // ignore: must_be_immutable
 class ReadChapter extends StatefulWidget {
@@ -33,17 +34,21 @@ class ReadChapter extends StatefulWidget {
 
 class _ReadChapterState extends State<ReadChapter> {
   List<String> mangaImages = [];
+  bool isCarousalView = false;
+  CarouselController buttonCarouselController = CarouselController();
 
   @override
   void initState() {
     super.initState();
+
     fetchData();
+    // preFetchImages();
   }
 
   Future<void> fetchData() async {
     try {
       final response = await http.post(
-        Uri.parse('https://weblakshay.tech/manga/manga_detail/'),
+        Uri.parse('$uri/manga/manga_detail/'),
         body: jsonEncode({'url': widget.accessLink}),
         headers: {'Content-Type': 'application/json'},
       );
@@ -52,6 +57,7 @@ class _ReadChapterState extends State<ReadChapter> {
           final responseData =
               jsonDecode(response.body) as Map<String, dynamic>;
           final data = responseData['data'] as List<dynamic>;
+
           setState(() {
             mangaImages = data.cast<String>().toList();
           });
@@ -86,6 +92,14 @@ class _ReadChapterState extends State<ReadChapter> {
         title: const Text('Manga Read'),
         actions: [
           GestureDetector(
+            onTap: () {
+              setState(() {
+                isCarousalView = !isCarousalView;
+              });
+            },
+            child: const Icon(Icons.view_carousel),
+          ),
+          GestureDetector(
               onTap: () {
                 showDialog(
                   context: context,
@@ -102,13 +116,29 @@ class _ReadChapterState extends State<ReadChapter> {
                           child: const Text('No'),
                         ),
                         TextButton(
-                          onPressed: () async{
-                            
-                            MangaStorageManager().saveChapter(
-                              context,
+                          onPressed: () async {
+                            if (await MangaStorageManager().doesDirectoryExists(
+                                context,
+                                '/storage/emulated/0/Download/OtakuSama/${widget.mangaDescription.title.replaceAll(' ', '_').replaceAll(':', '_')}/${widget.chapterName.replaceAll(' ', '_').replaceAll(':', '_')}',
+                                'Chapter already donwloaded')) {
+                              Navigator.of(context).pop();
+                              return;
+                            }
+                            showDialog(
+                              context: context,
+                              builder: (BuildContext context) {
+                                return const AlertDialog(
+                                  title: Text('Downloading'),
+                                  content: LinearProgressIndicator(),
+                                );
+                              },
+                            );
+                            await MangaStorageManager().saveChapter(
+                                context,
                                 widget.mangaDescription,
                                 widget.chapterName,
                                 mangaImages);
+                            Navigator.of(context).pop();
                             Navigator.of(context).pop();
                           },
                           child: const Text('Yes'),
@@ -132,74 +162,129 @@ class _ReadChapterState extends State<ReadChapter> {
               child: Column(
                 children: <Widget>[
                   Text(widget.chapterId.toString()),
-                  ListView.builder(
-                    physics: const NeverScrollableScrollPhysics(),
-                    shrinkWrap: true,
-                    itemCount: mangaImages.length,
-                    itemBuilder: (context, index) {
-                      final imageUrl = mangaImages[index];
-                      return Column(
-                        children: [
-                          Text(
-                            'Page : $index',
-                            style: const TextStyle(
-                                fontSize: 30, color: Colors.white),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              showDialog(
-                                context: context,
-                                builder: (BuildContext context) {
-                                  return Dialog(
-                                    child: PhotoView(
-                                      imageProvider: NetworkImage(imageUrl),
+                  isCarousalView
+                      ? CarouselSlider(
+                          disableGesture: false,
+                          carouselController: buttonCarouselController,
+                          options: CarouselOptions(
+                              viewportFraction: 0.9,
+                              aspectRatio: 2.0,
+                              initialPage: 2,
+                              enlargeCenterPage: true,
+                              height: 700),
+                          items: mangaImages.map((
+                            i,
+                          ) {
+                            return Builder(
+                              builder: (BuildContext context) {
+                                return GestureDetector(
+                                  onTap: () {
+                                    showDialog(
+                                      context: context,
+                                      builder: (BuildContext context) {
+                                        return Dialog(
+                                          child: PhotoView(
+                                            imageProvider: NetworkImage(i),
+                                          ),
+                                        );
+                                      },
+                                    );
+                                  },
+                                  child: SingleChildScrollView(
+                                    child: Column(
+                                      children: [
+                                        Text('Page : ${mangaImages.indexOf(i)}',
+                                            style: const TextStyle(
+                                                fontSize: 30,
+                                                color: Colors.white)),
+                                        CachedNetworkImage(
+                                          imageUrl: i,
+                                          fit: BoxFit.contain,
+                                          httpHeaders: const {
+                                            'User-Agent':
+                                                'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:123.0) Gecko/20100101 Firefox/123.0',
+                                            'Accept':
+                                                'image/avif,image/webp,*/*',
+                                            'Accept-Language': 'en-US,en;q=0.5',
+                                            'Accept-Encoding':
+                                                'gzip, deflate, br',
+                                            'Referer':
+                                                'https://chapmanganato.to/',
+                                          },
+                                          progressIndicatorBuilder: (context,
+                                                  url, downloadProgress) =>
+                                              CircularProgressIndicator(
+                                                  value: downloadProgress
+                                                      .progress),
+                                        ),
+                                      ],
                                     ),
-                                  );
-                                },
-                              );
-                            },
-                            child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Stack(
-                                alignment: Alignment.center,
-                                children: [
-                                  Image.network(
-                                    imageUrl,
-                                    fit: BoxFit.contain,
-                                    headers: const {
-                                      'User-Agent':
-                                          'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:123.0) Gecko/20100101 Firefox/123.0',
-                                      'Accept': 'image/avif,image/webp,*/*',
-                                      'Accept-Language': 'en-US,en;q=0.5',
-                                      'Accept-Encoding': 'gzip, deflate, br',
-                                      'Referer': 'https://chapmanganato.to/',
-                                    },
-                                    loadingBuilder: (BuildContext context,
-                                        Widget child,
-                                        ImageChunkEvent? loadingProgress) {
-                                      if (loadingProgress == null) {
-                                        return child;
-                                      }
-                                      return CircularProgressIndicator(
-                                        value: loadingProgress
-                                                    .expectedTotalBytes !=
-                                                null
-                                            ? loadingProgress
-                                                    .cumulativeBytesLoaded /
-                                                loadingProgress
-                                                    .expectedTotalBytes!
-                                            : 0.0,
-                                      );
-                                    },
                                   ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ],
-                      );
-                    },
-                  ),
+                                );
+                              },
+                            );
+                          }).toList(),
+                        )
+                      : ListView.builder(
+                          physics: const NeverScrollableScrollPhysics(),
+                          shrinkWrap: true,
+                          itemCount: mangaImages.length,
+                          itemBuilder: (context, index) {
+                            final imageUrl = mangaImages[index];
+                            return Column(
+                              children: [
+                                Text(
+                                  'Page : $index',
+                                  style: const TextStyle(
+                                      fontSize: 30, color: Colors.white),
+                                ),
+                                GestureDetector(
+                                  onTap: () {
+                                    showDialog(
+                                      context: context,
+                                      builder: (BuildContext context) {
+                                        return Dialog(
+                                          child: PhotoView(
+                                            imageProvider:
+                                                NetworkImage(imageUrl),
+                                          ),
+                                        );
+                                      },
+                                    );
+                                  },
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Stack(
+                                      alignment: Alignment.center,
+                                      children: [
+                                        CachedNetworkImage(
+                                          imageUrl: imageUrl,
+                                          fit: BoxFit.contain,
+                                          httpHeaders: const {
+                                            'User-Agent':
+                                                'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:123.0) Gecko/20100101 Firefox/123.0',
+                                            'Accept':
+                                                'image/avif,image/webp,*/*',
+                                            'Accept-Language': 'en-US,en;q=0.5',
+                                            'Accept-Encoding':
+                                                'gzip, deflate, br',
+                                            'Referer':
+                                                'https://chapmanganato.to/',
+                                          },
+                                          progressIndicatorBuilder: (context,
+                                                  url, downloadProgress) =>
+                                              CircularProgressIndicator(
+                                                  value: downloadProgress
+                                                      .progress),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            );
+                          },
+                        ),
                   Padding(
                     padding: const EdgeInsets.all(20),
                     child: widget.chapterId == 0

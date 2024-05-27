@@ -1,6 +1,7 @@
 // ignore_for_file: use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
+import 'package:otakusama/commons/contants.dart';
 import 'package:otakusama/feature/manga_short_preview/manga_short_preview_screen.dart';
 import 'package:otakusama/models/manga_model.dart';
 import 'package:http/http.dart' as http;
@@ -23,8 +24,7 @@ class _ViewAllMangaScreenState extends State<ViewAllMangaScreen> {
   }
 
   Future<void> fetchData() async {
-    final response =
-        await http.get(Uri.parse('https://weblakshay.tech/manga/top_manga/'));
+    final response = await http.get(Uri.parse('$uri/manga/top_manga/'));
 
     if (response.statusCode == 200) {
       setState(() {
@@ -43,7 +43,7 @@ class _ViewAllMangaScreenState extends State<ViewAllMangaScreen> {
       return;
     }
     final response = await http.post(
-      Uri.parse('https://weblakshay.tech/manga/search/'),
+      Uri.parse('$uri/manga/search/'),
       body: jsonEncode({'text': searchText}),
       headers: {'Content-Type': 'application/json'},
     );

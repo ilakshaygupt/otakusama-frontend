@@ -2,12 +2,12 @@
 
 import 'dart:convert';
 import 'dart:io';
-import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:marquee/marquee.dart';
 import 'package:otakusama/feature/mangaOfflineFullPreview/screens/ReadChapterOffline.dart';
-import 'package:otakusama/models/manga_description_model.dart';
+
 
 class MangaOfflineFullPreview extends ConsumerStatefulWidget {
   final String mangaPath;
@@ -39,30 +39,26 @@ class _MangaOfflineFullPreviewState
     final File mangaDataFile = File('${widget.mangaPath}/manga_data.json');
     final String mangaData = await mangaDataFile.readAsString();
     final daaa = json.decode(mangaData);
-    // print(mangaData);
-    print(daaa['title']);
-    print(daaa['description']);
-    print(daaa['rating']);
-    print(daaa['authors']);
-    print(daaa['genres']);
-    print(daaa['status']);
-
     final List<FileSystemEntity> files = directory.listSync();
     for (final FileSystemEntity file in files) {
       if (file is Directory) {
-        final String chapterName = file.path.split('/').last;
-        final String chapterPath = file.path;
+        final String chapterIndex = file.path.split('/').last;
+        final String chapterName = file.path.split('/').reversed.toList()[1];
 
+        final String chapterPath = file.path;
         mangaList.add({
+          chapterIndex: chapterPath,
           chapterName: chapterPath,
         });
       }
     }
     String mangaName = daaa['title'];
-    mangaName = mangaName.replaceAll(' ', '_');
+    mangaName = mangaName.replaceAll(' ', '_').replaceAll(':', '_');
 
-    imagePath = imagePath + '${mangaName}/cover.jpg';
-    print(imagePath);
+    imagePath = '$imagePath$mangaName/cover.jpg';
+    // mangaList.sort((a, b) => int.parse(a.keys.first as String)
+    //     .compareTo(int.parse(b.keys.first as String)));
+
     setState(() {
       mangaDescription = daaa;
     });
@@ -176,72 +172,35 @@ class _MangaOfflineFullPreviewState
                       ),
                       Row(
                         children: [
-                          Row(
+                          const Row(
                             children: [
-                              const Icon(
+                              Icon(
                                 Icons.star,
                                 color: Colors.red,
                               ),
-                              const SizedBox(
+                              SizedBox(
                                 width: 10,
                               ),
-                              // Text(
-                              //   mangaDescription['rating'],
-                              //   style: const TextStyle(
-                              //     color: Colors.red,
-                              //     fontSize: 16,
-                              //   ),
-                              // ),
                             ],
                           ),
                           SizedBox(
                             width: MediaQuery.of(context).size.width * 0.1,
                           ),
-                          Row(
+                          const Row(
                             children: [
-                              const Icon(
+                              Icon(
                                 Icons.remove_red_eye_rounded,
                                 color: Colors.red,
                               ),
-                              const SizedBox(
+                              SizedBox(
                                 width: 10,
                               ),
-                              // Text(
-                              //   mangaDescription['viewCount'],
-                              //   style: const TextStyle(
-                              //     color: Colors.red,
-                              //     fontSize: 16,
-                              //   ),
-                              // ),
                             ],
                           ),
                         ],
                       ),
                       const SizedBox(
                         height: 10,
-                      ),
-                      SingleChildScrollView(
-                        scrollDirection: Axis.horizontal,
-                        // child: Row(
-                        //   children: mangaDescription!['genres'].map((genre) {
-                        //     return Container(
-                        //       margin: const EdgeInsets.only(right: 10),
-                        //       padding: const EdgeInsets.symmetric(
-                        //           horizontal: 10, vertical: 5),
-                        //       decoration: BoxDecoration(
-                        //         color: Colors.grey[800],
-                        //         borderRadius: BorderRadius.circular(20),
-                        //       ),
-                        //       child: Text(
-                        //         genre.name,
-                        //         style: const TextStyle(
-                        //           color: Colors.white,
-                        //           fontSize: 12,
-                        //         ),
-                        //       ),
-                        //     );
-                        //   }).toList(),
-                        // ),
                       ),
                       GestureDetector(
                         onTap: () {
@@ -263,7 +222,7 @@ class _MangaOfflineFullPreviewState
                             ),
                             TextButton(
                               style: ButtonStyle(
-                                padding: MaterialStateProperty.all<
+                                padding: WidgetStateProperty.all<
                                     EdgeInsetsGeometry>(EdgeInsets.zero),
                               ),
                               onPressed: () {
@@ -365,7 +324,10 @@ class _MangaOfflineFullPreviewState
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Text(
-                        '${entry.value.keys.first}',
+                        entry.value.keys.first
+                            .toString()
+                            .replaceAll('_', ' ')
+                            .replaceAll(':', ' '),
                         style:
                             const TextStyle(fontSize: 10, color: Colors.white),
                       ),

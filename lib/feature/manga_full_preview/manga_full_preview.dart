@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:otakusama/commons/contants.dart';
 import 'package:otakusama/feature/MyList/service/MyListService.dart';
 import 'package:otakusama/feature/downloadManager/downloadManager.dart';
 import 'package:otakusama/feature/read_chapter/read_chapter_screen.dart';
@@ -40,8 +41,7 @@ class _MangaFullPreviewState extends ConsumerState<MangaFullPreview> {
   }
 
   Future<void> fetchSimilar() async {
-    final response =
-        await http.get(Uri.parse('https://weblakshay.tech/manga/top_manga/'));
+    final response = await http.get(Uri.parse('$uri/manga/top_manga/'));
 
     if (response.statusCode == 200) {
       setState(() {
@@ -70,7 +70,7 @@ class _MangaFullPreviewState extends ConsumerState<MangaFullPreview> {
   Future<void> fetchData() async {
     try {
       final response = await http.post(
-        Uri.parse('https://weblakshay.tech/manga/manga_list/'),
+        Uri.parse('$uri/manga/manga_list/'),
         body: jsonEncode({'url': widget.accessLink}),
         headers: {'Content-Type': 'application/json'},
       );

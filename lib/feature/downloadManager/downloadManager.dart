@@ -13,7 +13,7 @@ import 'package:http/http.dart' as http;
 class MangaStorageManager {
   Future<void> saveManga(BuildContext context, String mangaName,
       Map<String, dynamic> mangaData) async {
-    mangaName = mangaName.replaceAll(' ', '_');
+    mangaName = mangaName.replaceAll(' ', '_').replaceAll(':', '_');
 
     final path = '/storage/emulated/0/Download/OtakuSama/$mangaName/';
     if (!await Directory(path).exists()) {
@@ -29,12 +29,14 @@ class MangaStorageManager {
   }
 
   Future<void> saveChapter(
-      BuildContext context,
-      MangaDescription mangaDescription,
-      String chapterTitle,
-      List<String> imageUrls) async {
-    chapterTitle = chapterTitle.replaceAll(' ', '_');
-    final mangaName = mangaDescription.title.replaceAll(' ', '_');
+    BuildContext context,
+    MangaDescription mangaDescription,
+    String chapterTitle,
+    List<String> imageUrls,
+  ) async {
+    chapterTitle = chapterTitle.replaceAll(' ', '_').replaceAll(':', '_');
+    final mangaName =
+        mangaDescription.title.replaceAll(' ', '_').replaceAll(':', '_');
     final path = '/storage/emulated/0/Download/OtakuSama/$mangaName';
 
     final chapterPath = '$path/$chapterTitle';
@@ -77,6 +79,14 @@ class MangaStorageManager {
       await file.writeAsBytes(response.bodyBytes);
       print('Image $i saved');
     }
-    print('Chapter saved');
+  }
+
+  Future<bool> doesDirectoryExists(
+      BuildContext context, String path, String message) async {
+    if (await Directory(path).exists()) {
+      showSnackBar(context, message);
+      return true;
+    }
+    return false;
   }
 }

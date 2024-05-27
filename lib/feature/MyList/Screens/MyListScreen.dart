@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:otakusama/feature/MyList/service/MyListService.dart';
@@ -76,7 +75,8 @@ class _MyListScreenState extends ConsumerState<MyListScreen> {
                           manga.title,
                           overflow: TextOverflow.ellipsis,
                           maxLines: 3,
-                          style: TextStyle(fontSize: 20, color: Colors.white),
+                          style: const TextStyle(
+                              fontSize: 20, color: Colors.white),
                         ),
                       )
                     ],

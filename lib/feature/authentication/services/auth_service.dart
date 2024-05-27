@@ -5,6 +5,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:http/http.dart' as http;
+import 'package:otakusama/commons/contants.dart';
 import 'package:otakusama/commons/http_error.dart';
 import 'package:otakusama/feature/homepage/screens/homepage_screen.dart';
 import 'package:otakusama/main.dart';
@@ -28,7 +29,7 @@ class AuthService {
       var user = {"email": email, "password": password, "username": username};
 
       http.Response res = await http.post(
-        Uri.parse('https://weblakshay.tech/auth/register/'),
+        Uri.parse('$uri/auth/register/'),
         body: user,
       );
 
@@ -52,7 +53,7 @@ class AuthService {
       required WidgetRef ref}) async {
     try {
       http.Response res = await http.post(
-        Uri.parse('https://weblakshay.tech/auth/login/'),
+        Uri.parse('$uri/auth/login/'),
         body: jsonEncode({
           'email': email,
           'password': password,
@@ -94,19 +95,17 @@ class AuthService {
         pref.setString('x-auth-token', '');
       }
 
-      var tokenRes = await http.get(
-          Uri.parse('https://weblakshay.tech/auth/user'),
-          headers: <String, String>{
-            'Content-Type': 'application/json; charset=UTF-8',
-            'Authorization': 'Bearer $token'
-          });
+      var tokenRes =
+          await http.get(Uri.parse('$uri/auth/user'), headers: <String, String>{
+        'Content-Type': 'application/json; charset=UTF-8',
+        'Authorization': 'Bearer $token'
+      });
 
       _ref.read(userProvider.notifier).update(
             (state) => User.fromJson(tokenRes.body),
           );
     } catch (e) {
       // showSnackBar(context, e.toString());
-
     }
   }
 }

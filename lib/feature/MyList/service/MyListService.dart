@@ -5,6 +5,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:http/http.dart' as http;
+import 'package:otakusama/commons/contants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:otakusama/commons/http_error.dart';
@@ -31,7 +32,7 @@ class MangaService {
       showSnackBar(context, 'Manga is already in favorites');
     }
     final response = await http.post(
-      Uri.parse('https://weblakshay.tech/userdata/add_fav_manga/'),
+      Uri.parse('$uri/userdata/add_fav_manga/'),
       headers: {
         'Authorization': 'Bearer $token',
       },
@@ -47,7 +48,6 @@ class MangaService {
 
     if (response.statusCode == 200) {
       _ref.read(favMangaProvider).add(mangaApi);
-      print('Manga added to favorites');
     } else if (response.statusCode == 300) {
       throw Exception('Manga is already in favorites');
     } else {
@@ -63,7 +63,7 @@ class MangaService {
     }
 
     final response = await http.get(
-      Uri.parse('https://weblakshay.tech/userdata/get_fav_manga/'),
+      Uri.parse('$uri/userdata/get_fav_manga/'),
       headers: {
         'Authorization': 'Bearer $token',
       },
@@ -87,7 +87,8 @@ class MangaService {
     }
   }
 
-  Future<void> removeFromFavManga(BuildContext context, String mangaTitle) async {
+  Future<void> removeFromFavManga(
+      BuildContext context, String mangaTitle) async {
     final favMangaList = _ref.read(favMangaProvider);
 
     if (!favMangaList.any(
@@ -100,7 +101,7 @@ class MangaService {
       pref.setString('x-auth-token', '');
     }
     final response = await http.post(
-      Uri.parse('https://weblakshay.tech/userdata/delete_fav_manga/'),
+      Uri.parse('$uri/userdata/delete_fav_manga/'),
       headers: {
         'Authorization': 'Bearer $token',
       },

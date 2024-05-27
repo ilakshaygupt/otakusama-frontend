@@ -27,7 +27,7 @@ class _GetStartedScreenState extends ConsumerState<GetStartedScreen> {
         decoration:const BoxDecoration(
           image: DecorationImage(
             fit: BoxFit.cover,
-            image: AssetImage('assets/perf.png'),
+            image: AssetImage('assets/IntroImage.png'),
           ),
         ),
         child: Center(

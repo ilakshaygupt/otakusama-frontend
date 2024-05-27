@@ -3,11 +3,12 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:otakusama/commons/connectivity.dart';
+import 'package:otakusama/commons/contants.dart';
 import 'package:otakusama/commons/http_error.dart';
 import 'package:otakusama/models/manga_model.dart';
 import 'package:http/http.dart' as http;
 
-final HomePageProvider = Provider((ref) => HomepageService(ref: ref));
+final homePageProvider = Provider((ref) => HomepageService(ref: ref));
 
 class HomepageService {
   final Ref _ref;
@@ -22,8 +23,7 @@ class HomepageService {
       return [];
     }
     try {
-      http.Response res =
-          await http.get(Uri.parse("https://weblakshay.tech/manga/top_manga/"));
+      http.Response res = await http.get(Uri.parse("$uri/manga/top_manga/"));
       httpErrorHandle(
         response: res,
         context: context,

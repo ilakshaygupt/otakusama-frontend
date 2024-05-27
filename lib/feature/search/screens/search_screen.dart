@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:otakusama/commons/contants.dart';
 import 'package:otakusama/feature/manga_full_preview/manga_full_preview.dart';
 import 'dart:convert';
 import 'package:otakusama/models/manga_model.dart';
@@ -14,8 +15,7 @@ class SearchScreen extends StatefulWidget {
 class _SearchScreenState extends State<SearchScreen> {
   List<Manga> mangaList = [];
   Future<void> fetchData() async {
-    final response =
-        await http.get(Uri.parse('https://weblakshay.tech/manga/top_manga/'));
+    final response = await http.get(Uri.parse('$uri/manga/top_manga/'));
 
     if (response.statusCode == 200) {
       setState(() {
@@ -34,7 +34,7 @@ class _SearchScreenState extends State<SearchScreen> {
       return;
     }
     final response = await http.post(
-      Uri.parse('https://weblakshay.tech/manga/search/'),
+      Uri.parse('$uri/manga/search/'),
       body: jsonEncode({'text': searchText}),
       headers: {'Content-Type': 'application/json'},
     );

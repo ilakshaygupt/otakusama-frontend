@@ -5,6 +5,7 @@ import 'package:otakusama/feature/getStarted/screens/getStartedScreen.dart';
 import 'package:otakusama/feature/homepage/screens/homepage_screen.dart';
 
 void main() {
+  
   runApp(
     const ProviderScope(child: MyApp()),
   );
@@ -22,6 +23,7 @@ class _MyAppState extends ConsumerState<MyApp> {
   @override
   void initState() {
     super.initState();
+    
     _authFuture = checkAuth(context);
   }
 
@@ -31,6 +33,7 @@ class _MyAppState extends ConsumerState<MyApp> {
 
   @override
   Widget build(BuildContext context) {
+    
     return FutureBuilder(
       future: _authFuture,
       builder: (BuildContext context, AsyncSnapshot<void> snapshot) {
