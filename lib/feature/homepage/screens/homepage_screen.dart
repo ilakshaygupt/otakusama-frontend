@@ -1,30 +1,32 @@
-// ignore_for_file: use_key_in_widget_constructors, library_private_types_in_public_api
-
 import 'dart:async';
-import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
+import 'package:otakusama/feature/MyList/Screens/MyListScreen.dart';
+import 'package:otakusama/feature/homepage/services/homepage_service.dart';
 import 'package:otakusama/feature/manga_full_preview/manga_full_preview.dart';
-import 'package:otakusama/models/manga_model.dart';
+import 'package:otakusama/feature/profile/screens/profileScreen.dart';
 import 'package:otakusama/feature/search/screens/search_screen.dart';
 import 'package:otakusama/feature/viewallmanga/screens/viewallscreens.dart';
 
+
+
 class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
+
   @override
   _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
-  List<Manga> mangaList = [];
-  TextEditingController searchController = TextEditingController();
+  late HomeViewModel _viewModel;
   late PageController _pageController;
   late Timer _timer;
 
   @override
   void initState() {
     super.initState();
-    fetchData();
+    _viewModel = HomeViewModel();
+    _viewModel.addListener(_onViewModelChanged);
     _pageController = PageController();
     _startAutoPageChange();
   }
@@ -33,15 +35,20 @@ class _HomePageState extends State<HomePage> {
   void dispose() {
     _pageController.dispose();
     _timer.cancel();
+    _viewModel.removeListener(_onViewModelChanged);
+    _viewModel.dispose();
     super.dispose();
   }
 
   void _startAutoPageChange() {
-    const Duration duration = Duration(seconds: 4);
+    const Duration duration = Duration(seconds: 2);
     _timer = Timer.periodic(duration, (Timer timer) {
-      if (_pageController.page == mangaList.length - 1) {
-        _pageController.animateToPage(0,
-            duration: const Duration(milliseconds: 700), curve: Curves.ease);
+      if (_pageController.page == _viewModel.topAiring.length - 1) {
+        _pageController.animateToPage(
+          0,
+          duration: const Duration(milliseconds: 700),
+          curve: Curves.ease,
+        );
       } else {
         _pageController.nextPage(
             duration: const Duration(milliseconds: 700), curve: Curves.ease);
@@ -49,19 +56,8 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
-  Future<void> fetchData() async {
-    final response = await http
-        .get(Uri.parse('https://mangaka.onrender.com/manga/top_manga/'));
-
-    if (response.statusCode == 200) {
-      setState(() {
-        mangaList = (jsonDecode(response.body) as List)
-            .map((item) => Manga.fromJson(item))
-            .toList();
-      });
-    } else {
-      throw Exception('Failed to load manga');
-    }
+  void _onViewModelChanged() {
+    setState(() {});
   }
 
   void _onItemTapped(int index) {
@@ -79,7 +75,7 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: const Color.fromRGBO(0, 0, 0, 0),
         title: const Text(
           'OTAKUSAMA',
-          style: TextStyle(fontFamily: 'Outfit'),
+          style: TextStyle(fontFamily: 'Montserrat'),
         ),
         actions: [
           IconButton(
@@ -133,111 +129,181 @@ class _HomePageState extends State<HomePage> {
     switch (index) {
       case 0:
         return _buildHomeScreen();
+      case 1:
+        return const MyListScreen();
+      case 2:
+        return const ProfilePage();
       default:
         return Container();
     }
   }
 
   Widget _buildHomeScreen() {
-    return mangaList.isEmpty
+    return _viewModel.isLoading
         ? const Center(child: CircularProgressIndicator())
-        : Column(
-            children: [
-              SizedBox(
-                height: 380,
-                child: PageView.builder(
-                  scrollDirection: Axis.horizontal,
-                  controller: _pageController,
-                  itemCount: mangaList.length,
-                  itemBuilder: (context, index) {
-                    final manga = mangaList[index];
-                    return GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => MangaFullPreview(
-                              accessLink: manga.accessLink,
+        : SingleChildScrollView(
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 380,
+                  child: PageView.builder(
+                    scrollDirection: Axis.horizontal,
+                    controller: _pageController,
+                    itemCount: _viewModel.topAiring.length,
+                    itemBuilder: (context, index) {
+                      final manga = _viewModel.topAiring[index];
+                      return GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => MangaFullPreview(
+                                accessLink: manga.accessLink,
+                              ),
                             ),
-                          ),
-                        );
-                      },
-                      child: FadeInImage.assetNetwork(
-                        placeholder: 'assets/downloaded_image.jpg',
-                        image: manga.image,
-                        height: 380,
-                        width: MediaQuery.of(context).size.width,
-                        fit: BoxFit.fitWidth,
-                      ),
-                    );
-                  },
-                ),
-              ),
-              Row(
-                children: [
-                  const SizedBox(width: 8),
-                  const Text(
-                    "TOP AIRING",
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Color(0xfff6f7f8),
-                        fontWeight: FontWeight.w600,
-                        fontFamily: 'Core Sans AR'),
-                  ),
-                  const Spacer(),
-                  ElevatedButton(
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateColor.resolveWith(
-                          (states) => const Color.fromARGB(0, 240, 0, 0)),
-                    ),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => ViewAllMangaScreen(),
+                          );
+                        },
+                        child: FadeInImage.assetNetwork(
+                          placeholder: 'assets/OfflineAsset.jpg',
+                          image: manga.image,
+                          height: 360,
+                          width: MediaQuery.of(context).size.width,
+                          fit: BoxFit.fitWidth,
                         ),
                       );
                     },
-                    child: const Text(
-                      'View All',
-                      style: TextStyle(color: Color(0xffc6303c), fontSize: 15),
-                    ),
                   ),
-                ],
-              ),
-              SizedBox(
-                height: 230,
-                child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: mangaList.length,
-                  itemBuilder: (context, index) {
-                    final manga = mangaList[index];
-                    return GestureDetector(
-                      onTap: () {
+                ),
+                Row(
+                  children: [
+                    const SizedBox(width: 8),
+                    const Text(
+                      "TOP AIRING",
+                      style: TextStyle(
+                          fontSize: 20,
+                          color: Color(0xfff6f7f8),
+                          fontWeight: FontWeight.w600,
+                          fontFamily: 'Core Sans AR'),
+                    ),
+                    const Spacer(),
+                    ElevatedButton(
+                      style: ButtonStyle(
+                        backgroundColor: WidgetStateProperty.all(Colors.transparent),
+                      ),
+                      onPressed: () {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => MangaFullPreview(
-                              accessLink: manga.accessLink,
-                            ),
+                            builder: (context) => ViewAllMangaScreen(),
                           ),
                         );
                       },
-                      child: Container(
-                        padding: const EdgeInsets.all(10),
-                        height: 230,
-                        width: 150,
-                        child: FadeInImage.assetNetwork(
-                          placeholder: 'assets/downloaded_image.jpg',
-                          image: manga.image,
-                          fit: BoxFit.cover,
-                        ),
+                      child: const Text(
+                        'View All',
+                        style:
+                            TextStyle(color: Color(0xffc6303c), fontSize: 15),
                       ),
-                    );
-                  },
+                    ),
+                  ],
                 ),
-              ),
-            ],
+                SizedBox(
+                  height: 230,
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: _viewModel.topAiring.length,
+                    itemBuilder: (context, index) {
+                      final manga = _viewModel.topAiring[index];
+                      return GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => MangaFullPreview(
+                                accessLink: manga.accessLink,
+                              ),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          padding: const EdgeInsets.all(10),
+                          height: 230,
+                          width: 150,
+                          child: FadeInImage.assetNetwork(
+                            placeholder: 'assets/OfflineAsset.jpg',
+                            image: manga.image,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+                Row(
+                  children: [
+                    const SizedBox(width: 8),
+                    const Text(
+                      "UPDATED RECENTLY",
+                      style: TextStyle(
+                          fontSize: 20,
+                          color: Color(0xfff6f7f8),
+                          fontWeight: FontWeight.w600,
+                          fontFamily: 'Core Sans AR'),
+                    ),
+                    const Spacer(),
+                    ElevatedButton(
+                      style: ButtonStyle(
+                        backgroundColor: WidgetStateProperty.all(Colors.transparent),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => ViewAllMangaScreen(),
+                          ),
+                        );
+                      },
+                      child: const Text(
+                        'View All',
+                        style:
+                            TextStyle(color: Color(0xffc6303c), fontSize: 15),
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 230,
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: _viewModel.topLatest.length,
+                    itemBuilder: (context, index) {
+                      final manga = _viewModel.topLatest[index];
+                      return GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => MangaFullPreview(
+                                accessLink: manga.accessLink,
+                              ),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          padding: const EdgeInsets.all(10),
+                          height: 230,
+                          width: 150,
+                          child: FadeInImage.assetNetwork(
+                            placeholder: 'assets/OfflineAsset.jpg',
+                            image: manga.image,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+              ],
+            ),
           );
   }
 }

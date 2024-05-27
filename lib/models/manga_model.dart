@@ -1,3 +1,4 @@
+import 'dart:typed_data';
 
 class Manga {
   final String author;
@@ -27,3 +28,20 @@ class Manga {
     );
   }
 }
+
+class Chapter {
+  final String chapter;
+  final String chapterLink;
+  final Manga manga;
+  final List<Uint8List>? images;
+  final List<String> imageLinks;
+
+  Chapter({
+    required this.chapter,
+    required this.chapterLink,
+    required this.manga,
+    required this.images,
+    required this.imageLinks,
+  });
+}
+

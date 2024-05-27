@@ -3,6 +3,10 @@
 import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:otakusama/commons/contants.dart';
+import 'package:otakusama/feature/MyList/service/MyListService.dart';
+import 'package:otakusama/feature/downloadManager/downloadManager.dart';
 import 'package:otakusama/feature/read_chapter/read_chapter_screen.dart';
 import 'package:otakusama/models/manga_chapter_model.dart';
 import 'package:http/http.dart' as http;
@@ -11,17 +15,18 @@ import 'package:marquee/marquee.dart';
 
 import '../../models/manga_model.dart';
 
-class MangaFullPreview extends StatefulWidget {
+class MangaFullPreview extends ConsumerStatefulWidget {
   final String accessLink;
 
   const MangaFullPreview({Key? key, required this.accessLink})
       : super(key: key);
 
   @override
-  _MangaFullPreviewState createState() => _MangaFullPreviewState();
+  ConsumerState<MangaFullPreview> createState() => _MangaFullPreviewState();
 }
 
-class _MangaFullPreviewState extends State<MangaFullPreview> {
+class _MangaFullPreviewState extends ConsumerState<MangaFullPreview> {
+  late bool isFavourite;
   List<MangaChapter> mangaList = [];
   MangaDescription? mangaDescription;
   List<MangaChapter> filteredMangaList = [];
@@ -36,8 +41,7 @@ class _MangaFullPreviewState extends State<MangaFullPreview> {
   }
 
   Future<void> fetchSimilar() async {
-    final response = await http
-        .get(Uri.parse('https://mangaka.onrender.com/manga/top_manga/'));
+    final response = await http.get(Uri.parse('$uri/manga/top_manga/'));
 
     if (response.statusCode == 200) {
       setState(() {
@@ -66,7 +70,7 @@ class _MangaFullPreviewState extends State<MangaFullPreview> {
   Future<void> fetchData() async {
     try {
       final response = await http.post(
-        Uri.parse('https://mangaka.onrender.com/manga/manga_list/'),
+        Uri.parse('$uri/manga/manga_list/'),
         body: jsonEncode({'url': widget.accessLink}),
         headers: {'Content-Type': 'application/json'},
       );
@@ -114,12 +118,26 @@ class _MangaFullPreviewState extends State<MangaFullPreview> {
 
   @override
   Widget build(BuildContext context) {
+    isFavourite = ref
+        .watch(favMangaProvider)
+        .any((manga) => manga.accessLink == widget.accessLink);
     return Scaffold(
       extendBodyBehindAppBar: true,
       backgroundColor: const Color.fromARGB(255, 25, 26, 31),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         shadowColor: const Color.fromARGB(0, 0, 0, 0),
+        leading: IconButton(
+          icon: const Icon(Icons.download_rounded),
+          onPressed: () async {
+            await MangaStorageManager()
+                .saveManga(context, mangaDescription!.title, {
+              'title': mangaDescription!.title,
+              'imageLink': mangaDescription!.imageLink,
+              'mangaList': mangaDescription!.mangaList
+            });
+          },
+        ),
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -129,7 +147,7 @@ class _MangaFullPreviewState extends State<MangaFullPreview> {
                     Stack(
                       children: [
                         FadeInImage.assetNetwork(
-                          placeholder: 'assets/downloaded_image.jpg',
+                          placeholder: 'assets/OfflineAsset.jpg',
                           image: mangaDescription!.imageLink,
                           fit: BoxFit.cover,
                           height: 300,
@@ -206,13 +224,35 @@ class _MangaFullPreviewState extends State<MangaFullPreview> {
                                         IconButton(
                                           icon: const Icon(
                                               Icons.bookmark_outline_rounded),
-                                          color: Colors.white,
+                                          color: isFavourite
+                                              ? Colors.red
+                                              : Colors.white,
                                           style: ButtonStyle(
                                               iconSize:
                                                   MaterialStateProperty.all(
                                                       30)),
-                                          onPressed: () {
-                                            
+                                          onPressed: () async {
+                                            if (isFavourite) {
+                                              await ref
+                                                  .read(mangaServiceProvider)
+                                                  .removeFromFavManga(context,
+                                                      mangaDescription!.title);
+                                              setState(() {
+                                                isFavourite = !isFavourite;
+                                              });
+                                            } else {
+                                              await ref
+                                                  .read(mangaServiceProvider)
+                                                  .addMangaToFav(
+                                                    context,
+                                                    mangaDescription!.title,
+                                                    widget.accessLink,
+                                                    mangaDescription!.imageLink,
+                                                  );
+                                              setState(() {
+                                                isFavourite = !isFavourite;
+                                              });
+                                            }
                                           },
                                         ),
                                         IconButton(
@@ -222,7 +262,6 @@ class _MangaFullPreviewState extends State<MangaFullPreview> {
                                         ),
                                       ],
                                     ),
-                                    // const SizedBox(height: 6),
                                     Row(
                                       children: [
                                         Row(
@@ -444,13 +483,14 @@ class _MangaFullPreviewState extends State<MangaFullPreview> {
                             filteredMangaList.asMap().entries.map((entry) {
                           final int index = entry.key;
                           final mangaChapter = entry.value;
-
                           return GestureDetector(
                             onTap: () {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => ReadChapter(
+                                    mangaDescription: mangaDescription!,
+                                    chapterName: mangaChapter.mangaText,
                                     mangaChapterList:
                                         mangaDescription!.mangaList,
                                     accessLink: mangaChapter.mangaLink,
@@ -517,8 +557,7 @@ class _MangaFullPreviewState extends State<MangaFullPreview> {
                               decoration: BoxDecoration(
                                 image: DecorationImage(
                                     image: FadeInImage.assetNetwork(
-                                      placeholder:
-                                          'assets/downloaded_image.jpg',
+                                      placeholder: 'assets/OfflineAsset.jpg',
                                       image: manga.image,
                                       fit: BoxFit.cover,
                                       height: 240,
