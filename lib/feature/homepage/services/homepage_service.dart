@@ -1,43 +1,45 @@
+import 'dart:async';
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:otakusama/commons/connectivity.dart';
-import 'package:otakusama/commons/contants.dart';
-import 'package:otakusama/commons/http_error.dart';
-import 'package:otakusama/models/manga_model.dart';
 import 'package:http/http.dart' as http;
+import 'package:otakusama/commons/contants.dart';
+import 'package:otakusama/models/manga_model.dart';
 
-final homePageProvider = Provider((ref) => HomepageService(ref: ref));
+class HomeViewModel extends ChangeNotifier {
+  List<Manga> topAiring = [];
+  List<Manga> topLatest = [];
+  bool isLoading = true;
 
-class HomepageService {
-  final Ref _ref;
-  HomepageService({required Ref ref}) : _ref = ref;
-  Future<List<Manga>> getTopAiring(
-    BuildContext context,
-  ) async {
-    List<Manga> topAiring = [];
-    final bool _isConnected = await ConnectivityService().isConnected();
-    if (!_isConnected) {
-      showSnackBar(context, "No Internet Connection");
-      return [];
+  HomeViewModel() {
+    fetchTopAiring();
+    fetchLatestUpdated();
+  }
+
+  Future<void> fetchTopAiring() async {
+    final response = await http.get(Uri.parse('$uri/manga/top_manga/'));
+
+    if (response.statusCode == 200) {
+      topAiring = (jsonDecode(response.body) as List)
+          .map((item) => Manga.fromJson(item))
+          .toList();
+      isLoading = false;
+      notifyListeners();
+    } else {
+      throw Exception('Failed to load manga');
     }
-    try {
-      http.Response res = await http.get(Uri.parse("$uri/manga/top_manga/"));
-      httpErrorHandle(
-        response: res,
-        context: context,
-        onSuccess: () {
-          final Map<String, dynamic> body = jsonDecode(res.body);
-          for (var manga in body['data']) {
-            topAiring.add(Manga.fromJson(manga));
-          }
-        },
-      );
-    } catch (e) {
-      showSnackBar(context, "Something went wrong");
-    }
+  }
 
-    return topAiring;
+  Future<void> fetchLatestUpdated() async {
+    final response = await http.get(Uri.parse('$uri/manga/latest_updated/'));
+
+    if (response.statusCode == 200) {
+      topLatest = (jsonDecode(response.body) as List)
+          .map((item) => Manga.fromJson(item))
+          .toList();
+      isLoading = false;
+      notifyListeners();
+    } else {
+      throw Exception('Failed to load manga');
+    }
   }
 }

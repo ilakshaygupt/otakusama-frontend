@@ -36,7 +36,7 @@ class MangaShortPreview extends StatelessWidget {
                   Stack(
                     children: [
                       FadeInImage.assetNetwork(
-                        placeholder: "assets/downloaded_image.jpg",
+                        placeholder: "assets/OfflineAsset.jpg",
                         image: manga.image,
                         fit: BoxFit.cover,
                         height: 180,

@@ -147,7 +147,7 @@ class _MangaFullPreviewState extends ConsumerState<MangaFullPreview> {
                     Stack(
                       children: [
                         FadeInImage.assetNetwork(
-                          placeholder: 'assets/downloaded_image.jpg',
+                          placeholder: 'assets/OfflineAsset.jpg',
                           image: mangaDescription!.imageLink,
                           fit: BoxFit.cover,
                           height: 300,
@@ -557,8 +557,7 @@ class _MangaFullPreviewState extends ConsumerState<MangaFullPreview> {
                               decoration: BoxDecoration(
                                 image: DecorationImage(
                                     image: FadeInImage.assetNetwork(
-                                      placeholder:
-                                          'assets/downloaded_image.jpg',
+                                      placeholder: 'assets/OfflineAsset.jpg',
                                       image: manga.image,
                                       fit: BoxFit.cover,
                                       height: 240,

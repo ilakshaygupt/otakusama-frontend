@@ -1,38 +1,32 @@
-// ignore_for_file: use_key_in_widget_constructors, library_private_types_in_public_api
-
 import 'dart:async';
-import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:http/http.dart' as http;
-import 'package:otakusama/commons/contants.dart';
 import 'package:otakusama/feature/MyList/Screens/MyListScreen.dart';
+import 'package:otakusama/feature/homepage/services/homepage_service.dart';
 import 'package:otakusama/feature/manga_full_preview/manga_full_preview.dart';
 import 'package:otakusama/feature/profile/screens/profileScreen.dart';
-import 'package:otakusama/models/manga_model.dart';
 import 'package:otakusama/feature/search/screens/search_screen.dart';
 import 'package:otakusama/feature/viewallmanga/screens/viewallscreens.dart';
 
-class HomePage extends ConsumerStatefulWidget {
+
+
+class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
-  ConsumerState<HomePage> createState() => _HomePageState();
+  _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends ConsumerState<HomePage> {
+class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
-  List<Manga> topAiring = [];
-  List<Manga> topLatest = [];
-  TextEditingController searchController = TextEditingController();
+  late HomeViewModel _viewModel;
   late PageController _pageController;
   late Timer _timer;
 
   @override
   void initState() {
     super.initState();
-    fetchTopAiring();
-    fetchLatestUpdated();
+    _viewModel = HomeViewModel();
+    _viewModel.addListener(_onViewModelChanged);
     _pageController = PageController();
     _startAutoPageChange();
   }
@@ -41,13 +35,15 @@ class _HomePageState extends ConsumerState<HomePage> {
   void dispose() {
     _pageController.dispose();
     _timer.cancel();
+    _viewModel.removeListener(_onViewModelChanged);
+    _viewModel.dispose();
     super.dispose();
   }
 
   void _startAutoPageChange() {
     const Duration duration = Duration(seconds: 2);
     _timer = Timer.periodic(duration, (Timer timer) {
-      if (_pageController.page == topAiring.length - 1) {
+      if (_pageController.page == _viewModel.topAiring.length - 1) {
         _pageController.animateToPage(
           0,
           duration: const Duration(milliseconds: 700),
@@ -60,32 +56,8 @@ class _HomePageState extends ConsumerState<HomePage> {
     });
   }
 
-  Future<void> fetchLatestUpdated() async {
-    final response = await http.get(Uri.parse('$uri/manga/latest_updated/'));
-
-    if (response.statusCode == 200) {
-      setState(() {
-        topLatest = (jsonDecode(response.body) as List)
-            .map((item) => Manga.fromJson(item))
-            .toList();
-      });
-    } else {
-      throw Exception('Failed to load manga');
-    }
-  }
-
-  Future<void> fetchTopAiring() async {
-    final response = await http.get(Uri.parse('$uri/manga/top_manga/'));
-
-    if (response.statusCode == 200) {
-      setState(() {
-        topAiring = (jsonDecode(response.body) as List)
-            .map((item) => Manga.fromJson(item))
-            .toList();
-      });
-    } else {
-      throw Exception('Failed to load manga');
-    }
+  void _onViewModelChanged() {
+    setState(() {});
   }
 
   void _onItemTapped(int index) {
@@ -167,7 +139,7 @@ class _HomePageState extends ConsumerState<HomePage> {
   }
 
   Widget _buildHomeScreen() {
-    return topAiring.isEmpty
+    return _viewModel.isLoading
         ? const Center(child: CircularProgressIndicator())
         : SingleChildScrollView(
             child: Column(
@@ -177,9 +149,9 @@ class _HomePageState extends ConsumerState<HomePage> {
                   child: PageView.builder(
                     scrollDirection: Axis.horizontal,
                     controller: _pageController,
-                    itemCount: topAiring.length,
+                    itemCount: _viewModel.topAiring.length,
                     itemBuilder: (context, index) {
-                      final manga = topAiring[index];
+                      final manga = _viewModel.topAiring[index];
                       return GestureDetector(
                         onTap: () {
                           Navigator.push(
@@ -192,7 +164,7 @@ class _HomePageState extends ConsumerState<HomePage> {
                           );
                         },
                         child: FadeInImage.assetNetwork(
-                          placeholder: 'assets/downloaded_image.jpg',
+                          placeholder: 'assets/OfflineAsset.jpg',
                           image: manga.image,
                           height: 360,
                           width: MediaQuery.of(context).size.width,
@@ -216,8 +188,7 @@ class _HomePageState extends ConsumerState<HomePage> {
                     const Spacer(),
                     ElevatedButton(
                       style: ButtonStyle(
-                        backgroundColor: WidgetStateColor.resolveWith(
-                            (states) => const Color.fromARGB(0, 240, 0, 0)),
+                        backgroundColor: WidgetStateProperty.all(Colors.transparent),
                       ),
                       onPressed: () {
                         Navigator.push(
@@ -239,9 +210,9 @@ class _HomePageState extends ConsumerState<HomePage> {
                   height: 230,
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
-                    itemCount: topAiring.length,
+                    itemCount: _viewModel.topAiring.length,
                     itemBuilder: (context, index) {
-                      final manga = topAiring[index];
+                      final manga = _viewModel.topAiring[index];
                       return GestureDetector(
                         onTap: () {
                           Navigator.push(
@@ -258,7 +229,7 @@ class _HomePageState extends ConsumerState<HomePage> {
                           height: 230,
                           width: 150,
                           child: FadeInImage.assetNetwork(
-                            placeholder: 'assets/downloaded_image.jpg',
+                            placeholder: 'assets/OfflineAsset.jpg',
                             image: manga.image,
                             fit: BoxFit.cover,
                           ),
@@ -281,8 +252,7 @@ class _HomePageState extends ConsumerState<HomePage> {
                     const Spacer(),
                     ElevatedButton(
                       style: ButtonStyle(
-                        backgroundColor: WidgetStateColor.resolveWith(
-                            (states) => const Color.fromARGB(0, 240, 0, 0)),
+                        backgroundColor: WidgetStateProperty.all(Colors.transparent),
                       ),
                       onPressed: () {
                         Navigator.push(
@@ -304,9 +274,9 @@ class _HomePageState extends ConsumerState<HomePage> {
                   height: 230,
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
-                    itemCount: topLatest.length,
+                    itemCount: _viewModel.topLatest.length,
                     itemBuilder: (context, index) {
-                      final manga = topLatest[index];
+                      final manga = _viewModel.topLatest[index];
                       return GestureDetector(
                         onTap: () {
                           Navigator.push(
@@ -323,7 +293,7 @@ class _HomePageState extends ConsumerState<HomePage> {
                           height: 230,
                           width: 150,
                           child: FadeInImage.assetNetwork(
-                            placeholder: 'assets/downloaded_image.jpg',
+                            placeholder: 'assets/OfflineAsset.jpg',
                             image: manga.image,
                             fit: BoxFit.cover,
                           ),
