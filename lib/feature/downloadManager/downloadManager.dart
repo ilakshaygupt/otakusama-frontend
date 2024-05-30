@@ -1,7 +1,7 @@
 // ignore: file_names
 // ignore: file_names
 // ignore_for_file: unused_import, file_names, duplicate_ignore
-
+import 'package:permission_handler/permission_handler.dart';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:otakusama/commons/http_error.dart';
@@ -13,6 +13,14 @@ import 'package:http/http.dart' as http;
 class MangaStorageManager {
   Future<void> saveManga(BuildContext context, String mangaName,
       Map<String, dynamic> mangaData) async {
+        var status = await Permission.storage.status;
+                  if (!status.isGranted) {
+                    await Permission.storage.request();
+                  }
+        if(status.isPermanentlyDenied){
+          showSnackBar(context, 'Please enable storage permission to download manga');
+          return;
+        }
     mangaName = mangaName.replaceAll(' ', '_').replaceAll(':', '_');
 
     final path = '/storage/emulated/0/Download/OtakuSama/$mangaName/';
@@ -34,6 +42,7 @@ class MangaStorageManager {
     String chapterTitle,
     List<String> imageUrls,
   ) async {
+    print('here');
     chapterTitle = chapterTitle.replaceAll(' ', '_').replaceAll(':', '_');
     final mangaName =
         mangaDescription.title.replaceAll(' ', '_').replaceAll(':', '_');

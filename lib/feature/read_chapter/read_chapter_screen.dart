@@ -213,9 +213,11 @@ class _ReadChapterState extends State<ReadChapter> {
                                           },
                                           progressIndicatorBuilder: (context,
                                                   url, downloadProgress) =>
-                                              CircularProgressIndicator(
-                                                  value: downloadProgress
-                                                      .progress),
+                                              Center(
+                                                child: CircularProgressIndicator(
+                                                    value: downloadProgress
+                                                        .progress),
+                                              ),
                                         ),
                                       ],
                                     ),

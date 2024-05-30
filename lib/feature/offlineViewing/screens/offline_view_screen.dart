@@ -25,6 +25,7 @@ class _OfflineViewScreenState extends State<OfflineViewScreen> {
   }
 
   void getMangaData() async {
+    print('here1212');
     final Directory directory =
         Directory('/storage/emulated/0/Download/OtakuSama');
     final List<FileSystemEntity> files = directory.listSync();
@@ -53,6 +54,8 @@ class _OfflineViewScreenState extends State<OfflineViewScreen> {
                   final manga = mangaData[index];
                   return GestureDetector(
                     onTap: () {
+                      print(
+                          '/storage/emulated/0/Download/OtakuSama/${manga['title'].toString().replaceAll(' ', '_').replaceAll(':', '_')}');
                       Navigator.push(
                         context,
                         MaterialPageRoute(

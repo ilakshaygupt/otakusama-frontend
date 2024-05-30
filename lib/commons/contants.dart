@@ -1,1 +1,1 @@
-const uri = "https://manga.weblakshay.tech";
+const uri = "YOUR__BASE_URL_HERE";
