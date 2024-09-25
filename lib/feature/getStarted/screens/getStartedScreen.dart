@@ -34,9 +34,11 @@ class _GetStartedScreenState extends ConsumerState<GetStartedScreen> {
   Widget build(BuildContext context) {
     final user = ref.watch(userProvider);
     final size = MediaQuery.of(context).size;
+    final isLandscape =
+        MediaQuery.of(context).orientation == Orientation.landscape;
 
     return Scaffold(
-      backgroundColor: Colors.black, //
+      backgroundColor: Colors.black,
       body: Stack(
         children: [
           Container(color: Colors.black),
@@ -55,78 +57,26 @@ class _GetStartedScreenState extends ConsumerState<GetStartedScreen> {
           SafeArea(
             child: Center(
               child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    SizedBox(height: size.height * 0.5),
-                    Padding(
-                      padding:
-                          EdgeInsets.symmetric(horizontal: size.width * 0.1),
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Welcome to',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: size.width * 0.1,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            Text(
-                              'OtakuSama.',
-                              style: TextStyle(
-                                color: Colors.red,
-                                fontSize: size.width * 0.1,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: size.height * 0.08),
-                    Padding(
-                      padding:
-                          EdgeInsets.symmetric(horizontal: size.width * 0.05),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          _buildButton(
-                            context: context,
-                            label: 'Sign in',
-                            color: const Color.fromARGB(255, 78, 81, 93),
-                            onPressed: () async {
-                              user == null
-                                  ? Navigator.of(context).push(
-                                      MaterialPageRoute(
-                                          builder: (context) =>
-                                              const Register()),
-                                    )
-                                  : Navigator.of(context).push(
-                                      MaterialPageRoute(
-                                          builder: (context) =>
-                                              const HomePage()),
-                                    );
-                            },
-                          ),
-                          _buildButton(
-                            context: context,
-                            label: 'Watch Now',
-                            color: Colors.red,
-                            onPressed: () async {
-                              Navigator.of(context).pushAndRemoveUntil(
-                                MaterialPageRoute(
-                                    builder: (context) => const HomePage()),
-                                (route) => false,
-                              );
-                            },
-                          ),
-                        ],
-                      ),
-                    )
-                  ],
+                child: Padding(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: size.width * 0.05,
+                    vertical: size.height * 0.02,
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                          height: isLandscape
+                              ? size.height * 0.1
+                              : size.height * 0.3),
+                      _buildWelcomeText(size, isLandscape),
+                      SizedBox(
+                          height: isLandscape
+                              ? size.height * 0.05
+                              : size.height * 0.08),
+                      _buildButtons(context, size, user, isLandscape),
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -136,16 +86,82 @@ class _GetStartedScreenState extends ConsumerState<GetStartedScreen> {
     );
   }
 
+  Widget _buildWelcomeText(Size size, bool isLandscape) {
+    double fontSize = isLandscape ? size.height * 0.08 : size.width * 0.1;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Welcome to',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: fontSize,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        Text(
+          'OtakuSama.',
+          style: TextStyle(
+            color: Colors.red,
+            fontSize: fontSize,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildButtons(
+      BuildContext context, Size size, dynamic user, bool isLandscape) {
+    return Flex(
+      direction: isLandscape ? Axis.horizontal : Axis.vertical,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        _buildButton(
+          context: context,
+          label: 'Sign in',
+          color: const Color.fromARGB(255, 78, 81, 93),
+          onPressed: () {
+            user == null
+                ? Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => const Register()),
+                  )
+                : Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => const HomePage()),
+                  );
+          },
+          isLandscape: isLandscape,
+        ),
+        SizedBox(
+            width: isLandscape ? size.width * 0.05 : 0,
+            height: isLandscape ? 0 : size.height * 0.02),
+        _buildButton(
+          context: context,
+          label: 'Watch Now',
+          color: Colors.red,
+          onPressed: ()  {
+            Navigator.of(context).pushAndRemoveUntil(
+              MaterialPageRoute(builder: (context) => const HomePage()),
+              (route) => false,
+            );
+          },
+          isLandscape: isLandscape,
+        ),
+      ],
+    );
+  }
+
   Widget _buildButton({
     required BuildContext context,
     required String label,
     required Color color,
     required VoidCallback onPressed,
+    required bool isLandscape,
   }) {
     final size = MediaQuery.of(context).size;
     return Container(
-      height: size.height * 0.07,
-      width: size.width * 0.4,
+      height: isLandscape ? size.height * 0.1 : size.height * 0.07,
+      width: isLandscape ? size.width * 0.3 : size.width * 0.8,
       decoration: BoxDecoration(
         color: color,
         borderRadius: BorderRadius.circular(26),
@@ -156,7 +172,7 @@ class _GetStartedScreenState extends ConsumerState<GetStartedScreen> {
           label,
           style: TextStyle(
             color: Colors.white,
-            fontSize: size.width * 0.04,
+            fontSize: isLandscape ? size.height * 0.03 : size.width * 0.04,
             fontWeight: FontWeight.bold,
           ),
         ),

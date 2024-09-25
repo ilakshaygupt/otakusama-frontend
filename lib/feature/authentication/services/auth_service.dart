@@ -7,6 +7,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:http/http.dart' as http;
 import 'package:otakusama/commons/contants.dart';
 import 'package:otakusama/commons/http_error.dart';
+import 'package:otakusama/feature/authentication/screens/login_screen.dart';
 import 'package:otakusama/feature/homepage/screens/homepage_screen.dart';
 import 'package:otakusama/main.dart';
 import 'package:otakusama/models/user_model.dart';
@@ -19,7 +20,7 @@ class AuthService {
   final Ref _ref;
   AuthService({required Ref ref}) : _ref = ref;
 
-  void signUpUser({
+  Future<void> signUpUser({
     required BuildContext context,
     required String email,
     required String password,
@@ -32,7 +33,6 @@ class AuthService {
         Uri.parse('$uri/auth/register/'),
         body: user,
       );
-      
 
       httpErrorHandle(
         response: res,
@@ -40,6 +40,11 @@ class AuthService {
         onSuccess: () {
           showSnackBar(
               context, 'Account created ! Login with same credentials');
+          Navigator.of(context).pushReplacement(
+            MaterialPageRoute(
+              builder: (context) => const LoginScreen(),
+            ),
+          );
         },
       );
     } catch (e) {
@@ -47,7 +52,7 @@ class AuthService {
     }
   }
 
-  void signInUser(
+  Future<void> signInUser(
       {required BuildContext context,
       required String email,
       required String password,
