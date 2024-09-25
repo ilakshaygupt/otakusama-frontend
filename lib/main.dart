@@ -5,7 +5,7 @@ import 'package:otakusama/feature/getStarted/screens/getStartedScreen.dart';
 import 'package:otakusama/feature/homepage/screens/homepage_screen.dart';
 
 void main() {
-  
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(
     const ProviderScope(child: MyApp()),
   );

@@ -45,6 +45,7 @@ class MangaService {
 
     MangaApiModel mangaApi = MangaApiModel(
         title: mangaTitle, imageLink: mangaImage, accessLink: mangaUrl);
+        
 
     if (response.statusCode == 200) {
       _ref.read(favMangaProvider).add(mangaApi);
@@ -72,6 +73,7 @@ class MangaService {
       List<MangaApiModel> favManga = [];
       final List<dynamic> mangaData = jsonDecode(response.body);
       for (var manga in mangaData) {
+        print(manga);
         MangaApiModel mangaModel = MangaApiModel(
             title: manga['manga_title'],
             imageLink: manga['manga_image'],

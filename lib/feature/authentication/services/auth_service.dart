@@ -32,6 +32,7 @@ class AuthService {
         Uri.parse('$uri/auth/register/'),
         body: user,
       );
+      
 
       httpErrorHandle(
         response: res,

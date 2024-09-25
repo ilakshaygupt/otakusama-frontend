@@ -15,24 +15,24 @@ class _MyListScreenState extends ConsumerState<MyListScreen> {
   @override
   void initState() {
     super.initState();
-    // fetchFavManga();
+    fetchFavManga();
   }
 
-  // Future<void> fetchFavManga() async {
-  //   try {
-  //     final mangaData = await ref.read(mangaServiceProvider).getFavManga();
-  //     if (mounted) {
-  //       // Check if the widget is still mounted
-  //       setState(() {
-  //         favManga = mangaData;
+  Future<void> fetchFavManga() async {
+    try {
+      final mangaData = await ref.read(mangaServiceProvider).getFavManga();
+      if (mounted) {
+        // Check if the widget is still mounted
+        setState(() {
+          favManga = mangaData;
 
-  //       });
-  //     }
-  //   } catch (e) {
-  //     // Handle error
-  //     print('Error fetching favorite manga: $e');
-  //   }
-  // }
+        });
+      }
+    } catch (e) {
+      // Handle error
+      print('Error fetching favorite manga: $e');
+    }
+  }
 
   @override
   Widget build(BuildContext context) {

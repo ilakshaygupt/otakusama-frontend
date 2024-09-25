@@ -16,12 +16,18 @@ void httpErrorHandle({
   required BuildContext context,
   required VoidCallback onSuccess,
 }) {
+  print(jsonDecode(response.body));
   switch (response.statusCode) {
     case 200:
       onSuccess();
       break;
     case 400:
-      showSnackBar(context, jsonDecode(response.body)['msg']);
+      if (jsonDecode(response.body)['error'] != null) {
+        showSnackBar(context, jsonDecode(response.body)['error']);
+      }
+      else{
+        showSnackBar(context, jsonDecode(response.body)['message']);
+      }
       break;
     case 500:
       showSnackBar(context, jsonDecode(response.body)['error']);
