@@ -1,17 +1,17 @@
-// ignore_for_file: library_private_types_in_public_api
-
 import 'dart:convert';
 import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:http/http.dart' as http;
+import 'package:marquee/marquee.dart';
 import 'package:otakusama/commons/contants.dart';
 import 'package:otakusama/feature/MyList/service/MyListService.dart';
 import 'package:otakusama/feature/downloadManager/downloadManager.dart';
+import 'package:otakusama/feature/manga_full_preview/widgets/all_chapters_section.dart';
 import 'package:otakusama/feature/read_chapter/read_chapter_screen.dart';
 import 'package:otakusama/models/manga_chapter_model.dart';
-import 'package:http/http.dart' as http;
 import 'package:otakusama/models/manga_description_model.dart';
-import 'package:marquee/marquee.dart';
 
 import '../../models/manga_model.dart';
 
@@ -125,6 +125,14 @@ class _MangaFullPreviewState extends ConsumerState<MangaFullPreview> {
       extendBodyBehindAppBar: true,
       backgroundColor: const Color.fromARGB(255, 25, 26, 31),
       appBar: AppBar(
+        title: Text(
+          mangaDescription!.title,
+          style: const TextStyle(
+              fontFamily: 'Montserrat',
+              fontSize: 25,
+              fontWeight: FontWeight.bold,
+              color: Colors.black),
+        ),
         backgroundColor: Colors.transparent,
         shadowColor: const Color.fromARGB(0, 0, 0, 0),
         leading: IconButton(
@@ -150,11 +158,11 @@ class _MangaFullPreviewState extends ConsumerState<MangaFullPreview> {
                           placeholder: 'assets/OfflineAsset.jpg',
                           image: mangaDescription!.imageLink,
                           fit: BoxFit.cover,
-                          height: 300,
+                          height: 600,
                           width: MediaQuery.of(context).size.width,
                         ),
                         Container(
-                          height: 300,
+                          height: 600,
                           width: MediaQuery.of(context).size.width,
                           decoration: const BoxDecoration(
                             gradient: LinearGradient(
@@ -229,8 +237,7 @@ class _MangaFullPreviewState extends ConsumerState<MangaFullPreview> {
                                               : Colors.white,
                                           style: ButtonStyle(
                                               iconSize:
-                                                  MaterialStateProperty.all(
-                                                      30)),
+                                                  WidgetStateProperty.all(30)),
                                           onPressed: () async {
                                             if (isFavourite) {
                                               await ref
@@ -359,9 +366,9 @@ class _MangaFullPreviewState extends ConsumerState<MangaFullPreview> {
                                           ),
                                           TextButton(
                                             style: ButtonStyle(
-                                              padding: MaterialStateProperty
-                                                  .all<EdgeInsetsGeometry>(
-                                                      EdgeInsets.zero),
+                                              padding: WidgetStateProperty.all<
+                                                      EdgeInsetsGeometry>(
+                                                  EdgeInsets.zero),
                                             ),
                                             onPressed: () {
                                               showModalBottomSheet(
@@ -423,56 +430,8 @@ class _MangaFullPreviewState extends ConsumerState<MangaFullPreview> {
                               : const Center(
                                   child: CircularProgressIndicator(),
                                 ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              const Text(
-                                'Chapters',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                              ),
-                              Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(20),
-                                  border: Border.all(
-                                    color:
-                                        const Color.fromARGB(255, 96, 97, 98),
-                                  ),
-                                ),
-                                child: Row(
-                                  children: [
-                                    IconButton(
-                                        icon: const Icon(Icons.search),
-                                        onPressed: () {}),
-                                    Container(
-                                      width: MediaQuery.of(context).size.width *
-                                          0.3,
-                                      decoration: const BoxDecoration(
-                                        borderRadius: BorderRadius.zero,
-                                      ),
-                                      child: TextField(
-                                        style: const TextStyle(
-                                            color: Colors.white),
-                                        decoration: const InputDecoration(
-                                          border: InputBorder.none,
-                                          hintText: 'Search...',
-                                          hintStyle: TextStyle(
-                                            color: Colors.white,
-                                          ),
-                                        ),
-                                        onChanged: (value) {
-                                          filterMangaChapters(value);
-                                        },
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
+                          AllChaptersSection(
+                              filterMangaChapters: filterMangaChapters),
                         ],
                       ),
                     ),

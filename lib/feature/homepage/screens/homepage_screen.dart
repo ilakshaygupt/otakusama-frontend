@@ -1,4 +1,5 @@
 import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:otakusama/feature/MyList/Screens/MyListScreen.dart';
 import 'package:otakusama/feature/homepage/services/homepage_service.dart';
@@ -6,8 +7,6 @@ import 'package:otakusama/feature/manga_full_preview/manga_full_preview.dart';
 import 'package:otakusama/feature/profile/screens/profileScreen.dart';
 import 'package:otakusama/feature/search/screens/search_screen.dart';
 import 'package:otakusama/feature/viewallmanga/screens/viewallscreens.dart';
-
-
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -75,7 +74,11 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: const Color.fromRGBO(0, 0, 0, 0),
         title: const Text(
           'OTAKUSAMA',
-          style: TextStyle(fontFamily: 'Montserrat'),
+          style: TextStyle(
+              fontFamily: 'Montserrat',
+              fontSize: 25,
+              fontWeight: FontWeight.bold,
+              color: Colors.white),
         ),
         actions: [
           IconButton(
@@ -145,7 +148,7 @@ class _HomePageState extends State<HomePage> {
             child: Column(
               children: [
                 SizedBox(
-                  height: 380,
+                  height: 600,
                   child: PageView.builder(
                     scrollDirection: Axis.horizontal,
                     controller: _pageController,
@@ -188,7 +191,8 @@ class _HomePageState extends State<HomePage> {
                     const Spacer(),
                     ElevatedButton(
                       style: ButtonStyle(
-                        backgroundColor: WidgetStateProperty.all(Colors.transparent),
+                        backgroundColor:
+                            WidgetStateProperty.all(Colors.transparent),
                       ),
                       onPressed: () {
                         Navigator.push(
@@ -252,7 +256,8 @@ class _HomePageState extends State<HomePage> {
                     const Spacer(),
                     ElevatedButton(
                       style: ButtonStyle(
-                        backgroundColor: WidgetStateProperty.all(Colors.transparent),
+                        backgroundColor:
+                            WidgetStateProperty.all(Colors.transparent),
                       ),
                       onPressed: () {
                         Navigator.push(

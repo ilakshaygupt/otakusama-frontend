@@ -35,7 +35,6 @@ class ReadChapter extends StatefulWidget {
 class _ReadChapterState extends State<ReadChapter> {
   List<String> mangaImages = [];
   bool isCarousalView = false;
-  
 
   @override
   void initState() {
@@ -89,7 +88,7 @@ class _ReadChapterState extends State<ReadChapter> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text('Manga Read'),
+        title: Text(widget.mangaDescription.title),
         actions: [
           GestureDetector(
             onTap: () {
@@ -158,219 +157,241 @@ class _ReadChapterState extends State<ReadChapter> {
           ? const Center(
               child: CircularProgressIndicator(),
             )
-          : SingleChildScrollView(
-              child: Column(
-                children: <Widget>[
-                  Text(widget.chapterId.toString()),
-                  ListView.builder(
-                    physics: const NeverScrollableScrollPhysics(),
-                    shrinkWrap: true,
-                    itemCount: mangaImages.length,
-                    itemBuilder: (context, index) {
-                      final imageUrl = mangaImages[index];
-                      return Column(
-                        children: [
-                          Text(
-                            'Page : $index',
-                            style: const TextStyle(
-                                fontSize: 30, color: Colors.white),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              showDialog(
-                                context: context,
-                                builder: (BuildContext context) {
-                                  return Dialog(
-                                    child: PhotoView(
-                                      imageProvider: NetworkImage(imageUrl),
-                                    ),
-                                  );
-                                },
-                              );
-                            },
-                            child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Stack(
-                                alignment: Alignment.center,
-                                children: [
-                                  CachedNetworkImage(
-                                    imageUrl: imageUrl,
-                                    fit: BoxFit.contain,
-                                    httpHeaders: const {
-                                      'User-Agent':
-                                          'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:123.0) Gecko/20100101 Firefox/123.0',
-                                      'Accept': 'image/avif,image/webp,*/*',
-                                      'Accept-Language': 'en-US,en;q=0.5',
-                                      'Accept-Encoding': 'gzip, deflate, br',
-                                      'Referer': 'https://chapmanganato.to/',
-                                    },
-                                    progressIndicatorBuilder: (context, url,
-                                            downloadProgress) =>
-                                        CircularProgressIndicator(
-                                            value: downloadProgress.progress),
-                                  )
-                                ],
-                              ),
+          : InteractiveViewer(
+              panEnabled: false, // Set it to false to prevent panning.
+              // boundaryMargin: EdgeInsets.all(80),
+              minScale: 0.5,
+              maxScale: 4,
+              child: SingleChildScrollView(
+                child: Column(
+                  children: <Widget>[
+                    Text(widget.chapterId.toString()),
+                    ListView.builder(
+                      physics: const NeverScrollableScrollPhysics(),
+                      shrinkWrap: true,
+                      itemCount: mangaImages.length,
+                      itemBuilder: (context, index) {
+                        final imageUrl = mangaImages[index];
+                        return Column(
+                          children: [
+                            Text(
+                              'Page : $index',
+                              style: const TextStyle(
+                                  fontSize: 30, color: Colors.white),
                             ),
-                          ),
-                        ],
-                      );
-                    },
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(20),
-                    child: widget.chapterId == 0
-                        ? GestureDetector(
-                            onTap: () {
-                              Navigator.pushReplacement(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => ReadChapter(
-                                    mangaDescription: widget.mangaDescription,
-                                    chapterName: widget.chapterName,
-                                    accessLink: widget
-                                        .mangaChapterList[widget.chapterId + 1]
-                                        .mangaLink,
-                                    chapterId: widget.chapterId + 1,
-                                    mangaChapterList: widget.mangaChapterList,
-                                  ),
-                                ),
-                              );
-                            },
-                            child: Container(
-                              height: 40,
-                              width: MediaQuery.of(context).size.width * 0.35,
-                              decoration: const BoxDecoration(
-                                  color: Color(0xFF27ae60),
-                                  borderRadius: BorderRadius.all(
-                                      Radius.elliptical(10, 10))),
-                              child: const Center(
-                                child: Text(
-                                  'Previous Chapter',
-                                  style: TextStyle(color: Colors.white),
+                            GestureDetector(
+                              onTap: () {
+                                showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return PhotoView(
+                                      imageProvider: NetworkImage(
+                                        imageUrl,
+                                        headers: const {
+                                          'User-Agent':
+                                              'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:123.0) Gecko/20100101 Firefox/123.0',
+                                          'Accept': 'image/avif,image/webp,*/*',
+                                          'Accept-Language': 'en-US,en;q=0.5',
+                                          'Accept-Encoding':
+                                              'gzip, deflate, br',
+                                          'Referer':
+                                              'https://chapmanganato.to/',
+                                        },
+                                      ),
+                                    );
+                                  },
+                                );
+                              },
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Stack(
+                                  alignment: Alignment.center,
+                                  children: [
+                                    CachedNetworkImage(
+                                      imageUrl: imageUrl,
+                                      fit: BoxFit.contain,
+                                      httpHeaders: const {
+                                        'User-Agent':
+                                            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:123.0) Gecko/20100101 Firefox/123.0',
+                                        'Accept': 'image/avif,image/webp,*/*',
+                                        'Accept-Language': 'en-US,en;q=0.5',
+                                        'Accept-Encoding': 'gzip, deflate, br',
+                                        'Referer': 'https://chapmanganato.to/',
+                                      },
+                                      progressIndicatorBuilder: (context, url,
+                                              downloadProgress) =>
+                                          CircularProgressIndicator(
+                                              value: downloadProgress.progress),
+                                    )
+                                  ],
                                 ),
                               ),
                             ),
-                          )
-                        : widget.chapterId == widget.mangaChapterList.length - 1
-                            ? GestureDetector(
-                                onTap: () {
-                                  Navigator.pushReplacement(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) => ReadChapter(
-                                        mangaDescription:
-                                            widget.mangaDescription,
-                                        chapterName: widget.chapterName,
-                                        accessLink: widget
-                                            .mangaChapterList[
-                                                widget.chapterId - 1]
-                                            .mangaLink,
-                                        chapterId: widget.chapterId - 1,
-                                        mangaChapterList:
-                                            widget.mangaChapterList,
-                                      ),
+                          ],
+                        );
+                      },
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(20),
+                      child: widget.chapterId == 0
+                          ? GestureDetector(
+                              onTap: () {
+                                Navigator.pushReplacement(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => ReadChapter(
+                                      mangaDescription: widget.mangaDescription,
+                                      chapterName: widget.chapterName,
+                                      accessLink: widget
+                                          .mangaChapterList[
+                                              widget.chapterId + 1]
+                                          .mangaLink,
+                                      chapterId: widget.chapterId + 1,
+                                      mangaChapterList: widget.mangaChapterList,
                                     ),
-                                  );
-                                },
-                                child: Container(
-                                  height: 40,
-                                  width:
-                                      MediaQuery.of(context).size.width * 0.35,
-                                  decoration: const BoxDecoration(
-                                      color: Color(0xFF27ae60),
-                                      borderRadius: BorderRadius.all(
-                                          Radius.elliptical(10, 10))),
-                                  child: const Center(
-                                    child: Text(
-                                      'Next Chapter',
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                      ),
-                                    ),
+                                  ),
+                                );
+                              },
+                              child: Container(
+                                height: 40,
+                                width: MediaQuery.of(context).size.width * 0.35,
+                                decoration: const BoxDecoration(
+                                    color: Color(0xFF27ae60),
+                                    borderRadius: BorderRadius.all(
+                                        Radius.elliptical(10, 10))),
+                                child: const Center(
+                                  child: Text(
+                                    'Previous Chapter',
+                                    style: TextStyle(color: Colors.white),
                                   ),
                                 ),
-                              )
-                            : Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceAround,
-                                children: [
-                                  GestureDetector(
-                                    onTap: () {
-                                      Navigator.pushReplacement(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) => ReadChapter(
-                                            mangaDescription:
-                                                widget.mangaDescription,
-                                            chapterName: widget.chapterName,
-                                            accessLink: widget
-                                                .mangaChapterList[
-                                                    widget.chapterId - 1]
-                                                .mangaLink,
-                                            chapterId: widget.chapterId - 1,
-                                            mangaChapterList:
-                                                widget.mangaChapterList,
-                                          ),
-                                        ),
-                                      );
-                                    },
-                                    child: Container(
-                                      height: 40,
-                                      width: MediaQuery.of(context).size.width *
-                                          0.35,
-                                      decoration: const BoxDecoration(
-                                          color: Color(0xFF27ae60),
-                                          borderRadius: BorderRadius.all(
-                                              Radius.elliptical(10, 10))),
-                                      child: const Center(
-                                        child: Text(
-                                          'Next Chapter',
-                                          style: TextStyle(color: Colors.white),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  GestureDetector(
-                                    onTap: () {
-                                      Navigator.pushReplacement(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) => ReadChapter(
-                                            mangaDescription:
-                                                widget.mangaDescription,
-                                            chapterName: widget.chapterName,
-                                            accessLink: widget
-                                                .mangaChapterList[
-                                                    widget.chapterId + 1]
-                                                .mangaLink,
-                                            chapterId: widget.chapterId + 1,
-                                            mangaChapterList:
-                                                widget.mangaChapterList,
-                                          ),
-                                        ),
-                                      );
-                                    },
-                                    child: Container(
-                                      height: 40,
-                                      width: MediaQuery.of(context).size.width *
-                                          0.35,
-                                      decoration: const BoxDecoration(
-                                          color: Color(0xFF27ae60),
-                                          borderRadius: BorderRadius.all(
-                                              Radius.elliptical(10, 10))),
-                                      child: const Center(
-                                        child: Text(
-                                          'Previous Chapter',
-                                          style: TextStyle(color: Colors.white),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
                               ),
-                  ),
-                ],
+                            )
+                          : widget.chapterId ==
+                                  widget.mangaChapterList.length - 1
+                              ? GestureDetector(
+                                  onTap: () {
+                                    Navigator.pushReplacement(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => ReadChapter(
+                                          mangaDescription:
+                                              widget.mangaDescription,
+                                          chapterName: widget.chapterName,
+                                          accessLink: widget
+                                              .mangaChapterList[
+                                                  widget.chapterId - 1]
+                                              .mangaLink,
+                                          chapterId: widget.chapterId - 1,
+                                          mangaChapterList:
+                                              widget.mangaChapterList,
+                                        ),
+                                      ),
+                                    );
+                                  },
+                                  child: Container(
+                                    height: 40,
+                                    width: MediaQuery.of(context).size.width *
+                                        0.35,
+                                    decoration: const BoxDecoration(
+                                        color: Color(0xFF27ae60),
+                                        borderRadius: BorderRadius.all(
+                                            Radius.elliptical(10, 10))),
+                                    child: const Center(
+                                      child: Text(
+                                        'Next Chapter',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                )
+                              : Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
+                                  children: [
+                                    GestureDetector(
+                                      onTap: () {
+                                        Navigator.pushReplacement(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) => ReadChapter(
+                                              mangaDescription:
+                                                  widget.mangaDescription,
+                                              chapterName: widget.chapterName,
+                                              accessLink: widget
+                                                  .mangaChapterList[
+                                                      widget.chapterId - 1]
+                                                  .mangaLink,
+                                              chapterId: widget.chapterId - 1,
+                                              mangaChapterList:
+                                                  widget.mangaChapterList,
+                                            ),
+                                          ),
+                                        );
+                                      },
+                                      child: Container(
+                                        height: 40,
+                                        width:
+                                            MediaQuery.of(context).size.width *
+                                                0.35,
+                                        decoration: const BoxDecoration(
+                                            color: Color(0xFF27ae60),
+                                            borderRadius: BorderRadius.all(
+                                                Radius.elliptical(10, 10))),
+                                        child: const Center(
+                                          child: Text(
+                                            'Next Chapter',
+                                            style:
+                                                TextStyle(color: Colors.white),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    GestureDetector(
+                                      onTap: () {
+                                        Navigator.pushReplacement(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) => ReadChapter(
+                                              mangaDescription:
+                                                  widget.mangaDescription,
+                                              chapterName: widget.chapterName,
+                                              accessLink: widget
+                                                  .mangaChapterList[
+                                                      widget.chapterId + 1]
+                                                  .mangaLink,
+                                              chapterId: widget.chapterId + 1,
+                                              mangaChapterList:
+                                                  widget.mangaChapterList,
+                                            ),
+                                          ),
+                                        );
+                                      },
+                                      child: Container(
+                                        height: 40,
+                                        width:
+                                            MediaQuery.of(context).size.width *
+                                                0.35,
+                                        decoration: const BoxDecoration(
+                                            color: Color(0xFF27ae60),
+                                            borderRadius: BorderRadius.all(
+                                                Radius.elliptical(10, 10))),
+                                        child: const Center(
+                                          child: Text(
+                                            'Previous Chapter',
+                                            style:
+                                                TextStyle(color: Colors.white),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                    ),
+                  ],
+                ),
               ),
             ),
     );
