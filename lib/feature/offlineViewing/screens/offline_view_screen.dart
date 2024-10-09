@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:otakusama/feature/mangaOfflineFullPreview/manga_offline_full_preview.dart';
 import 'package:otakusama/feature/manga_full_preview/manga_full_preview.dart';
+import 'package:path_provider/path_provider.dart';
 
 class OfflineViewScreen extends StatefulWidget {
   const OfflineViewScreen({super.key});
@@ -25,8 +26,9 @@ class _OfflineViewScreenState extends State<OfflineViewScreen> {
   }
 
   void getMangaData() async {
-    final Directory directory =
-        Directory('/storage/emulated/0/Download/OtakuSama');
+   
+    final Directory directory = Directory('/Internal storage/Download/OtakuSama');
+
     final List<FileSystemEntity> files = directory.listSync();
     for (final FileSystemEntity file in files) {
       final String mangaPhotoPath = '${file.path}/cover.jpg';
