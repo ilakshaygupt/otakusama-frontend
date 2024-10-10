@@ -1,0 +1,2 @@
+/Users/lakshay/otakusama-frontend/android/app/.cxx/Debug/3o6y714q/x86_64/CMakeFiles/edit_cache.dir
+/Users/lakshay/otakusama-frontend/android/app/.cxx/Debug/3o6y714q/x86_64/CMakeFiles/rebuild_cache.dir

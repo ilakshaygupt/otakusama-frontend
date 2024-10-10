@@ -1,11 +1,9 @@
 // ignore_for_file: use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
-import 'package:otakusama/commons/contants.dart';
 import 'package:otakusama/feature/manga_short_preview/manga_short_preview_screen.dart';
+import 'package:otakusama/feature/viewallmanga/services/viewall_service.dart';
 import 'package:otakusama/models/manga_model.dart';
-import 'package:http/http.dart' as http;
-import 'dart:convert';
 
 class ViewAllMangaScreen extends StatefulWidget {
   @override
@@ -16,6 +14,8 @@ class ViewAllMangaScreen extends StatefulWidget {
 class _ViewAllMangaScreenState extends State<ViewAllMangaScreen> {
   List<Manga> mangaList = [];
   TextEditingController searchController = TextEditingController();
+  final ViewAllService _viewAllService = ViewAllService();
+  bool _isLoading = false;
 
   @override
   void initState() {
@@ -24,38 +24,40 @@ class _ViewAllMangaScreenState extends State<ViewAllMangaScreen> {
   }
 
   Future<void> fetchData() async {
-    final response = await http.get(Uri.parse('$uri/manga/top_manga/'));
+    setState(() {
+      _isLoading = true;
+    });
 
-    if (response.statusCode == 200) {
+    try {
+      final results = await _viewAllService.fetchTopManga();
       setState(() {
-        mangaList = (jsonDecode(response.body) as List)
-            .map((item) => Manga.fromJson(item))
-            .toList();
+        mangaList = results;
       });
-    } else {
-      throw Exception('Failed to load manga');
+    } catch (e) {
+      // Handle error
+    } finally {
+      setState(() {
+        _isLoading = false;
+      });
     }
   }
 
   Future<void> searchManga(String searchText) async {
-    if (searchText.isEmpty) {
-      fetchData();
-      return;
-    }
-    final response = await http.post(
-      Uri.parse('$uri/manga/search/'),
-      body: jsonEncode({'text': searchText}),
-      headers: {'Content-Type': 'application/json'},
-    );
+    setState(() {
+      _isLoading = true;
+    });
 
-    if (response.statusCode == 200) {
+    try {
+      final results = await _viewAllService.searchManga(searchText);
       setState(() {
-        mangaList = (jsonDecode(response.body) as List)
-            .map((item) => Manga.fromJson(item))
-            .toList();
+        mangaList = results;
       });
-    } else {
-      throw Exception('Failed to search manga');
+    } catch (e) {
+      // Handle error
+    } finally {
+      setState(() {
+        _isLoading = false;
+      });
     }
   }
 
@@ -77,7 +79,7 @@ class _ViewAllMangaScreenState extends State<ViewAllMangaScreen> {
       body: Column(
         children: [
           Expanded(
-            child: mangaList.isEmpty
+            child: _isLoading
                 ? const Center(
                     child: CircularProgressIndicator(),
                   )

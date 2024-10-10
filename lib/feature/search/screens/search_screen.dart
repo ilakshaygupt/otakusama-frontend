@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
-import 'package:otakusama/commons/contants.dart';
 import 'package:otakusama/feature/manga_full_preview/manga_full_preview.dart';
-import 'dart:convert';
+import 'package:otakusama/feature/search/services/search_service.dart';
 import 'package:otakusama/models/manga_model.dart';
 
 class SearchScreen extends StatefulWidget {
@@ -14,39 +12,44 @@ class SearchScreen extends StatefulWidget {
 
 class _SearchScreenState extends State<SearchScreen> {
   List<Manga> mangaList = [];
-  Future<void> fetchData() async {
-    final response = await http.get(Uri.parse('$uri/manga/top_manga/'));
+  final SearchService _searchService = SearchService();
+  bool _isLoading = false;
 
-    if (response.statusCode == 200) {
+  Future<void> fetchData() async {
+    setState(() {
+      _isLoading = true;
+    });
+
+    try {
+      final results = await _searchService.fetchTopManga();
       setState(() {
-        mangaList = (jsonDecode(response.body) as List)
-            .map((item) => Manga.fromJson(item))
-            .toList();
+        mangaList = results;
       });
-    } else {
-      throw Exception('Failed to load manga');
+    } catch (e) {
+      // Handle error - could show a snackbar
+    } finally {
+      setState(() {
+        _isLoading = false;
+      });
     }
   }
 
   Future<void> searchManga(String searchText) async {
-    if (searchText.isEmpty) {
-      fetchData();
-      return;
-    }
-    final response = await http.post(
-      Uri.parse('$uri/manga/search/'),
-      body: jsonEncode({'text': searchText}),
-      headers: {'Content-Type': 'application/json'},
-    );
+    setState(() {
+      _isLoading = true;
+    });
 
-    if (response.statusCode == 200) {
+    try {
+      final results = await _searchService.searchManga(searchText);
       setState(() {
-        mangaList = (jsonDecode(response.body) as List)
-            .map((item) => Manga.fromJson(item))
-            .toList();
+        mangaList = results;
       });
-    } else {
-      throw Exception('Failed to search manga');
+    } catch (e) {
+      // Handle error
+    } finally {
+      setState(() {
+        _isLoading = false;
+      });
     }
   }
 
@@ -70,40 +73,42 @@ class _SearchScreenState extends State<SearchScreen> {
           },
         ),
       ),
-      body: GridView.builder(
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-          crossAxisSpacing: 10,
-          mainAxisSpacing: 10,
-          childAspectRatio: 0.7,
-        ),
-        itemCount: mangaList.length,
-        itemBuilder: (context, index) {
-          return Padding(
-            padding: const EdgeInsets.only(top: 5.0),
-            child: GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => MangaFullPreview(
-                      accessLink: mangaList[index].accessLink,
+      body: _isLoading
+          ? const Center(child: CircularProgressIndicator())
+          : GridView.builder(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                crossAxisSpacing: 10,
+                mainAxisSpacing: 10,
+                childAspectRatio: 0.7,
+              ),
+              itemCount: mangaList.length,
+              itemBuilder: (context, index) {
+                return Padding(
+                  padding: const EdgeInsets.only(top: 5.0),
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MangaFullPreview(
+                            accessLink: mangaList[index].accessLink,
+                          ),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      padding: const EdgeInsets.only(left: 8, right: 8),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          image: DecorationImage(
+                              image: NetworkImage(mangaList[index].image),
+                              fit: BoxFit.cover)),
                     ),
                   ),
                 );
               },
-              child: Container(
-                padding: const EdgeInsets.only(left: 8, right: 8),
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    image: DecorationImage(
-                        image: NetworkImage(mangaList[index].image),
-                        fit: BoxFit.cover)),
-              ),
             ),
-          );
-        },
-      ),
     );
   }
 }

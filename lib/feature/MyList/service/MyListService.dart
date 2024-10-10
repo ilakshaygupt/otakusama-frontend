@@ -6,10 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:http/http.dart' as http;
 import 'package:otakusama/commons/contants.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-
 import 'package:otakusama/commons/http_error.dart';
 import 'package:otakusama/models/manga_api_model.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 final favMangaProvider = StateProvider<List<MangaApiModel>>((ref) => []);
 final mangaServiceProvider = Provider((ref) => MangaService(ref: ref));
@@ -45,7 +44,6 @@ class MangaService {
 
     MangaApiModel mangaApi = MangaApiModel(
         title: mangaTitle, imageLink: mangaImage, accessLink: mangaUrl);
-        
 
     if (response.statusCode == 200) {
       _ref.read(favMangaProvider).add(mangaApi);
@@ -73,7 +71,6 @@ class MangaService {
       List<MangaApiModel> favManga = [];
       final List<dynamic> mangaData = jsonDecode(response.body);
       for (var manga in mangaData) {
-        print(manga);
         MangaApiModel mangaModel = MangaApiModel(
             title: manga['manga_title'],
             imageLink: manga['manga_image'],

@@ -12,13 +12,13 @@ class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
-  _HomePageState createState() => _HomePageState();
+  State<HomePage> createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
-  late HomeViewModel _viewModel;
-  late PageController _pageController;
+  late final HomeViewModel _viewModel;
+  late final PageController _pageController;
   late Timer _timer;
 
   @override
@@ -42,15 +42,19 @@ class _HomePageState extends State<HomePage> {
   void _startAutoPageChange() {
     const Duration duration = Duration(seconds: 2);
     _timer = Timer.periodic(duration, (Timer timer) {
-      if (_pageController.page == _viewModel.topAiring.length - 1) {
-        _pageController.animateToPage(
-          0,
-          duration: const Duration(milliseconds: 700),
-          curve: Curves.ease,
-        );
-      } else {
-        _pageController.nextPage(
-            duration: const Duration(milliseconds: 700), curve: Curves.ease);
+      if (_pageController.hasClients) {
+        if (_pageController.page == _viewModel.topAiring.length - 1) {
+          _pageController.animateToPage(
+            0,
+            duration: const Duration(milliseconds: 700),
+            curve: Curves.ease,
+          );
+        } else {
+          _pageController.nextPage(
+            duration: const Duration(milliseconds: 700),
+            curve: Curves.ease,
+          );
+        }
       }
     });
   }
@@ -75,10 +79,11 @@ class _HomePageState extends State<HomePage> {
         title: const Text(
           'OTAKUSAMA',
           style: TextStyle(
-              fontFamily: 'Montserrat',
-              fontSize: 25,
-              fontWeight: FontWeight.bold,
-              color: Colors.white),
+            fontFamily: 'Montserrat',
+            fontSize: 25,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
         ),
         actions: [
           IconButton(
@@ -183,10 +188,11 @@ class _HomePageState extends State<HomePage> {
                     const Text(
                       "TOP AIRING",
                       style: TextStyle(
-                          fontSize: 20,
-                          color: Color(0xfff6f7f8),
-                          fontWeight: FontWeight.w600,
-                          fontFamily: 'Core Sans AR'),
+                        fontSize: 20,
+                        color: Color(0xfff6f7f8),
+                        fontWeight: FontWeight.w600,
+                        fontFamily: 'Core Sans AR',
+                      ),
                     ),
                     const Spacer(),
                     ElevatedButton(

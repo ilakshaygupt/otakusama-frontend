@@ -6,13 +6,12 @@ import 'package:otakusama/feature/homepage/screens/homepage_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(
-    const ProviderScope(child: MyApp()),
-  );
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends ConsumerStatefulWidget {
   const MyApp({super.key});
+
   @override
   ConsumerState<MyApp> createState() => _MyAppState();
 }
@@ -23,32 +22,36 @@ class _MyAppState extends ConsumerState<MyApp> {
   @override
   void initState() {
     super.initState();
-    
-    _authFuture = checkAuth(context);
+    _authFuture = _checkAuth();
   }
 
-  Future<void> checkAuth(BuildContext context) async {
+  Future<void> _checkAuth() async {
     await ref.read(authServiceProvider).getUserData(context);
   }
 
   @override
   Widget build(BuildContext context) {
-    
-    return FutureBuilder(
+    return FutureBuilder<void>(
       future: _authFuture,
-      builder: (BuildContext context, AsyncSnapshot<void> snapshot) {
+      builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.done) {
           final user = ref.watch(userProvider);
+
           return MaterialApp(
-              debugShowCheckedModeBanner: false,
-              title: 'Flutter Demo',
-              theme: ThemeData(
-                colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-                useMaterial3: true,
-              ),
-              home: user == null ? const GetStartedScreen() : const HomePage());
+            debugShowCheckedModeBanner: false,
+            title: 'Flutter Demo',
+            theme: ThemeData(
+              colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+              useMaterial3: true,
+            ),
+            home: user == null ? const GetStartedScreen() : const HomePage(),
+          );
         } else {
-          return const Center(child: CircularProgressIndicator());
+          return const MaterialApp(
+            home: Scaffold(
+              body: Center(child: CircularProgressIndicator()),
+            ),
+          );
         }
       },
     );

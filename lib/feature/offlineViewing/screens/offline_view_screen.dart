@@ -26,8 +26,8 @@ class _OfflineViewScreenState extends State<OfflineViewScreen> {
   }
 
   void getMangaData() async {
-   
-    final Directory directory = Directory('/Internal storage/Download/OtakuSama');
+    final Directory directory =
+        Directory('storage/emulated/0/Download/OtakuSama');
 
     final List<FileSystemEntity> files = directory.listSync();
     for (final FileSystemEntity file in files) {

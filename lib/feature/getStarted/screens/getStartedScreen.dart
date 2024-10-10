@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:otakusama/feature/authentication/screens/sign_in_screen.dart';
 import 'package:otakusama/feature/authentication/services/auth_service.dart';
 import 'package:otakusama/feature/homepage/screens/homepage_screen.dart';
+import 'package:otakusama/models/user_model.dart';
 
 class GetStartedScreen extends ConsumerStatefulWidget {
   const GetStartedScreen({Key? key}) : super(key: key);
@@ -12,15 +13,19 @@ class GetStartedScreen extends ConsumerStatefulWidget {
 }
 
 class _GetStartedScreenState extends ConsumerState<GetStartedScreen> {
-  late ImageProvider _backgroundImage;
+  late final ImageProvider _backgroundImage;
   bool _imageLoaded = false;
 
   @override
   void initState() {
     super.initState();
     _backgroundImage = const AssetImage('assets/IntroImage.png');
+    _loadImage();
+  }
+
+  void _loadImage() {
     _backgroundImage.resolve(const ImageConfiguration()).addListener(
-      ImageStreamListener((ImageInfo info, bool _) {
+      ImageStreamListener((_, __) {
         if (mounted) {
           setState(() {
             _imageLoaded = true;
@@ -87,7 +92,8 @@ class _GetStartedScreenState extends ConsumerState<GetStartedScreen> {
   }
 
   Widget _buildWelcomeText(Size size, bool isLandscape) {
-    double fontSize = isLandscape ? size.height * 0.08 : size.width * 0.1;
+    final fontSize = isLandscape ? size.height * 0.08 : size.width * 0.1;
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -112,7 +118,7 @@ class _GetStartedScreenState extends ConsumerState<GetStartedScreen> {
   }
 
   Widget _buildButtons(
-      BuildContext context, Size size, dynamic user, bool isLandscape) {
+      BuildContext context, Size size, User? user, bool isLandscape) {
     return Flex(
       direction: isLandscape ? Axis.horizontal : Axis.vertical,
       mainAxisAlignment: MainAxisAlignment.center,
@@ -133,13 +139,14 @@ class _GetStartedScreenState extends ConsumerState<GetStartedScreen> {
           isLandscape: isLandscape,
         ),
         SizedBox(
-            width: isLandscape ? size.width * 0.05 : 0,
-            height: isLandscape ? 0 : size.height * 0.02),
+          width: isLandscape ? size.width * 0.05 : 0,
+          height: isLandscape ? 0 : size.height * 0.02,
+        ),
         _buildButton(
           context: context,
           label: 'Watch Now',
           color: Colors.red,
-          onPressed: ()  {
+          onPressed: () {
             Navigator.of(context).pushAndRemoveUntil(
               MaterialPageRoute(builder: (context) => const HomePage()),
               (route) => false,
@@ -159,6 +166,7 @@ class _GetStartedScreenState extends ConsumerState<GetStartedScreen> {
     required bool isLandscape,
   }) {
     final size = MediaQuery.of(context).size;
+
     return Container(
       height: isLandscape ? size.height * 0.1 : size.height * 0.07,
       width: isLandscape ? size.width * 0.3 : size.width * 0.8,

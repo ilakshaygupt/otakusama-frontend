@@ -32,7 +32,6 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
         _isLoading = true;
       });
 
-      // Simulate a network call
       await ref.watch(authServiceProvider).signInUser(
             context: context,
             email: _emailController.text.trim(),
@@ -74,7 +73,6 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
             color: Color.fromARGB(255, 98, 0, 0),
           ),
         ),
-        // elevation: 8,
         shadowColor: Colors.black54,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.white),
