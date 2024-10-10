@@ -23,9 +23,10 @@ void httpErrorHandle({
       break;
     case 400:
       if (jsonDecode(response.body)['error'] != null) {
+        print(jsonDecode(response.body)['error']);
         showSnackBar(context, jsonDecode(response.body)['error']);
       }
-      else{
+      else{print(jsonDecode(response.body)['message']);
         showSnackBar(context, jsonDecode(response.body)['message']);
       }
       break;

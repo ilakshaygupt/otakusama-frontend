@@ -1,8 +1,8 @@
 import 'dart:typed_data';
 
 class Manga {
-  final String author;
-  final String updatedTime;
+  final String? author;
+  final String? updatedTime;
   final String image;
   final String title;
   final String lastChapter;
@@ -19,12 +19,12 @@ class Manga {
 
   factory Manga.fromJson(Map<String, dynamic> json) {
     return Manga(
-      author: json['author'],
-      updatedTime: json['updated_time'],
-      image: json['image'],
-      title: json['title'],
-      lastChapter: json['last_chapter'],
-      accessLink: json['access_link'],
+      title: json['title'] ?? '',
+      image: json['image'] ?? '',
+      accessLink: json['access_link'] ?? '',
+      lastChapter: json['last_chapter'] ?? '',
+      author: json['author'] ?? '',
+      updatedTime: json['updated_time'] ?? '',
     );
   }
 }
@@ -44,4 +44,3 @@ class Chapter {
     required this.imageLinks,
   });
 }
-

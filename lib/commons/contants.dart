@@ -1,1 +1,1 @@
-const uri = "https://manga.weblakshay.tech";
+const uri = "http://localhost:8000";

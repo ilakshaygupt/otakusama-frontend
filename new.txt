@@ -1,0 +1,2402 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="https://kunmanga.com/xmlrpc.php">
+
+	
+    <script async data-cfasync="false" src="https://cdn.pubfuture-ad.com/v2/unit/pt.js" type="text/javascript"></script>
+    <script async data-cfasync="false" src="https://platform.pubadx.one/pubadx-ad.js" type="text/javascript"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script data-rocketlazyloadscript='https://www.googletagmanager.com/gtag/js?id=G-DF73F0BEBT' async type="95b6dd6f07ce6d5b2581e042-text/javascript"></script>
+    <script data-rocketlazyloadscript='data:text/javascript;base64,CiAgICB3aW5kb3cuZGF0YUxheWVyID0gd2luZG93LmRhdGFMYXllciB8fCBbXTsKICAgIGZ1bmN0aW9uIGd0YWcoKXtkYXRhTGF5ZXIucHVzaChhcmd1bWVudHMpO30KICAgIGd0YWcoJ2pzJywgbmV3IERhdGUoKSk7CgogICAgZ3RhZygnY29uZmlnJywgJ0ctREY3M0YwQkVCVCcpOwogICAg' type="95b6dd6f07ce6d5b2581e042-text/javascript"></script>
+
+
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v20.8 (Yoast SEO v20.9) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>KunManga - Read manga free online and update daily</title>
+	<meta name="description" content="➀✔️ Read Manga and Comics online free, update fastest, most full, synthesized with high-quality images, with all manga update daily." />
+	<link rel="canonical" href="https://kunmanga.com/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="HOME" />
+	<meta property="og:description" content="➀✔️ Read Manga and Comics online free, update fastest, most full, synthesized with high-quality images, with all manga update daily." />
+	<meta property="og:url" content="https://kunmanga.com/" />
+	<meta property="og:site_name" content="Kun Manga" />
+	<meta property="article:modified_time" content="2025-04-07T18:35:54+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://kunmanga.com/","url":"https://kunmanga.com/","name":"KunManga - Read manga free online and update daily","isPartOf":{"@id":"https://kunmanga.com/#website"},"datePublished":"2017-10-06T03:23:09+00:00","dateModified":"2025-04-07T18:35:54+00:00","description":"➀✔️ Read Manga and Comics online free, update fastest, most full, synthesized with high-quality images, with all manga update daily.","breadcrumb":{"@id":"https://kunmanga.com/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://kunmanga.com/"]}]},{"@type":"BreadcrumbList","@id":"https://kunmanga.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://kunmanga.com/#website","url":"https://kunmanga.com/","name":"Kun Manga","description":"Read Manga Online","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://kunmanga.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Kun Manga &raquo; Feed" href="https://kunmanga.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Kun Manga &raquo; Comments Feed" href="https://kunmanga.com/comments/feed/" />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://kunmanga.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ct-shortcode-css' href='https://kunmanga.com/wp-content/plugins/madara-shortcodes/shortcodes/css/shortcodes.css?ver=6.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css' href='https://kunmanga.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css' href='https://kunmanga.com/wp-content/themes/madara/css/bootstrap.min.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-css' href='https://kunmanga.com/wp-content/themes/madara/js/slick/slick.css?ver=1.9.0' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-theme-css' href='https://kunmanga.com/wp-content/themes/madara/js/slick/slick-theme.css?ver=6.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='madara-css-child-css' href='https://kunmanga.com/wp-content/themes/madara/style.css?ver=6.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='fontawesome-css' href='https://kunmanga.com/wp-content/themes/madara/app/lib/fontawesome/web-fonts-with-css/css/all.min.css?ver=5.15.3' type='text/css' media='all' />
+<link rel='stylesheet' id='ionicons-css' href='https://kunmanga.com/wp-content/themes/madara/css/fonts/ionicons/css/ionicons.min.css?ver=4.5.10' type='text/css' media='all' />
+<link rel='stylesheet' id='madara-icons-css' href='https://kunmanga.com/wp-content/themes/madara/css/fonts/ct-icon/ct-icon.css?ver=6.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='loaders-css' href='https://kunmanga.com/wp-content/themes/madara/css/loaders.min.css?ver=6.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='madara-css-css' href='https://kunmanga.com/wp-content/themes/madara-child/style.css?ver=1.6.6' type='text/css' media='all' />
+<style id='madara-css-inline-css' type='text/css'>
+.c-blog__heading.style-2 i {
+						  background: -webkit-linear-gradient(left, #130f40 40%,#686de0);
+						  background: -o-linear-gradient(right, #130f40 40%,#686de0);
+						  background: -moz-linear-gradient(right, #130f40 40%,#686de0);
+						  background: linear-gradient(to right, #130f40 40%,#686de0);
+					 ;}.c-blog__heading.style-2 i:after, .settings-page .nav-tabs-wrap ul.nav-tabs li.active:after { border-left-color: #686de0 ; }.site-header .main-navigation.style-1, .widget-heading, .widget.background:after, .c-blog__heading.style-2 i, .tab-wrap .c-nav-tabs ul.c-tabs-content li.active a:after, .tab-wrap .c-nav-tabs ul.c-tabs-content li:hover a:after, .tab-wrap .c-nav-tabs ul.c-tabs-content li a:after, .related-heading.font-nav, .c-blog__heading.style-3, .settings-page .nav-tabs-wrap ul.nav-tabs li.active a, .off-canvas {
+						  background: -webkit-linear-gradient(left, #130f40 40%,#686de0);
+						  background: -o-linear-gradient(right, #130f40 40%,#686de0);
+						  background: -moz-linear-gradient(right, #130f40 40%,#686de0);
+						  background: linear-gradient(to right, #130f40 40%,#686de0);
+					 ;}.widget-heading:after, .related-heading.font-nav:after, .genres_wrap .c-blog__heading.style-3.active:after { border-top-color: #130f40 ;}body.modal-open .modal .modal-content a:hover, .tab-wrap .c-nav-tabs ul.c-tabs-content li.active a, .tab-wrap .c-nav-tabs ul.c-tabs-content li:hover a, body.search.search-results .search-wrap .tab-content-wrap .c-tabs-item .c-tabs-item__content .tab-summary .post-content .post-content_item .summary-content:not(.release-year) a:hover, body.search.search-results .search-wrap .tab-content-wrap .c-tabs-item .c-tabs-item__content .tab-summary .post-content .post-content_item .summary-content.release-year a:hover, .c-blog-post .entry-header .entry-meta .post-on:before, .manga-slider .slider__container .slick-dots li.slick-active button:before, .manga-slider .slider__container .slick-dots li button:hover:before, body.manga-page .profile-manga .tab-summary .summary_content_wrap .summary_content .post-status .manga-action .count-comment .action_icon a i, body.manga-page .profile-manga .tab-summary .summary_content_wrap .summary_content .post-status .manga-action .add-bookmark .action_icon a i, body.manga-page .profile-manga .tab-summary .summary_content_wrap .summary_content .post-status .manga-action .count-comment .action_detail a i, body.manga-page .profile-manga .tab-summary .summary_content_wrap .summary_content .post-status .manga-action .add-bookmark .action_detail a i, body.manga-page .profile-manga .post-title a, body.manga-page .content-readmore:hover, body.text-ui-light.manga-page .content-readmore:hover, .genres_wrap .genres__collapse .genres ul li a:hover, .genres_wrap .genres__collapse .genres ul li a:hover:before, .c-blog-post .entry-header .entry-meta .post-on .posted-on a:hover, body.search .c-search-header__wrapper #search-advanced .search-advanced-form .form-group.checkbox-group .checkbox label:hover, .site-header .main-navigation .search-navigation .menu-search .open-search-main-menu, .c-btn.c-btn_style-2, body.search .c-search-header__wrapper .search-content .btn-search-adv, body.reading-manga .entry-header .entry-header_wrap .action-icon ul li a, body.reading-manga .c-select-bottom .entry-header_wrap .action-icon ul li a, .widget.c-released .released-item-wrap ul.list-released li a:hover, body.manga-page .profile-manga .post-title h1, .genres_wrap .genres__collapse #genres ul li:hover a, .genres_wrap .genres__collapse #genres ul li:hover a:before, input[type=checkbox]:checked + label:before, input[type=radio]:checked + label:before, .genres_wrap a.btn-genres, .c-breadcrumb .breadcrumb li a:hover, body.search.search-results .search-wrap .tab-content-wrap .c-tabs-item .c-tabs-item__content .tab-summary .post-content .post-content_item.mg_genres .summary-content, body.page .c-page-content .c-page .c-page__content .page-content-listing .page-listing-item .page-item-detail .item-summary .list-chapter .chapter-item .vol a:hover, #hover-infor .item_thumb .post-title a, body.manga-page .version-chap:before, body.manga-page .content-readmore:hover, body.manga-page .chapter-readmore:hover, .icon-load-info, .c-blog-post .entry-header .entry-meta .post-on .c-blog__date .post-category a:hover, .woocommerce ul.products li.product .price, .woocommerce div.entry-summary p.price, .woocommerce div.entry-summary form.cart .variations .label, .woocommerce div.entry-summary form.cart .quantity-text, .widget_product_categories .product-categories li a:hover, .woocommerce ul.products li.product h2:hover, .woocommerce .c-woo-breadcrumb a:hover, .site-header .c-sub-header-nav .c-sub-nav_wrap .c-modal_item .c-user_item .c-user_menu a:hover, .site-header .c-sub-header-nav .c-sub-nav_wrap .sub-nav_content .sub-nav_list li:hover > a, .settings-page .action i.ion-ios-close:hover:before, .settings-page .list-chapter .chapter-item a:hover, .settings-page .tabs-content-wrap .tab-group-item .tab-item .history-content .item-infor .chapter span a, .settings-page .nav-tabs-wrap ul.nav-tabs li:not(.active):hover a, .main-color,
+.site-header .c-sub-header-nav .c-sub-nav_wrap .sub-nav_content .sub-nav_list li.menu-item-has-children.active > a,.woocommerce .woocommerce-ordering:after,.text-ui-light .widget.c-popular .popular-item-wrap .popular-content .chapter-item .chapter a:hover, body.text-ui-light .settings-page .list-chapter .chapter-item .chapter a:hover,body.search.text-ui-light .search-wrap .tab-content-wrap .c-tabs-item .c-tabs-item__content .tab-meta .latest-chap .chapter a:hover			{ color: #130f40 ;}.c-blog__heading.style-2 i:after{border-right-color:#130f40 !important}body.page.text-ui-light .c-page-content .c-page .c-page__content .page-content-listing .page-listing-item .page-item-detail .item-summary .list-chapter .chapter-item .chapter a:hover, .text-ui-light .widget.c-popular .popular-item-wrap .popular-content .chapter-item .chapter a:hover,#hover-infor .item_thumb .post-title a{color: #FFFFFF}.navigation-ajax .load-ajax:not(.show-loading):hover, body.manga-page .page-content-listing.single-page .listing-chapters_wrap > ul.main.version-chap .sub-chap > li:before, .shortcode-manga-chapters .listing-chapters_wrap > ul.main.version-chap .sub-chap > li:before, .c-wg-button-wrap .btn:hover, body.manga-page .page-content-listing.single-page .listing-chapters_wrap ul.main.version-chap .wp-manga-chapter:before, .site-header .search-main-menu form input[type=submit], .form-submit input[type=submit], #comments.comments-area #respond.comment-respond .comment-form .form-submit #submit, .c-btn.c-btn_style-1, .settings-page input[type="submit"], .settings-page .remove-all #delete-bookmark-manga, body.manga-page .page-content-listing.single-page .listing-chapters_wrap > ul.main.version-chap li .wp-manga-chapter:before, .woocommerce ul.products li.product .button, .woocommerce span.onsale, .woocommerce .widget_price_filter .price_slider_amount .button:not(:hover), .woocommerce .woocommerce-pagination .page-numbers li span.current, .woocommerce .woocommerce-pagination .page-numbers li .prev:hover, .woocommerce .woocommerce-pagination .page-numbers li .next:hover, .woocommerce div.entry-summary form.cart .single_add_to_cart_button,.post-password-form input[name="Submit"] { background: #130f40 ;}.navigation-ajax .load-ajax:not(.show-loading):hover, .popular-slider .slider__container .slider__item .slider__content .slider__content_item .chapter-item .chapter a:hover, body.search .c-search-header__wrapper .search-content .btn-search-adv.collapsed, .c-btn.c-btn_style-2, body.search .c-search-header__wrapper .search-content .btn-search-adv, .genres_wrap a.btn-genres, .wpcf7-validation-errors, .text-ui-light.woocommerce-page input[type="text"]:focus, .text-ui-light.woocommerce-page input[type="email"]:focus, .text-ui-light.woocommerce-page input[type="search"]:focus, .text-ui-light.woocommerce-page input[type="url"]:focus, .text-ui-light.woocommerce-page input[type="password"]:focus, .text-ui-light.woocommerce-page input[type="tel"]:focus, .text-ui-light.woocommerce-page .input-text:focus, .text-ui-light.woocommerce-page input[type="text"]:active, .text-ui-light.woocommerce-page input[type="email"]:active, .text-ui-light.woocommerce-page input[type="search"]:active, .text-ui-light.woocommerce-page input[type="url"]:active, .text-ui-light.woocommerce-page input[type="password"]:active, .text-ui-light.woocommerce-page input[type="tel"]:active, .text-ui-light.woocommerce-page .input-text:active, .text-ui-light.woocommerce-page input[type="text"]:hover, .text-ui-light.woocommerce-page input[type="email"]:hover, .text-ui-light.woocommerce-page input[type="search"]:hover, .text-ui-light.woocommerce-page input[type="url"]:hover, .text-ui-light.woocommerce-page input[type="password"]:hover, .text-ui-light.woocommerce-page input[type="tel"]:hover, .text-ui-light.woocommerce-page .input-text:hover, .text-ui-light.woocommerce-page select.orderby:hover  { border-color: #130f40 ;}.site-header .c-sub-header-nav .c-sub-nav_wrap .sub-nav_content .sub-nav_list > li.menu-item-has-children > ul.sub-menu, .site-header .c-sub-header-nav .c-sub-nav_wrap .c-modal_item .c-user_item .c-user_menu { border-bottom-color: #130f40 ;}.widget.widget_tag_cloud .tag-cloud-link:hover, body.page .c-page-content .c-page .c-page__content .page-content-listing .page-listing-item .page-item-detail .item-summary .list-chapter .chapter-item .chapter:hover, .popular-slider .slider__container .slider__item .slider__content .slider__content_item .chapter-item .chapter a:hover, .widget.c-popular .popular-item-wrap .popular-content .chapter-item .chapter:hover, .site-footer .top-footer .wrap_social_account ul.social_account__item li a, .site-content .main-col .item-tags ul li a:hover, .popular-slider .slider__container .slick-arrow:hover, .widget.background.widget_tag_cloud .tag-cloud-link:hover, .wp-pagenavi a:hover, body.search.search-results .search-wrap .tab-content-wrap .c-tabs-item .c-tabs-item__content .tab-meta .latest-chap .chapter:hover, .go-to-top:hover, .widget.c-popular .widget-view-more, body.search .c-search-header__wrapper .search-content .search-form .search-submit, body.reading-manga .entry-header .select-pagination .nav-links .nav-next a:not(:hover), body.reading-manga .c-select-bottom .select-pagination .nav-links .nav-next a:not(:hover), body.reading-manga .entry-header .entry-header_wrap .action-icon ul li:hover a, body.reading-manga .c-select-bottom .entry-header_wrap .action-icon ul li:hover a, .widget.c-released .released-search form [type="submit"], body.manga-page .profile-manga .tab-summary .loader-inner > div, .wpcf7-submit, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce .woocommerce-cart-form .cart button.button, .woocommerce .cart input.button:not(:hover), #adult_modal .modal-footer .btn.btn-primary:not(:hover), body.reading-manga .entry-header .select-pagination .nav-links > * a, body.reading-manga .c-select-bottom .select-pagination .nav-links > * a, .settings-page .list-chapter .chapter-item .chapter:hover, body.modal-open .modal .modal-content .modal-body .login .submit .wp-submit:not(:hover), .settings-page .tabs-content-wrap .my_account_orders a.button.view, .main-bg, #madara-comments.comments-area #respond.comment-respond .comment-form .form-submit #submit, body.search .c-search-header__wrapper .search-content .btn-search-adv { background-color: #130f40 ;}:root{ --madara-main-color: #130f40}body.search.search-results .search-wrap .tab-content-wrap .c-tabs-item .c-tabs-item__content .tab-meta .latest-chap .chapter:hover a, .wp-pagenavi a:hover{color:#FFF !important}.item-thumb .quick-chapter-link{background: #130f40;}            
+            .page-content-listing.single-page li.wp-manga-chapter.unread a{color:#130f40}
+			#pageloader.spinners{
+				position:fixed;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				z-index:99999;
+				background:#222
+			}
+		
+			p.madara-unyson{
+				color: #FF0000;
+			}
+		
+			.table.table-hover.list-bookmark tr:last-child td{
+				text-align: center;
+			}
+		#adminmenu .wp-submenu li.current { display: none !important;}.show_tgmpa_version{ float: right; padding: 0em 1.5em 0.5em 0; }.tgmpa > h2{ font-size: 23px; font-weight: 400; line-height: 29px; margin: 0; padding: 9px 15px 4px 0;}.update-php{ width: 100%; height: 98%; min-height: 850px; padding-top: 1px; }@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
+				/* Retina Logo */
+				.site-header .c-header__top .wrap_branding a {background:url(https://kunmanga.com/wp-content/uploads/2021/01/logo-kun-3.png) no-repeat center; background-size:contain; display:block; max-width: 100%}
+				.site-header .c-header__top .wrap_branding a img{ opacity:0; visibility:hidden;}
+			}.c-blog-post .entry-content .entry-content_wrap .read-container img.alignleft { margin: 10px 30px 10px 0 !important; } .c-blog-post .entry-content .entry-content_wrap .read-container img.alignright { margin: 10px 0px 10px 30px !important; } .read-container i.fas.fa-spinner.fa-spin{ font-size: 31px; color: #888; }.c-blog-post .entry-content .entry-content_wrap .read-container img{ cursor : pointer; }.choose-avatar .loading-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(255, 255, 255, 0.72);
+			z-index: 1;
+			display: none;
+		}
+
+		.choose-avatar .loading-overlay i.fas.fa-spinner {
+			font-size: 40px;
+			color: #ec3348;
+		}
+
+		.choose-avatar .loading-overlay .loading-icon {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+
+		.choose-avatar.uploading .loading-overlay {
+			display: block;
+		}.site-header .c-sub-header-nav .entry-header {
+			display: none;
+			margin-bottom: 15px;
+		}
+
+		.site-header .c-sub-header-nav.sticky .entry-header {
+			display: block;
+		}
+
+		.site-header .c-sub-header-nav.hide-sticky-menu.sticky .c-sub-nav_wrap{
+			display:none;
+		}
+		.site-header .c-sub-header-nav.hide-sticky-menu .entry-header{
+			margin-top:15px;
+		}
+		body.page .c-page-content .c-page .c-page__content .page-content-listing .page-listing-item .page-item-detail .item-summary .list-chapter .chapter-item span.vol.font-meta{display:none}@media (max-width: 480px) {.c-blog-post .entry-content .entry-content_wrap .reading-content{margin-left:-15px;margin-right:-15px}}
+        .settings-page table.list-bookmark > tbody tr td > div.mange-name:before {
+            content: "Manga Name";
+          }
+          .settings-page table.list-bookmark > tbody tr td > div.action:before {
+            content: "Edit";
+          }
+          .settings-page table.list-bookmark > tbody tr td > div.post-on:before {            
+            content: "Updated Time";
+          }
+.archive .footer-ads, .blog .footer-ads, .single-post .footer-ads {
+    display: none;
+}
+
+/* Custom header menu */
+.site-header .main-navigation .main-navigation_wrap {
+    padding: 9px 0;
+}
+</style>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://kunmanga.com/wp-json/" /><link rel="alternate" type="application/json" href="https://kunmanga.com/wp-json/wp/v2/pages/378" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://kunmanga.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://kunmanga.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://kunmanga.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkunmanga.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://kunmanga.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkunmanga.com%2F&#038;format=xml" />
+<link rel="icon" href="https://kunmanga.com/wp-content/uploads/2021/06/cropped-kun-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://kunmanga.com/wp-content/uploads/2021/06/cropped-kun-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://kunmanga.com/wp-content/uploads/2021/06/cropped-kun-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://kunmanga.com/wp-content/uploads/2021/06/cropped-kun-favicon-270x270.png" />
+</head>
+
+<body class="home page-template page-template-page-templates page-template-front-page page-template-page-templatesfront-page-php page page-id-378 wp-embed-responsive header-style-1 sticky-enabled sticky-style-1 is-sidebar text-ui-dark">
+
+
+
+
+<div class="wrap">
+    <div class="body-wrap">
+		        <header class="site-header">
+            <div class="c-header__top">
+                <ul class="search-main-menu">
+                    <li>
+                        <form id="blog-post-search" class="ajax" action="https://kunmanga.com/" method="get">
+                            <input type="text" placeholder="Search..." name="s" value="">
+                            <input type="submit" value="Search">
+                            <div class="loader-inner line-scale">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <div class="main-navigation style-1 ">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-navigation_wrap">
+                                    <div class="wrap_branding">
+                                        <a class="logo" href="https://kunmanga.com/" title="Kun Manga">
+											                                            <img class="img-responsive" src="https://kunmanga.com/wp-content/uploads/2021/01/logo-kun-2.png"  alt="Kun Manga"/>
+                                        </a>
+                                    </div>
+
+									    <div class="main-menu">
+		<ul class="nav navbar-nav main-navbar"><li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-10"><a href="/" aria-current="page">HOME</a></li>
+<li id="menu-item-5587" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5587"><a href="#">All Webtoons</a>
+<ul class="sub-menu">
+	<li id="menu-item-5590" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5590"><a href="https://kunmanga.com/manga/?m_orderby=trending">Trending</a></li>
+	<li id="menu-item-5589" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5589"><a href="https://kunmanga.com/manga/?m_orderby=new-manga">New</a></li>
+	<li id="menu-item-5588" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5588"><a href="http://kunmanga.com/?s=&#038;post_type=wp-manga">Search</a></li>
+</ul>
+</li>
+</ul>    </div>
+
+    <div class="search-navigation search-sidebar">
+
+					<div id="manga-search-5" class="widget col-12 col-md-12   default  no-icon heading-style-1 manga-widget widget-manga-search"><div class="widget__inner manga-widget widget-manga-search__inner c-widget-wrap"><div class="widget-content">
+		<div class="search-navigation__wrap">
+
+			<script type="95b6dd6f07ce6d5b2581e042-text/javascript">
+	jQuery(document).ready(function ($) {
+		if ($('.c-header__top .manga-search-form').length !== 0 && $('.c-header__top .manga-search-form.search-form').length !== 0) {
+
+			$('form#blog-post-search').append('<input type="hidden" name="post_type" value="wp-manga">');
+
+			$('form#blog-post-search').addClass("manga-search-form");
+
+			$('form#blog-post-search input[name="s"]').addClass("manga-search-field");
+
+			$('form.manga-search-form.ajax input.manga-search-field').each(function(){
+
+			var searchIcon = $(this).parent().children('.ion-ios-search-strong');
+
+			var append = $(this).parent();
+
+			$(this).autocomplete({
+				appendTo: append,
+				source: function( request, resp ) {
+					$.ajax({
+						url: manga.ajax_url,
+						type: 'POST',
+						dataType: 'json',
+						data: {
+							action: 'wp-manga-search-manga',
+							title: request.term,
+						},
+						success: function( data ) {
+							resp( $.map( data.data, function( item ) {
+								if ( true == data.success ) {
+									return {
+										label: item.title,
+										value: item.title,
+										url: item.url,
+										type: item.type
+									}
+								} else {
+									return {
+										label: item.message,
+										value: item.message,
+										type: item.type,
+										click: false
+									}
+								}
+							}))
+						}
+					});
+				},
+				select: function( e, ui ) {
+					if ( ui.item.url ) {
+						window.location.href = ui.item.url;
+					} else {
+						if ( ui.item.click ) {
+							return true;
+						} else {
+							return false;
+						}
+					}
+				},
+				open: function( e, ui ) {
+					var acData = $(this).data( 'uiAutocomplete' );
+					acData.menu.element.addClass('manga-autocomplete').find('li div').each(function(){
+						var $self = $(this),
+							keyword = $.trim( acData.term ).split(' ').join('|');
+						$self.html( $self.text().replace( new RegExp( "(" + keyword + ")", "gi" ), '<span class="manga-text-highlight">$1</span>' ) );
+					});
+				}
+			}).autocomplete( "instance" )._renderItem = function( ul, item ) {
+				  return $( "<li class='search-item'>" )
+					.append( "<div class='manga-type-" + item.type + "'>" + item.label + "</div>" )
+					.appendTo( ul );
+			};
+		});
+		}
+	});
+</script>
+<ul class="main-menu-search nav-menu">
+    <li class="menu-search">
+        <a href="javascript:;" class="open-search-main-menu"> <i class="icon ion-ios-search"></i>
+            <i class="icon ion-android-close"></i> </a>
+        <ul class="search-main-menu">
+            <li>
+                <form class="manga-search-form search-form ajax" action="https://kunmanga.com/" method="get">
+                    <input class="manga-search-field" type="text" placeholder="Search..." name="s" value="">
+                    <input type="hidden" name="post_type" value="wp-manga"> <i class="icon ion-ios-search"></i>
+                    <div class="loader-inner ball-clip-rotate-multiple">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <input type="submit" value="Search">
+                </form>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+					<div class="link-adv-search">
+				<a href="https://kunmanga.com/?s=&#038;post_type=wp-manga">Advanced</a>
+			</div>
+		
+		</div>
+
+		</div></div></div>				
+    </div>
+    <div class="c-togle__menu">
+        <button type="button" class="menu_icon__open">
+            <span></span> <span></span> <span></span>
+        </button>
+    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			
+<div class="mobile-menu menu-collapse off-canvas">
+    <div class="close-nav">
+        <button class="menu_icon__close">
+            <span></span> <span></span>
+        </button>
+    </div>
+
+	
+        <div class="c-modal_item">
+            <!-- Button trigger modal -->
+            <span class="c-modal_sign-in">
+                <a href="#" data-toggle="modal" data-target="#form-login" class="btn-active-modal">Sign in</a>
+            </span>
+
+            <span class="c-modal_sign-up">
+                <a href="javascript:void(0)" data-toggle="modal" data-target="#form-sign-up" class="btn-active-modal">Sign up</a>
+            </span>
+
+        </div>
+
+	
+    <nav class="off-menu">
+		<ul id="menu-main-menu-1" class="nav navbar-nav main-navbar"><li id="nav-menu-item-10" class="main-menu-item menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item"><a href="/" class="menu-link  main-menu-link">HOME </a></li>
+<li id="nav-menu-item-5587" class="main-menu-item menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent dropdown"><a href="#" class="menu-link dropdown-toggle disabled main-menu-link" data-toggle="dropdown">All Webtoons </a>
+<ul class="dropdown-menu menu-depth-1">
+	<li id="nav-menu-item-5590" class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-custom menu-item-object-custom"><a href="https://kunmanga.com/manga/?m_orderby=trending" class="menu-link  sub-menu-link">Trending </a></li>
+	<li id="nav-menu-item-5589" class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-custom menu-item-object-custom"><a href="https://kunmanga.com/manga/?m_orderby=new-manga" class="menu-link  sub-menu-link">New </a></li>
+	<li id="nav-menu-item-5588" class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-custom menu-item-object-custom"><a href="http://kunmanga.com/?s=&amp;post_type=wp-manga" class="menu-link  sub-menu-link">Search </a></li>
+
+</ul>
+</li>
+</ul>    </nav>
+	
+	<div class="center"></div>
+</div>
+			        <div class=" c-sub-header-nav with-border  ">
+            <div class="container ">
+                <div class="c-sub-nav_wrap">
+                    <div class="sub-nav_content">
+						
+												
+						                        <ul class="sub-nav_list list-inline second-menu">
+							<li id="menu-item-17" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-17"><a href="https://kunmanga.com/manga-genre/romance/">Romance</a></li>
+<li id="menu-item-337" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-337"><a href="https://kunmanga.com/manga-genre/manhua/">Manhua</a></li>
+<li id="menu-item-18" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-18"><a href="https://kunmanga.com/manga-genre/shoujo/">Shoujo</a></li>
+<li id="menu-item-327" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-327"><a href="https://kunmanga.com/manga-genre/drama/">Drama</a></li>
+<li id="menu-item-15" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-15"><a href="https://kunmanga.com/manga-genre/comedy/">Comedy</a></li>
+<li id="menu-item-11" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-11"><a href="https://kunmanga.com/manga-genre/action/">Action</a></li>
+<li id="menu-item-336" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-336"><a href="https://kunmanga.com/manga-genre/manga/">Manga</a></li>
+<li id="menu-item-332" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-332"><a href="https://kunmanga.com/manga-genre/historical/">Historical</a></li>
+<li id="menu-item-343" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-343"><a href="https://kunmanga.com/manga-genre/one-shot/">One shot</a></li>
+<li id="menu-item-361" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent menu-item-361"><a href="#">MORE</a>
+<ul class="sub-menu">
+	<li id="menu-item-345" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-345"><a href="https://kunmanga.com/manga-genre/school-life/">School Life</a></li>
+	<li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-349"><a href="https://kunmanga.com/manga-genre/shounen/">Shounen</a></li>
+	<li id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-13"><a href="https://kunmanga.com/manga-genre/adventure/">Adventure</a></li>
+	<li id="menu-item-16" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-16"><a href="https://kunmanga.com/manga-genre/comic/">Comic</a></li>
+	<li id="menu-item-325" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-325"><a href="https://kunmanga.com/manga-genre/cooking/">Cooking</a></li>
+	<li id="menu-item-328" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-328"><a href="https://kunmanga.com/manga-genre/ecchi/">Ecchi</a></li>
+	<li id="menu-item-329" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-329"><a href="https://kunmanga.com/manga-genre/fantasy/">Fantasy</a></li>
+	<li id="menu-item-338" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-338"><a href="https://kunmanga.com/manga-genre/manhwa-top/">Manhwa Hot</a></li>
+	<li id="menu-item-331" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-331"><a href="https://kunmanga.com/manga-genre/harem/">Harem</a></li>
+	<li id="menu-item-334" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-334"><a href="https://kunmanga.com/manga-genre/josei/">Josei</a></li>
+	<li id="menu-item-339" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-339"><a href="https://kunmanga.com/manga-genre/martial-arts/">Martial Arts</a></li>
+	<li id="menu-item-342" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-342"><a href="https://kunmanga.com/manga-genre/mystery/">Mystery</a></li>
+	<li id="menu-item-344" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-344"><a href="https://kunmanga.com/manga-genre/psychological/">Psychological</a></li>
+	<li id="menu-item-346" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-346"><a href="https://kunmanga.com/manga-genre/sci-fi/">Sci-fi</a></li>
+	<li id="menu-item-347" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-347"><a href="https://kunmanga.com/manga-genre/seinen/">Seinen</a></li>
+	<li id="menu-item-351" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-351"><a href="https://kunmanga.com/manga-genre/slice-of-life/">Slice of Life</a></li>
+	<li id="menu-item-352" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-352"><a href="https://kunmanga.com/manga-genre/smut/">Smut</a></li>
+	<li id="menu-item-355" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-355"><a href="https://kunmanga.com/manga-genre/sports/">Sports</a></li>
+	<li id="menu-item-357" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-357"><a href="https://kunmanga.com/manga-genre/tragedy/">Tragedy</a></li>
+	<li id="menu-item-356" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-356"><a href="https://kunmanga.com/manga-genre/supernatural/">Supernatural</a></li>
+	<li id="menu-item-358" class="menu-item menu-item-type-taxonomy menu-item-object-wp-manga-genre menu-item-358"><a href="https://kunmanga.com/manga-genre/webtoon/">Webtoon</a></li>
+</ul>
+</li>
+	
+								<i class="mobile-icon icon ion-md-more"></i>
+								                            
+                        </ul>
+						                    </div>
+
+					                        <div class="c-modal_item">
+                            <!-- Button trigger modal -->
+                            <a href="javascript:void(0)" data-toggle="modal" data-target="#form-login" class="btn-active-modal">Sign in</a>
+                            <a href="javascript:void(0)" data-toggle="modal" data-target="#form-sign-up" class="btn-active-modal">Sign up</a>
+                        </div>
+					                </div>
+
+				            </div>
+        </div>
+
+	
+        </header>
+
+		
+			
+			                <div class="c-sidebar c-top-second-sidebar" style=" padding:50px 10px ; " >
+                    <div class="container c-container">
+                        <div class="row c-row">
+							<div id="manga-popular-slider-5" class="widget col-12 col-md-12   default  no-icon heading-style-1 manga-widget widget-manga-popular-slider"><div class="widget__inner manga-widget widget-manga-popular-slider__inner c-widget-wrap">
+            <div class="popular-slider style-3" data-autoplay="1" data-style="style-2" data-count="4">
+				<div class="widget-heading font-nav"><h5 class="heading">Manga new</h5></div><div class="widget-content">                <div class="slider__container" role="toolbar">
+
+					<div class="slider__item">
+    <div class="item__wrap ">
+
+		            <div class="slider__thumb">
+                <div class="slider__thumb_item c-image-hover">
+					                    <a href="https://kunmanga.com/manga/casting-cinderella/">
+						<img width="125" height="180"  src="https://kunmanga.com/wp-content/uploads/2025/04/Casting-Cinderella-125x180.jpg" srcset="https://kunmanga.com/wp-content/uploads/2025/04/Casting-Cinderella-125x180.jpg 125w, https://kunmanga.com/wp-content/uploads/2025/04/Casting-Cinderella-210x300.jpg 210w, https://kunmanga.com/wp-content/uploads/2025/04/Casting-Cinderella-716x1024.jpg 716w, https://kunmanga.com/wp-content/uploads/2025/04/Casting-Cinderella-768x1099.jpg 768w, https://kunmanga.com/wp-content/uploads/2025/04/Casting-Cinderella-193x278.jpg 193w, https://kunmanga.com/wp-content/uploads/2025/04/Casting-Cinderella.jpg 1024w" sizes="(max-width: 125px) 100vw, 125px" class="img-responsive" style=""  alt="Casting Cinderella"/>                        <div class="slider-overlay"></div>
+                    </a>
+                </div>
+            </div>
+		
+        <div class="slider__content">
+            <div class="slider__content_item">
+                <div class="post-title font-title">
+                    <h4>
+                        <a href="https://kunmanga.com/manga/casting-cinderella/">Casting Cinderella</a>
+                    </h4>
+                </div>
+								                    <div class="post-on font-meta">
+                        <span>
+                            April 11, 2025                        </span>
+                    </div>
+				
+                <div class="chapter-item ">
+					
+								                                    <span class="chapter ">
+                                        <a href="https://kunmanga.com/manga/casting-cinderella/chapter-12/">Chapter 12</a>
+                                    </span>
+								
+							
+								                                    <span class="chapter ">
+                                        <a href="https://kunmanga.com/manga/casting-cinderella/chapter-11/">Chapter 11</a>
+                                    </span>
+								
+							                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="slider__item">
+    <div class="item__wrap ">
+
+		            <div class="slider__thumb">
+                <div class="slider__thumb_item c-image-hover">
+					                    <a href="https://kunmanga.com/manga/trapped-in-a-crazy-world-as-an-extra/">
+						<img width="125" height="180"  src="https://kunmanga.com/wp-content/uploads/2025/04/Trapped-in-a-Crazy-World-as-an-Extra-125x180.jpg" srcset="https://kunmanga.com/wp-content/uploads/2025/04/Trapped-in-a-Crazy-World-as-an-Extra-125x180.jpg 125w, https://kunmanga.com/wp-content/uploads/2025/04/Trapped-in-a-Crazy-World-as-an-Extra-210x300.jpg 210w, https://kunmanga.com/wp-content/uploads/2025/04/Trapped-in-a-Crazy-World-as-an-Extra-193x278.jpg 193w, https://kunmanga.com/wp-content/uploads/2025/04/Trapped-in-a-Crazy-World-as-an-Extra.jpg 500w" sizes="(max-width: 125px) 100vw, 125px" class="img-responsive" style=""  alt="Trapped-in-a-Crazy-World-as-an-Extra"/>                        <div class="slider-overlay"></div>
+                    </a>
+                </div>
+            </div>
+		
+        <div class="slider__content">
+            <div class="slider__content_item">
+                <div class="post-title font-title">
+                    <h4>
+                        <a href="https://kunmanga.com/manga/trapped-in-a-crazy-world-as-an-extra/">Trapped in a Crazy World as an Extra</a>
+                    </h4>
+                </div>
+								                    <div class="post-on font-meta">
+                        <span>
+                            April 12, 2025                        </span>
+                    </div>
+				
+                <div class="chapter-item ">
+					
+								                                    <span class="chapter ">
+                                        <a href="https://kunmanga.com/manga/trapped-in-a-crazy-world-as-an-extra/chapter-12/">Chapter 12</a>
+                                    </span>
+								
+							
+								                                    <span class="chapter ">
+                                        <a href="https://kunmanga.com/manga/trapped-in-a-crazy-world-as-an-extra/chapter-11/">Chapter 11</a>
+                                    </span>
+								
+							                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="slider__item">
+    <div class="item__wrap ">
+
+		            <div class="slider__thumb">
+                <div class="slider__thumb_item c-image-hover">
+					                    <a href="https://kunmanga.com/manga/adinmirs-thorn-flower/">
+						<img width="125" height="180"  src="https://kunmanga.com/wp-content/uploads/2025/04/Adinmirs-Thorn-Flower-125x180.jpg" srcset="https://kunmanga.com/wp-content/uploads/2025/04/Adinmirs-Thorn-Flower-125x180.jpg 125w, https://kunmanga.com/wp-content/uploads/2025/04/Adinmirs-Thorn-Flower-193x278.jpg 193w" sizes="(max-width: 125px) 100vw, 125px" class="img-responsive" style=""  alt="Adinmir’s Thorn Flower"/>                        <div class="slider-overlay"></div>
+                    </a>
+                </div>
+            </div>
+		
+        <div class="slider__content">
+            <div class="slider__content_item">
+                <div class="post-title font-title">
+                    <h4>
+                        <a href="https://kunmanga.com/manga/adinmirs-thorn-flower/">Adinmir’s Thorn Flower</a>
+                    </h4>
+                </div>
+								                    <div class="post-on font-meta">
+                        <span>
+                            April 11, 2025                        </span>
+                    </div>
+				
+                <div class="chapter-item ">
+					
+								                                    <span class="chapter ">
+                                        <a href="https://kunmanga.com/manga/adinmirs-thorn-flower/chapter-10/">Chapter 10</a>
+                                    </span>
+								
+							
+								                                    <span class="chapter ">
+                                        <a href="https://kunmanga.com/manga/adinmirs-thorn-flower/chapter-9/">Chapter 9</a>
+                                    </span>
+								
+							                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="slider__item">
+    <div class="item__wrap ">
+
+		            <div class="slider__thumb">
+                <div class="slider__thumb_item c-image-hover">
+					                    <a href="https://kunmanga.com/manga/the-top-100-young-lady/">
+						<img width="125" height="180"  src="https://kunmanga.com/wp-content/uploads/2025/04/The-Top-100-Young-Lady-125x180.webp" srcset="https://kunmanga.com/wp-content/uploads/2025/04/The-Top-100-Young-Lady-125x180.webp 125w, https://kunmanga.com/wp-content/uploads/2025/04/The-Top-100-Young-Lady-210x300.webp 210w, https://kunmanga.com/wp-content/uploads/2025/04/The-Top-100-Young-Lady-193x278.webp 193w, https://kunmanga.com/wp-content/uploads/2025/04/The-Top-100-Young-Lady.webp 600w" sizes="(max-width: 125px) 100vw, 125px" class="img-responsive" style=""  alt="The Top 100 Young Lady"/>                        <div class="slider-overlay"></div>
+                    </a>
+                </div>
+            </div>
+		
+        <div class="slider__content">
+            <div class="slider__content_item">
+                <div class="post-title font-title">
+                    <h4>
+                        <a href="https://kunmanga.com/manga/the-top-100-young-lady/">The Top 100 Young Lady</a>
+                    </h4>
+                </div>
+								                    <div class="post-on font-meta">
+                        <span>
+                            April 11, 2025                        </span>
+                    </div>
+				
+                <div class="chapter-item ">
+					
+								                                    <span class="chapter ">
+                                        <a href="https://kunmanga.com/manga/the-top-100-young-lady/chapter-18/">Chapter 18</a>
+                                    </span>
+								
+							
+								                                    <span class="chapter ">
+                                        <a href="https://kunmanga.com/manga/the-top-100-young-lady/chapter-17/">Chapter 17</a>
+                                    </span>
+								
+							                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="slider__item">
+    <div class="item__wrap ">
+
+		            <div class="slider__thumb">
+                <div class="slider__thumb_item c-image-hover">
+					                    <a href="https://kunmanga.com/manga/holy-revenge-the-princess-who-became-a-swordsman/">
+						<img width="125" height="180"  src="https://kunmanga.com/wp-content/uploads/2025/04/Holy-Revenge-125x180.webp" srcset="https://kunmanga.com/wp-content/uploads/2025/04/Holy-Revenge-125x180.webp 125w, https://kunmanga.com/wp-content/uploads/2025/04/Holy-Revenge-193x278.webp 193w" sizes="(max-width: 125px) 100vw, 125px" class="img-responsive" style=""  alt="Holy Revenge"/>                        <div class="slider-overlay"></div>
+                    </a>
+                </div>
+            </div>
+		
+        <div class="slider__content">
+            <div class="slider__content_item">
+                <div class="post-title font-title">
+                    <h4>
+                        <a href="https://kunmanga.com/manga/holy-revenge-the-princess-who-became-a-swordsman/">Holy Revenge: The Princess Who Became a Swordsman</a>
+                    </h4>
+                </div>
+								                    <div class="post-on font-meta">
+                        <span>
+                            April 11, 2025                        </span>
+                    </div>
+				
+                <div class="chapter-item ">
+					
+								                                    <span class="chapter ">
+                                        <a href="https://kunmanga.com/manga/holy-revenge-the-princess-who-became-a-swordsman/chapter-11/">Chapter 11</a>
+                                    </span>
+								
+							
+								                                    <span class="chapter ">
+                                        <a href="https://kunmanga.com/manga/holy-revenge-the-princess-who-became-a-swordsman/chapter-10/">Chapter 10</a>
+                                    </span>
+								
+							                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="slider__item">
+    <div class="item__wrap ">
+
+		            <div class="slider__thumb">
+                <div class="slider__thumb_item c-image-hover">
+					                    <a href="https://kunmanga.com/manga/the-art-student-who-lived-twice/">
+						<img width="125" height="180"  src="https://kunmanga.com/wp-content/uploads/2025/04/The-Art-Student-Who-Lived-Twice-125x180.jpg" srcset="https://kunmanga.com/wp-content/uploads/2025/04/The-Art-Student-Who-Lived-Twice-125x180.jpg 125w, https://kunmanga.com/wp-content/uploads/2025/04/The-Art-Student-Who-Lived-Twice-193x278.jpg 193w" sizes="(max-width: 125px) 100vw, 125px" class="img-responsive" style=""  alt="The Art Student Who Lived Twice"/>                        <div class="slider-overlay"></div>
+                    </a>
+                </div>
+            </div>
+		
+        <div class="slider__content">
+            <div class="slider__content_item">
+                <div class="post-title font-title">
+                    <h4>
+                        <a href="https://kunmanga.com/manga/the-art-student-who-lived-twice/">The Art Student Who Lived Twice</a>
+                    </h4>
+                </div>
+								                    <div class="post-on font-meta">
+                        <span>
+                            April 12, 2025                        </span>
+                    </div>
+				
+                <div class="chapter-item ">
+					
+								                                    <span class="chapter ">
+                                        <a href="https://kunmanga.com/manga/the-art-student-who-lived-twice/chapter-18/">Chapter 18</a>
+                                    </span>
+								
+							
+								                                    <span class="chapter ">
+                                        <a href="https://kunmanga.com/manga/the-art-student-who-lived-twice/chapter-17/">Chapter 17</a>
+                                    </span>
+								
+							                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="slider__item">
+    <div class="item__wrap ">
+
+		            <div class="slider__thumb">
+                <div class="slider__thumb_item c-image-hover">
+					                    <a href="https://kunmanga.com/manga/around-forty/">
+						<img width="125" height="180"  src="https://kunmanga.com/wp-content/uploads/2025/04/Around-Forty-125x180.webp" srcset="https://kunmanga.com/wp-content/uploads/2025/04/Around-Forty-125x180.webp 125w, https://kunmanga.com/wp-content/uploads/2025/04/Around-Forty-193x278.webp 193w" sizes="(max-width: 125px) 100vw, 125px" class="img-responsive" style=""  alt="Around Forty"/>                        <div class="slider-overlay"></div>
+                    </a>
+                </div>
+            </div>
+		
+        <div class="slider__content">
+            <div class="slider__content_item">
+                <div class="post-title font-title">
+                    <h4>
+                        <a href="https://kunmanga.com/manga/around-forty/">Around Forty</a>
+                    </h4>
+                </div>
+								                    <div class="post-on font-meta">
+                        <span>
+                            April 9, 2025                        </span>
+                    </div>
+				
+                <div class="chapter-item ">
+					
+								                                    <span class="chapter ">
+                                        <a href="https://kunmanga.com/manga/around-forty/chapter-12/">Chapter 12</a>
+                                    </span>
+								
+							
+								                                    <span class="chapter ">
+                                        <a href="https://kunmanga.com/manga/around-forty/chapter-11/">Chapter 11</a>
+                                    </span>
+								
+							                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="slider__item">
+    <div class="item__wrap ">
+
+		            <div class="slider__thumb">
+                <div class="slider__thumb_item c-image-hover">
+					                    <a href="https://kunmanga.com/manga/i-was-a-sacrificial-princess-but-i-reincarnated-and-became-the-body-pillow-of-the-demon-king/">
+						<img width="125" height="180"  src="https://kunmanga.com/wp-content/uploads/2025/04/I-Was-a-Sacrificial-Princess-125x180.webp" srcset="https://kunmanga.com/wp-content/uploads/2025/04/I-Was-a-Sacrificial-Princess-125x180.webp 125w, https://kunmanga.com/wp-content/uploads/2025/04/I-Was-a-Sacrificial-Princess-193x278.webp 193w" sizes="(max-width: 125px) 100vw, 125px" class="img-responsive" style=""  alt="I Was a Sacrificial Princess"/>                        <div class="slider-overlay"></div>
+                    </a>
+                </div>
+            </div>
+		
+        <div class="slider__content">
+            <div class="slider__content_item">
+                <div class="post-title font-title">
+                    <h4>
+                        <a href="https://kunmanga.com/manga/i-was-a-sacrificial-princess-but-i-reincarnated-and-became-the-body-pillow-of-the-demon-king/">I Was a Sacrificial Princess, but I Reincarnated and Became the Body Pillow of the Demon King</a>
+                    </h4>
+                </div>
+								                    <div class="post-on font-meta">
+                        <span>
+                            April 9, 2025                        </span>
+                    </div>
+				
+                <div class="chapter-item ">
+					
+								                                    <span class="chapter ">
+                                        <a href="https://kunmanga.com/manga/i-was-a-sacrificial-princess-but-i-reincarnated-and-became-the-body-pillow-of-the-demon-king/chapter-4/">Chapter 4</a>
+                                    </span>
+								
+							
+								                                    <span class="chapter ">
+                                        <a href="https://kunmanga.com/manga/i-was-a-sacrificial-princess-but-i-reincarnated-and-became-the-body-pillow-of-the-demon-king/chapter-3/">Chapter 3</a>
+                                    </span>
+								
+							                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+                </div>
+            </div>
+			</div></div></div>                        </div>
+                    </div>
+                </div>
+			
+					        <div class="site-content">
+        
+    <div class="c-page-content style-1">
+        <div class="content-area " style="margin-top: 50px">
+            <div class="container">
+                <div class="row ">
+                                        <div class="main-col col-md-8 col-sm-8">
+
+						<div class="ad c-ads custom-code body-top-ads"><div id="pf-8529-1"><script type="95b6dd6f07ce6d5b2581e042-text/javascript">window.pubfuturetag = window.pubfuturetag || [];window.pubfuturetag.push({unit: "661522c12cb31731c0b67ecc", id: "pf-8529-1"})</script></div>
+				<br />
+				<div id="bg-ssp-8411">
+				<script data-cfasync="false">
+				var adx_id_8411 = document.getElementById("bg-ssp-8411");
+				adx_id_8411.id = "bg-ssp-8411-" + Math.floor(Math.random() * Date.now());
+				window.pubadxtag = window.pubadxtag || [];
+				window.pubadxtag.push({zoneid: 8411, id: adx_id_8411.id, wu: window.location.href})
+				</script>
+				</div>
+				<br />
+				<div id="pf-10665-1"><script type="95b6dd6f07ce6d5b2581e042-text/javascript">window.pubfuturetag = window.pubfuturetag || [];window.pubfuturetag.push({unit: "66ce99482141191aaaae9504", id: "pf-10665-1"})</script></div>
+				</div>
+
+
+                        <div class="main-col-inner c-page">
+
+							                                <div class="c-blog__heading style-2 font-heading ">
+
+                                    <h1 class="h4">
+
+										                                            <i class="icon ion-ios-star"></i>
+										
+										LATEST MANGA UPDATES
+                                    </h1>
+                                </div>
+							
+                            <div class="c-blog-listing c-page__content manga_content">
+                                <div class="c-blog__inner">
+                                    <div class="c-blog__content">
+																					
+                                            <div id="loop-content" class="page-content-listing item-big_thumbnail">
+
+
+												
+												
+													<div class="page-listing-item">
+    <div class="row row-eq-height">
+		
+        <div class="col-6 col-md-3 badge-pos-1">
+            <div class="page-item-detail manga  ">
+				                <div id="manga-item-24186" class="item-thumb  c-image-hover" data-post-id="24186">
+					                            <a href="https://kunmanga.com/manga/even-if-the-villains-daughter-regresses/" title="Even if the Villain’s Daughter Regresses">
+								<img width="175" height="238"  src="https://kunmanga.com/wp-content/uploads/2023/12/Even-if-the-Villains-Daughter-Regresses-KUN-175x238.jpg" srcset="https://kunmanga.com/wp-content/uploads/2023/12/Even-if-the-Villains-Daughter-Regresses-KUN-175x238.jpg 175w, https://kunmanga.com/wp-content/uploads/2023/12/Even-if-the-Villains-Daughter-Regresses-KUN-110x150.jpg 110w, https://kunmanga.com/wp-content/uploads/2023/12/Even-if-the-Villains-Daughter-Regresses-KUN-350x476.jpg 350w" sizes="(max-width: 175px) 100vw, 175px" class="img-responsive" style=""  alt="Even if the Villain’s Daughter Regresses KUN"/>                            </a>
+							                </div>
+                <div class="item-summary">
+                    <div class="post-title font-title">
+                        <h3 class="h5">
+																						                            <a href="https://kunmanga.com/manga/even-if-the-villains-daughter-regresses/">Even if the Villain’s Daughter Regresses</a>
+                        </h3>
+                    </div>
+                    <div class="meta-item rating">
+						<div class="post-total-rating "><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star-half ratings_stars rating_current_half"></i><span class="score font-meta total_votes">4.7</span></div>                    </div>
+                    <div class="list-chapter">
+						                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/even-if-the-villains-daughter-regresses/chapter-51/" class="btn-link"> Chapter 51 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/even-if-the-villains-daughter-regresses/chapter-51/" title="3 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/even-if-the-villains-daughter-regresses/chapter-50/" class="btn-link"> Chapter 50 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									April 6, 2025								</span>
+								                    </div>
+					                    </div>
+                </div>
+				
+				            </div>
+
+        </div>
+		
+												
+													
+        <div class="col-6 col-md-3 badge-pos-1">
+            <div class="page-item-detail manga  ">
+				                <div id="manga-item-25049" class="item-thumb  c-image-hover" data-post-id="25049">
+					                            <a href="https://kunmanga.com/manga/until-the-real-one-shows-up/" title="Until the Real One Shows Up">
+								<img width="175" height="238"  src="https://kunmanga.com/wp-content/uploads/2024/04/Until-the-Real-One-Shows-Up-175x238.webp" srcset="https://kunmanga.com/wp-content/uploads/2024/04/Until-the-Real-One-Shows-Up-175x238.webp 175w, https://kunmanga.com/wp-content/uploads/2024/04/Until-the-Real-One-Shows-Up-110x150.webp 110w, https://kunmanga.com/wp-content/uploads/2024/04/Until-the-Real-One-Shows-Up-350x476.webp 350w" sizes="(max-width: 175px) 100vw, 175px" class="img-responsive" style=""  alt="Until the Real One Shows Up"/>                            </a>
+							                </div>
+                <div class="item-summary">
+                    <div class="post-title font-title">
+                        <h3 class="h5">
+																						                            <a href="https://kunmanga.com/manga/until-the-real-one-shows-up/">Until the Real One Shows Up</a>
+                        </h3>
+                    </div>
+                    <div class="meta-item rating">
+						<div class="post-total-rating "><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star-half ratings_stars rating_current_half"></i><span class="score font-meta total_votes">4.3</span></div>                    </div>
+                    <div class="list-chapter">
+						                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/until-the-real-one-shows-up/chapter-62/" class="btn-link"> Chapter 62 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/until-the-real-one-shows-up/chapter-62/" title="3 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/until-the-real-one-shows-up/chapter-61/" class="btn-link"> Chapter 61 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/until-the-real-one-shows-up/chapter-61/" title="2 days ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    </div>
+                </div>
+				
+				            </div>
+
+        </div>
+		
+												
+													
+        <div class="col-6 col-md-3 badge-pos-1">
+            <div class="page-item-detail manga  ">
+				                <div id="manga-item-27606" class="item-thumb  c-image-hover" data-post-id="27606">
+					                            <a href="https://kunmanga.com/manga/the-earth-lords-school-life/" title="The Earth Lord’s School Life">
+								<img width="175" height="238"  src="https://kunmanga.com/wp-content/uploads/2025/01/The-Earth-Lords-School-Life-175x238.webp" srcset="https://kunmanga.com/wp-content/uploads/2025/01/The-Earth-Lords-School-Life-175x238.webp 175w, https://kunmanga.com/wp-content/uploads/2025/01/The-Earth-Lords-School-Life-110x150.webp 110w, https://kunmanga.com/wp-content/uploads/2025/01/The-Earth-Lords-School-Life-350x476.webp 350w" sizes="(max-width: 175px) 100vw, 175px" class="img-responsive" style=""  alt="The Earth Lord’s School Life"/>                            </a>
+							                </div>
+                <div class="item-summary">
+                    <div class="post-title font-title">
+                        <h3 class="h5">
+																						                            <a href="https://kunmanga.com/manga/the-earth-lords-school-life/">The Earth Lord’s School Life</a>
+                        </h3>
+                    </div>
+                    <div class="meta-item rating">
+						<div class="post-total-rating "><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><span class="score font-meta total_votes">4.8</span></div>                    </div>
+                    <div class="list-chapter">
+						                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/the-earth-lords-school-life/chapter-20/" class="btn-link"> Chapter 20 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/the-earth-lords-school-life/chapter-20/" title="3 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/the-earth-lords-school-life/chapter-19/" class="btn-link"> Chapter 19 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									April 4, 2025								</span>
+								                    </div>
+					                    </div>
+                </div>
+				
+				            </div>
+
+        </div>
+		
+												
+													
+        <div class="col-6 col-md-3 badge-pos-1">
+            <div class="page-item-detail manga  ">
+				                <div id="manga-item-24868" class="item-thumb  c-image-hover" data-post-id="24868">
+					                            <a href="https://kunmanga.com/manga/the-monster-duke-mistook-me-for-his-wife/" title="The Monster Duke Mistook Me for His Wife">
+								<img width="175" height="238"  src="https://kunmanga.com/wp-content/uploads/2024/03/The-Monster-Duke-Mistook-Me-for-His-Wife-KUN-175x238.jpg" srcset="https://kunmanga.com/wp-content/uploads/2024/03/The-Monster-Duke-Mistook-Me-for-His-Wife-KUN-175x238.jpg 175w, https://kunmanga.com/wp-content/uploads/2024/03/The-Monster-Duke-Mistook-Me-for-His-Wife-KUN-110x150.jpg 110w, https://kunmanga.com/wp-content/uploads/2024/03/The-Monster-Duke-Mistook-Me-for-His-Wife-KUN-350x476.jpg 350w" sizes="(max-width: 175px) 100vw, 175px" class="img-responsive" style=""  alt="The Monster Duke Mistook Me for His Wife KUN"/>                            </a>
+							                </div>
+                <div class="item-summary">
+                    <div class="post-title font-title">
+                        <h3 class="h5">
+																						                            <a href="https://kunmanga.com/manga/the-monster-duke-mistook-me-for-his-wife/">The Monster Duke Mistook Me for His Wife</a>
+                        </h3>
+                    </div>
+                    <div class="meta-item rating">
+						<div class="post-total-rating "><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star-half ratings_stars rating_current_half"></i><span class="score font-meta total_votes">4.6</span></div>                    </div>
+                    <div class="list-chapter">
+						                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/the-monster-duke-mistook-me-for-his-wife/chapter-49/" class="btn-link"> Chapter 49 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/the-monster-duke-mistook-me-for-his-wife/chapter-49/" title="3 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/the-monster-duke-mistook-me-for-his-wife/chapter-48/" class="btn-link"> Chapter 48 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/the-monster-duke-mistook-me-for-his-wife/chapter-48/" title="1 day ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    </div>
+                </div>
+				
+				            </div>
+
+        </div>
+		    </div>
+</div>
+
+												
+													<div class="page-listing-item">
+    <div class="row row-eq-height">
+		
+        <div class="col-6 col-md-3 badge-pos-1">
+            <div class="page-item-detail manga  ">
+				                <div id="manga-item-18510" class="item-thumb  c-image-hover" data-post-id="18510">
+					                            <a href="https://kunmanga.com/manga/divine-urban-god/" title="Divine Urban God">
+								<img width="175" height="238"  src="https://kunmanga.com/wp-content/uploads/2022/09/Divine-Urban-God-kun-175x238.jpg" srcset="https://kunmanga.com/wp-content/uploads/2022/09/Divine-Urban-God-kun-175x238.jpg 175w, https://kunmanga.com/wp-content/uploads/2022/09/Divine-Urban-God-kun-110x150.jpg 110w, https://kunmanga.com/wp-content/uploads/2022/09/Divine-Urban-God-kun-350x476.jpg 350w" sizes="(max-width: 175px) 100vw, 175px" class="img-responsive" style=""  alt="Divine Urban God kun"/>                            </a>
+							                </div>
+                <div class="item-summary">
+                    <div class="post-title font-title">
+                        <h3 class="h5">
+																						                            <a href="https://kunmanga.com/manga/divine-urban-god/">Divine Urban God</a>
+                        </h3>
+                    </div>
+                    <div class="meta-item rating">
+						<div class="post-total-rating "><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star-outline ratings_stars"></i><i class="ion-ios-star-outline ratings_stars"></i><span class="score font-meta total_votes">3.1</span></div>                    </div>
+                    <div class="list-chapter">
+						                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/divine-urban-god/chapter-245/" class="btn-link"> Chapter 245 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/divine-urban-god/chapter-245/" title="3 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/divine-urban-god/chapter-244/" class="btn-link"> Chapter 244 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									March 31, 2025								</span>
+								                    </div>
+					                    </div>
+                </div>
+				
+				            </div>
+
+        </div>
+		
+												
+													
+        <div class="col-6 col-md-3 badge-pos-1">
+            <div class="page-item-detail manga  ">
+				                <div id="manga-item-6462" class="item-thumb  c-image-hover" data-post-id="6462">
+					                            <a href="https://kunmanga.com/manga/i-will-remove-them-from-my-life/" title="I Will Remove Them From My Life">
+								<img width="175" height="238"  src="https://kunmanga.com/wp-content/uploads/2021/10/I-Will-Remove-Them-From-My-Life-175x238.jpg" srcset="https://kunmanga.com/wp-content/uploads/2021/10/I-Will-Remove-Them-From-My-Life-175x238.jpg 175w, https://kunmanga.com/wp-content/uploads/2021/10/I-Will-Remove-Them-From-My-Life-110x150.jpg 110w" sizes="(max-width: 175px) 100vw, 175px" class="img-responsive" style=""  alt="I Will Remove Them From My Life"/>                            </a>
+							                </div>
+                <div class="item-summary">
+                    <div class="post-title font-title">
+                        <h3 class="h5">
+															<span class="manga-title-badges new">NEW</span>							                            <a href="https://kunmanga.com/manga/i-will-remove-them-from-my-life/">I Will Remove Them From My Life</a>
+                        </h3>
+                    </div>
+                    <div class="meta-item rating">
+						<div class="post-total-rating "><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star-outline ratings_stars"></i><span class="score font-meta total_votes">4.2</span></div>                    </div>
+                    <div class="list-chapter">
+						                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/i-will-remove-them-from-my-life/chapter-110/" class="btn-link"> Chapter 110 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/i-will-remove-them-from-my-life/chapter-110/" title="3 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/i-will-remove-them-from-my-life/chapter-109/" class="btn-link"> Chapter 109 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									April 5, 2025								</span>
+								                    </div>
+					                    </div>
+                </div>
+				
+				            </div>
+
+        </div>
+		
+												
+													
+        <div class="col-6 col-md-3 badge-pos-1">
+            <div class="page-item-detail   ">
+				                <div id="manga-item-23827" class="item-thumb  c-image-hover" data-post-id="23827">
+					                            <a href="https://kunmanga.com/manga/maxed-strength-necromancer/" title="Maxed Strength Necromancer">
+								<img width="175" height="238"  src="https://kunmanga.com/wp-content/uploads/2023/11/Maxed-Strength-Necromancer-kun-175x238.jpg" srcset="https://kunmanga.com/wp-content/uploads/2023/11/Maxed-Strength-Necromancer-kun-175x238.jpg 175w, https://kunmanga.com/wp-content/uploads/2023/11/Maxed-Strength-Necromancer-kun-110x150.jpg 110w, https://kunmanga.com/wp-content/uploads/2023/11/Maxed-Strength-Necromancer-kun-350x476.jpg 350w" sizes="(max-width: 175px) 100vw, 175px" class="img-responsive" style=""  alt="Maxed-Strength-Necromancer-kun"/>                            </a>
+							                </div>
+                <div class="item-summary">
+                    <div class="post-title font-title">
+                        <h3 class="h5">
+																						                            <a href="https://kunmanga.com/manga/maxed-strength-necromancer/">Maxed Strength Necromancer</a>
+                        </h3>
+                    </div>
+                    <div class="meta-item rating">
+						<div class="post-total-rating "><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star-half ratings_stars rating_current_half"></i><i class="ion-ios-star-outline ratings_stars"></i><span class="score font-meta total_votes">3.6</span></div>                    </div>
+                    <div class="list-chapter">
+						                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/maxed-strength-necromancer/chapter-103/" class="btn-link"> Chapter 103 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/maxed-strength-necromancer/chapter-103/" title="3 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/maxed-strength-necromancer/chapter-102/" class="btn-link"> Chapter 102 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/maxed-strength-necromancer/chapter-102/" title="20 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    </div>
+                </div>
+				
+				            </div>
+
+        </div>
+		
+												
+													
+        <div class="col-6 col-md-3 badge-pos-1">
+            <div class="page-item-detail manga  ">
+				                <div id="manga-item-26210" class="item-thumb  c-image-hover" data-post-id="26210">
+					                            <a href="https://kunmanga.com/manga/the-great-war/" title="The Great War">
+								<img width="175" height="238"  src="https://kunmanga.com/wp-content/uploads/2024/08/The-Great-War-175x238.jpg" srcset="https://kunmanga.com/wp-content/uploads/2024/08/The-Great-War-175x238.jpg 175w, https://kunmanga.com/wp-content/uploads/2024/08/The-Great-War-110x150.jpg 110w, https://kunmanga.com/wp-content/uploads/2024/08/The-Great-War-350x476.jpg 350w" sizes="(max-width: 175px) 100vw, 175px" class="img-responsive" style=""  alt="The Great War"/>                            </a>
+							                </div>
+                <div class="item-summary">
+                    <div class="post-title font-title">
+                        <h3 class="h5">
+																						                            <a href="https://kunmanga.com/manga/the-great-war/">The Great War</a>
+                        </h3>
+                    </div>
+                    <div class="meta-item rating">
+						<div class="post-total-rating "><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star-outline ratings_stars"></i><span class="score font-meta total_votes">4</span></div>                    </div>
+                    <div class="list-chapter">
+						                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/the-great-war/chapter-38/" class="btn-link"> Chapter 38 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/the-great-war/chapter-38/" title="3 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/the-great-war/chapter-37/" class="btn-link"> Chapter 37 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									April 5, 2025								</span>
+								                    </div>
+					                    </div>
+                </div>
+				
+				            </div>
+
+        </div>
+		    </div>
+</div>
+
+												
+													<div class="page-listing-item">
+    <div class="row row-eq-height">
+		
+        <div class="col-6 col-md-3 badge-pos-1">
+            <div class="page-item-detail manga  ">
+				                <div id="manga-item-27510" class="item-thumb  c-image-hover" data-post-id="27510">
+					                            <a href="https://kunmanga.com/manga/almighty-boss-beautiful-and-dashing/" title="Almighty Boss, Beautiful and Dashing">
+								<img width="175" height="238"  src="https://kunmanga.com/wp-content/uploads/2025/01/Almighty-Boss-Beautiful-and-Dashing-175x238.jpeg" srcset="https://kunmanga.com/wp-content/uploads/2025/01/Almighty-Boss-Beautiful-and-Dashing-175x238.jpeg 175w, https://kunmanga.com/wp-content/uploads/2025/01/Almighty-Boss-Beautiful-and-Dashing-110x150.jpeg 110w" sizes="(max-width: 175px) 100vw, 175px" class="img-responsive" style=""  alt="Almighty Boss Beautiful and Dashing"/>                            </a>
+							                </div>
+                <div class="item-summary">
+                    <div class="post-title font-title">
+                        <h3 class="h5">
+																						                            <a href="https://kunmanga.com/manga/almighty-boss-beautiful-and-dashing/">Almighty Boss, Beautiful and Dashing</a>
+                        </h3>
+                    </div>
+                    <div class="meta-item rating">
+						<div class="post-total-rating "><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star-half ratings_stars rating_current_half"></i><span class="score font-meta total_votes">4.3</span></div>                    </div>
+                    <div class="list-chapter">
+						                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/almighty-boss-beautiful-and-dashing/chapter-47/" class="btn-link"> Chapter 47 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/almighty-boss-beautiful-and-dashing/chapter-47/" title="3 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/almighty-boss-beautiful-and-dashing/chapter-46/" class="btn-link"> Chapter 46 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									April 5, 2025								</span>
+								                    </div>
+					                    </div>
+                </div>
+				
+				            </div>
+
+        </div>
+		
+												
+													
+        <div class="col-6 col-md-3 badge-pos-1">
+            <div class="page-item-detail manga  ">
+				                <div id="manga-item-14689" class="item-thumb  c-image-hover" data-post-id="14689">
+					                            <a href="https://kunmanga.com/manga/cheating-men-must-die/" title="Cheating Men Must Die">
+								<img width="175" height="238"  src="https://kunmanga.com/wp-content/uploads/cheating-men-must-die-193x278-14689-175x238.jpg" srcset="https://kunmanga.com/wp-content/uploads/cheating-men-must-die-193x278-14689-175x238.jpg 175w, https://kunmanga.com/wp-content/uploads/cheating-men-must-die-193x278-14689-110x150.jpg 110w" sizes="(max-width: 175px) 100vw, 175px" class="img-responsive" style=""  alt="14689"/>                            </a>
+							                </div>
+                <div class="item-summary">
+                    <div class="post-title font-title">
+                        <h3 class="h5">
+																						                            <a href="https://kunmanga.com/manga/cheating-men-must-die/">Cheating Men Must Die</a>
+                        </h3>
+                    </div>
+                    <div class="meta-item rating">
+						<div class="post-total-rating "><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><span class="score font-meta total_votes">4.8</span></div>                    </div>
+                    <div class="list-chapter">
+						                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/cheating-men-must-die/chapter-460/" class="btn-link"> Chapter 460 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/cheating-men-must-die/chapter-460/" title="3 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/cheating-men-must-die/chapter-459/" class="btn-link"> Chapter 459 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									April 5, 2025								</span>
+								                    </div>
+					                    </div>
+                </div>
+				
+				            </div>
+
+        </div>
+		
+												
+													
+        <div class="col-6 col-md-3 badge-pos-1">
+            <div class="page-item-detail manga  ">
+				                <div id="manga-item-27961" class="item-thumb  c-image-hover" data-post-id="27961">
+					                            <a href="https://kunmanga.com/manga/unauthorized-access/" title="Unauthorized Access">
+								<img width="175" height="238"  src="https://kunmanga.com/wp-content/uploads/2025/02/Unauthorized-Access-175x238.webp" srcset="https://kunmanga.com/wp-content/uploads/2025/02/Unauthorized-Access-175x238.webp 175w, https://kunmanga.com/wp-content/uploads/2025/02/Unauthorized-Access-110x150.webp 110w, https://kunmanga.com/wp-content/uploads/2025/02/Unauthorized-Access-350x476.webp 350w" sizes="(max-width: 175px) 100vw, 175px" class="img-responsive" style=""  alt="Unauthorized Access"/>                            </a>
+							                </div>
+                <div class="item-summary">
+                    <div class="post-title font-title">
+                        <h3 class="h5">
+																						                            <a href="https://kunmanga.com/manga/unauthorized-access/">Unauthorized Access</a>
+                        </h3>
+                    </div>
+                    <div class="meta-item rating">
+						<div class="post-total-rating "><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star-outline ratings_stars"></i><span class="score font-meta total_votes">4</span></div>                    </div>
+                    <div class="list-chapter">
+						                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/unauthorized-access/chapter-35/" class="btn-link"> Chapter 35 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/unauthorized-access/chapter-35/" title="3 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/unauthorized-access/chapter-34/" class="btn-link"> Chapter 34 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/unauthorized-access/chapter-34/" title="3 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    </div>
+                </div>
+				
+				            </div>
+
+        </div>
+		
+												
+													
+        <div class="col-6 col-md-3 badge-pos-1">
+            <div class="page-item-detail manga  ">
+				                <div id="manga-item-25843" class="item-thumb  c-image-hover" data-post-id="25843">
+					                            <a href="https://kunmanga.com/manga/the-villainess-is-done-trying/" title="The Villainess is Done Trying">
+								<img width="175" height="238"  src="https://kunmanga.com/wp-content/uploads/2024/07/The-Villainess-is-Done-Trying-175x238.jpeg" srcset="https://kunmanga.com/wp-content/uploads/2024/07/The-Villainess-is-Done-Trying-175x238.jpeg 175w, https://kunmanga.com/wp-content/uploads/2024/07/The-Villainess-is-Done-Trying-110x150.jpeg 110w, https://kunmanga.com/wp-content/uploads/2024/07/The-Villainess-is-Done-Trying-350x476.jpeg 350w" sizes="(max-width: 175px) 100vw, 175px" class="img-responsive" style=""  alt="The Villainess is Done Trying"/>                            </a>
+							                </div>
+                <div class="item-summary">
+                    <div class="post-title font-title">
+                        <h3 class="h5">
+																						                            <a href="https://kunmanga.com/manga/the-villainess-is-done-trying/">The Villainess is Done Trying</a>
+                        </h3>
+                    </div>
+                    <div class="meta-item rating">
+						<div class="post-total-rating "><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star-half ratings_stars rating_current_half"></i><span class="score font-meta total_votes">4.7</span></div>                    </div>
+                    <div class="list-chapter">
+						                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/the-villainess-is-done-trying/chapter-45/" class="btn-link"> Chapter 45 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/the-villainess-is-done-trying/chapter-45/" title="3 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/the-villainess-is-done-trying/chapter-44/" class="btn-link"> Chapter 44 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/the-villainess-is-done-trying/chapter-44/" title="3 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    </div>
+                </div>
+				
+				            </div>
+
+        </div>
+		    </div>
+</div>
+
+												
+													<div class="page-listing-item">
+    <div class="row row-eq-height">
+		
+        <div class="col-6 col-md-3 badge-pos-1">
+            <div class="page-item-detail manga  ">
+				                <div id="manga-item-24329" class="item-thumb  c-image-hover" data-post-id="24329">
+					                            <a href="https://kunmanga.com/manga/the-billionaires-replacement-wife/" title="The Billionaire’s Replacement Wife">
+								<img width="175" height="238"  src="https://kunmanga.com/wp-content/uploads/2024/01/The-Billionaires-Replacement-Wife-kun-175x238.jpg" srcset="https://kunmanga.com/wp-content/uploads/2024/01/The-Billionaires-Replacement-Wife-kun-175x238.jpg 175w, https://kunmanga.com/wp-content/uploads/2024/01/The-Billionaires-Replacement-Wife-kun-110x150.jpg 110w, https://kunmanga.com/wp-content/uploads/2024/01/The-Billionaires-Replacement-Wife-kun-350x476.jpg 350w" sizes="(max-width: 175px) 100vw, 175px" class="img-responsive" style=""  alt="The Billionaire’s Replacement Wife kun"/>                            </a>
+							                </div>
+                <div class="item-summary">
+                    <div class="post-title font-title">
+                        <h3 class="h5">
+																						                            <a href="https://kunmanga.com/manga/the-billionaires-replacement-wife/">The Billionaire’s Replacement Wife</a>
+                        </h3>
+                    </div>
+                    <div class="meta-item rating">
+						<div class="post-total-rating "><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star-half ratings_stars rating_current_half"></i><span class="score font-meta total_votes">4.5</span></div>                    </div>
+                    <div class="list-chapter">
+						                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/the-billionaires-replacement-wife/chapter-19/" class="btn-link"> Chapter 19 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/the-billionaires-replacement-wife/chapter-19/" title="3 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/the-billionaires-replacement-wife/chapter-18/" class="btn-link"> Chapter 18 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									September 4, 2024								</span>
+								                    </div>
+					                    </div>
+                </div>
+				
+				            </div>
+
+        </div>
+		
+												
+													
+        <div class="col-6 col-md-3 badge-pos-1">
+            <div class="page-item-detail manga  ">
+				                <div id="manga-item-28395" class="item-thumb  c-image-hover" data-post-id="28395">
+					                            <a href="https://kunmanga.com/manga/business-marriage-if-you-fall-in-love-well-get-a-divorce/" title="Business Marriage &#8211; If You Fall in Love, We’ll Get a Divorce">
+								<img width="175" height="238"  src="https://kunmanga.com/wp-content/uploads/2025/04/Business-Marriage-175x238.webp" srcset="https://kunmanga.com/wp-content/uploads/2025/04/Business-Marriage-175x238.webp 175w, https://kunmanga.com/wp-content/uploads/2025/04/Business-Marriage-110x150.webp 110w, https://kunmanga.com/wp-content/uploads/2025/04/Business-Marriage-350x476.webp 350w" sizes="(max-width: 175px) 100vw, 175px" class="img-responsive" style=""  alt="Business Marriage"/>                            </a>
+							                </div>
+                <div class="item-summary">
+                    <div class="post-title font-title">
+                        <h3 class="h5">
+																						                            <a href="https://kunmanga.com/manga/business-marriage-if-you-fall-in-love-well-get-a-divorce/">Business Marriage &#8211; If You Fall in Love, We’ll Get a Divorce</a>
+                        </h3>
+                    </div>
+                    <div class="meta-item rating">
+						<div class="post-total-rating "><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star-half ratings_stars rating_current_half"></i><span class="score font-meta total_votes">4.7</span></div>                    </div>
+                    <div class="list-chapter">
+						                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/business-marriage-if-you-fall-in-love-well-get-a-divorce/chapter-7/" class="btn-link"> Chapter 7 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/business-marriage-if-you-fall-in-love-well-get-a-divorce/chapter-7/" title="3 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/business-marriage-if-you-fall-in-love-well-get-a-divorce/chapter-6/" class="btn-link"> Chapter 6 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/business-marriage-if-you-fall-in-love-well-get-a-divorce/chapter-6/" title="5 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    </div>
+                </div>
+				
+				            </div>
+
+        </div>
+		
+												
+													
+        <div class="col-6 col-md-3 badge-pos-1">
+            <div class="page-item-detail manga  ">
+				                <div id="manga-item-1916" class="item-thumb  c-image-hover" data-post-id="1916">
+					                            <a href="https://kunmanga.com/manga/lady-baby/" title="Lady Baby">
+								<img width="175" height="238"  src="https://kunmanga.com/wp-content/uploads/2021/05/Lady-Baby-kun-1-175x238.jpg" srcset="https://kunmanga.com/wp-content/uploads/2021/05/Lady-Baby-kun-1-175x238.jpg 175w, https://kunmanga.com/wp-content/uploads/2021/05/Lady-Baby-kun-1-110x150.jpg 110w, https://kunmanga.com/wp-content/uploads/2021/05/Lady-Baby-kun-1-350x476.jpg 350w" sizes="(max-width: 175px) 100vw, 175px" class="img-responsive" style=""  alt="Lady Baby kun"/>                            </a>
+							                </div>
+                <div class="item-summary">
+                    <div class="post-title font-title">
+                        <h3 class="h5">
+															<span class="manga-title-badges hot">HOT</span>							                            <a href="https://kunmanga.com/manga/lady-baby/">Lady Baby</a>
+                        </h3>
+                    </div>
+                    <div class="meta-item rating">
+						<div class="post-total-rating "><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star-half ratings_stars rating_current_half"></i><span class="score font-meta total_votes">4.5</span></div>                    </div>
+                    <div class="list-chapter">
+						                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/lady-baby/chapter-225/" class="btn-link"> Chapter 225 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/lady-baby/chapter-225/" title="43 mins ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/lady-baby/chapter-224/" class="btn-link"> Chapter 224 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									April 5, 2025								</span>
+								                    </div>
+					                    </div>
+                </div>
+				
+				            </div>
+
+        </div>
+		
+												
+													
+        <div class="col-6 col-md-3 badge-pos-1">
+            <div class="page-item-detail   ">
+				                <div id="manga-item-23854" class="item-thumb  c-image-hover" data-post-id="23854">
+					                            <a href="https://kunmanga.com/manga/as-my-husband-said-i-brought-in-a-lover/" title="As My Husband Said, I Brought in A Lover">
+								<img width="175" height="238"  src="https://kunmanga.com/wp-content/uploads/2023/11/As-My-Husband-Said-kun-175x238.jpg" srcset="https://kunmanga.com/wp-content/uploads/2023/11/As-My-Husband-Said-kun-175x238.jpg 175w, https://kunmanga.com/wp-content/uploads/2023/11/As-My-Husband-Said-kun-110x150.jpg 110w, https://kunmanga.com/wp-content/uploads/2023/11/As-My-Husband-Said-kun-350x476.jpg 350w" sizes="(max-width: 175px) 100vw, 175px" class="img-responsive" style=""  alt="As My Husband Said kun"/>                            </a>
+							                </div>
+                <div class="item-summary">
+                    <div class="post-title font-title">
+                        <h3 class="h5">
+																						                            <a href="https://kunmanga.com/manga/as-my-husband-said-i-brought-in-a-lover/">As My Husband Said, I Brought in A Lover</a>
+                        </h3>
+                    </div>
+                    <div class="meta-item rating">
+						<div class="post-total-rating "><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star-half ratings_stars rating_current_half"></i><span class="score font-meta total_votes">4.5</span></div>                    </div>
+                    <div class="list-chapter">
+						                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/as-my-husband-said-i-brought-in-a-lover/chapter-74/" class="btn-link"> Chapter 74 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/as-my-husband-said-i-brought-in-a-lover/chapter-74/" title="43 mins ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/as-my-husband-said-i-brought-in-a-lover/chapter-73/" class="btn-link"> Chapter 73 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									April 4, 2025								</span>
+								                    </div>
+					                    </div>
+                </div>
+				
+				            </div>
+
+        </div>
+		    </div>
+</div>
+
+												
+													<div class="page-listing-item">
+    <div class="row row-eq-height">
+		
+        <div class="col-6 col-md-3 badge-pos-1">
+            <div class="page-item-detail   ">
+				                <div id="manga-item-20815" class="item-thumb  c-image-hover" data-post-id="20815">
+					                            <a href="https://kunmanga.com/manga/the-castle-ghost-eyed-bride/" title="The Castle: Ghost-eyed Bride">
+								<img width="175" height="238"  src="https://kunmanga.com/wp-content/uploads/2023/06/The-Castle-Ghost-eyed-Bride-kun-175x238.jpg" srcset="https://kunmanga.com/wp-content/uploads/2023/06/The-Castle-Ghost-eyed-Bride-kun-175x238.jpg 175w, https://kunmanga.com/wp-content/uploads/2023/06/The-Castle-Ghost-eyed-Bride-kun-110x150.jpg 110w, https://kunmanga.com/wp-content/uploads/2023/06/The-Castle-Ghost-eyed-Bride-kun-350x476.jpg 350w" sizes="(max-width: 175px) 100vw, 175px" class="img-responsive" style=""  alt="The-Castle-Ghost-eyed-Bride-kun"/>                            </a>
+							                </div>
+                <div class="item-summary">
+                    <div class="post-title font-title">
+                        <h3 class="h5">
+																						                            <a href="https://kunmanga.com/manga/the-castle-ghost-eyed-bride/">The Castle: Ghost-eyed Bride</a>
+                        </h3>
+                    </div>
+                    <div class="meta-item rating">
+						<div class="post-total-rating "><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star-half ratings_stars rating_current_half"></i><span class="score font-meta total_votes">4.6</span></div>                    </div>
+                    <div class="list-chapter">
+						                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/the-castle-ghost-eyed-bride/chapter-88/" class="btn-link"> Chapter 88 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/the-castle-ghost-eyed-bride/chapter-88/" title="42 mins ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/the-castle-ghost-eyed-bride/chapter-87/" class="btn-link"> Chapter 87 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									April 6, 2025								</span>
+								                    </div>
+					                    </div>
+                </div>
+				
+				            </div>
+
+        </div>
+		
+												
+													
+        <div class="col-6 col-md-3 badge-pos-1">
+            <div class="page-item-detail manga  ">
+				                <div id="manga-item-25777" class="item-thumb  c-image-hover" data-post-id="25777">
+					                            <a href="https://kunmanga.com/manga/the-shamans-blade/" title="The Shaman’s Blade">
+								<img width="175" height="238"  src="https://kunmanga.com/wp-content/uploads/2024/07/The-Shamans-Blade-175x238.webp" srcset="https://kunmanga.com/wp-content/uploads/2024/07/The-Shamans-Blade-175x238.webp 175w, https://kunmanga.com/wp-content/uploads/2024/07/The-Shamans-Blade-110x150.webp 110w" sizes="(max-width: 175px) 100vw, 175px" class="img-responsive" style=""  alt="The Shaman’s Blade"/>                            </a>
+							                </div>
+                <div class="item-summary">
+                    <div class="post-title font-title">
+                        <h3 class="h5">
+																						                            <a href="https://kunmanga.com/manga/the-shamans-blade/">The Shaman’s Blade</a>
+                        </h3>
+                    </div>
+                    <div class="meta-item rating">
+						<div class="post-total-rating "><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><span class="score font-meta total_votes">4.9</span></div>                    </div>
+                    <div class="list-chapter">
+						                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/the-shamans-blade/chapter-31/" class="btn-link"> Chapter 31 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/the-shamans-blade/chapter-31/" title="37 mins ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/the-shamans-blade/chapter-30/" class="btn-link"> Chapter 30 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									April 5, 2025								</span>
+								                    </div>
+					                    </div>
+                </div>
+				
+				            </div>
+
+        </div>
+		
+												
+													
+        <div class="col-6 col-md-3 badge-pos-1">
+            <div class="page-item-detail manga  ">
+				                <div id="manga-item-25493" class="item-thumb  c-image-hover" data-post-id="25493">
+					                            <a href="https://kunmanga.com/manga/special-civil-servant/" title="Special Civil Servant">
+								<img width="175" height="238"  src="https://kunmanga.com/wp-content/uploads/2024/06/Special-Civil-Servant-175x238.webp" srcset="https://kunmanga.com/wp-content/uploads/2024/06/Special-Civil-Servant-175x238.webp 175w, https://kunmanga.com/wp-content/uploads/2024/06/Special-Civil-Servant-110x150.webp 110w, https://kunmanga.com/wp-content/uploads/2024/06/Special-Civil-Servant-350x476.webp 350w" sizes="(max-width: 175px) 100vw, 175px" class="img-responsive" style=""  alt="Special Civil Servant"/>                            </a>
+							                </div>
+                <div class="item-summary">
+                    <div class="post-title font-title">
+                        <h3 class="h5">
+																						                            <a href="https://kunmanga.com/manga/special-civil-servant/">Special Civil Servant</a>
+                        </h3>
+                    </div>
+                    <div class="meta-item rating">
+						<div class="post-total-rating "><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><span class="score font-meta total_votes">4.9</span></div>                    </div>
+                    <div class="list-chapter">
+						                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/special-civil-servant/chapter-46/" class="btn-link"> Chapter 46 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/special-civil-servant/chapter-46/" title="37 mins ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/special-civil-servant/chapter-45/" class="btn-link"> Chapter 45 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									April 2, 2025								</span>
+								                    </div>
+					                    </div>
+                </div>
+				
+				            </div>
+
+        </div>
+		
+												
+													
+        <div class="col-6 col-md-3 badge-pos-1">
+            <div class="page-item-detail manga  ">
+				                <div id="manga-item-25195" class="item-thumb  c-image-hover" data-post-id="25195">
+					                            <a href="https://kunmanga.com/manga/a-beast-swallowed-by-a-flower/" title="A Beast Swallowed by a Flower">
+								<img width="175" height="238"  src="https://kunmanga.com/wp-content/uploads/2024/04/A-Beast-Swallowed-by-a-Flower-175x238.jpg" srcset="https://kunmanga.com/wp-content/uploads/2024/04/A-Beast-Swallowed-by-a-Flower-175x238.jpg 175w, https://kunmanga.com/wp-content/uploads/2024/04/A-Beast-Swallowed-by-a-Flower-110x150.jpg 110w, https://kunmanga.com/wp-content/uploads/2024/04/A-Beast-Swallowed-by-a-Flower-350x476.jpg 350w" sizes="(max-width: 175px) 100vw, 175px" class="img-responsive" style=""  alt="A Beast Swallowed by a Flower"/>                            </a>
+							                </div>
+                <div class="item-summary">
+                    <div class="post-title font-title">
+                        <h3 class="h5">
+																						                            <a href="https://kunmanga.com/manga/a-beast-swallowed-by-a-flower/">A Beast Swallowed by a Flower</a>
+                        </h3>
+                    </div>
+                    <div class="meta-item rating">
+						<div class="post-total-rating "><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><span class="score font-meta total_votes">4.9</span></div>                    </div>
+                    <div class="list-chapter">
+						                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/a-beast-swallowed-by-a-flower/chapter-75/" class="btn-link"> Chapter 75 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/a-beast-swallowed-by-a-flower/chapter-75/" title="36 mins ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/a-beast-swallowed-by-a-flower/chapter-74/" class="btn-link"> Chapter 74 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									April 3, 2025								</span>
+								                    </div>
+					                    </div>
+                </div>
+				
+				            </div>
+
+        </div>
+		    </div>
+</div>
+
+												
+                                            </div>
+
+										
+                                        <script type="95b6dd6f07ce6d5b2581e042-text/javascript">
+											var manga_args = {"orderby":"meta_value_num","paged":1,"timerange":"","posts_per_page":20,"tax_query":{"relation":"OR"},"meta_query":{"relation":"AND","0":{"relation":"AND"}},"post__not_in":["7784"],"post_type":"wp-manga","post_status":"publish","meta_key":"_latest_update","order":"DESC","error":"","m":"","p":0,"post_parent":"","subpost":"","subpost_id":"","attachment":"","attachment_id":0,"name":"","pagename":"","page_id":0,"second":"","minute":"","hour":"","day":0,"monthnum":0,"year":0,"w":0,"category_name":"","tag":"","cat":"","tag_id":"","author":"","author_name":"","feed":"","tb":"","meta_value":"","preview":"","s":"","sentence":"","title":"","fields":"","menu_order":"","embed":"","category__in":[],"category__not_in":[],"category__and":[],"post__in":[],"post_name__in":[],"tag__in":[],"tag__not_in":[],"tag__and":[],"tag_slug__in":[],"tag_slug__and":[],"post_parent__in":[],"post_parent__not_in":[],"author__in":[],"author__not_in":[],"search_columns":[],"ignore_sticky_posts":false,"suppress_filters":false,"cache_results":true,"update_post_term_cache":true,"update_menu_item_cache":false,"lazy_load_term_meta":true,"update_post_meta_cache":true,"nopaging":false,"comments_per_page":"20","no_found_rows":false};
+                                        </script>
+
+										<div class="col-12 col-md-12"><div class='wp-pagenavi' role='navigation'>
+<span class='pages'>Page 1 of 210</span><span aria-current='page' class='current'>1</span><a class="page larger" title="Page 2" href="https://kunmanga.com/page/2/">2</a><a class="page larger" title="Page 3" href="https://kunmanga.com/page/3/">3</a><a class="page larger" title="Page 4" href="https://kunmanga.com/page/4/">4</a><a class="page larger" title="Page 5" href="https://kunmanga.com/page/5/">5</a><span class='extend'>...</span><a class="larger page" title="Page 10" href="https://kunmanga.com/page/10/">10</a><a class="larger page" title="Page 20" href="https://kunmanga.com/page/20/">20</a><a class="larger page" title="Page 30" href="https://kunmanga.com/page/30/">30</a><span class='extend'>...</span><a class="nextpostslink" rel="next" aria-label="Next Page" href="https://kunmanga.com/page/2/">&raquo;</a><a class="last" aria-label="Last Page" href="https://kunmanga.com/page/210/">Last &raquo;</a>
+</div></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+						<div class="ad c-ads custom-code body-bottom-ads"><div id="pf-8530-1"><script type="95b6dd6f07ce6d5b2581e042-text/javascript">window.pubfuturetag = window.pubfuturetag || [];window.pubfuturetag.push({unit: "661522d92cb31731c0b67ee7", id: "pf-8530-1"})</script></div>
+				<div id="bg-ssp-8410">
+				<script data-cfasync="false">
+				var adx_id_8410 = document.getElementById("bg-ssp-8410");
+				adx_id_8410.id = "bg-ssp-8410-" + Math.floor(Math.random() * Date.now());
+				window.pubadxtag = window.pubadxtag || [];
+				window.pubadxtag.push({zoneid: 8410, id: adx_id_8410.id, wu: window.location.href})
+				</script>
+				</div>
+				<br />
+				<div id="pf-10666-1"><script type="95b6dd6f07ce6d5b2581e042-text/javascript">window.pubfuturetag = window.pubfuturetag || [];window.pubfuturetag.push({unit: "66ce996e2141191aaaae952a", id: "pf-10666-1"})</script></div>
+</div>
+
+                    </div>
+
+
+					                            <div class="sidebar-col col-md-4 col-sm-4">
+								        <div id="main-sidebar" class="main-sidebar" role="complementary">
+			<div class="row"><div id="manga-history-id-3" class="widget col-12 col-md-12   bordered  no-icon heading-style-1 manga-history-widget"><div class="widget__inner manga-history-widget__inner c-widget-wrap"><div class="widget-heading font-nav"><h5 class="heading">MY READING HISTORY</h5></div><div class="widget-content">			<div class="my-history">
+				<!-- -->
+				<span class="no-histories" style="display:none">You don&#039;t have anything in histories</span>
+			</div>
+			</div></div></div></div>			<script type="95b6dd6f07ce6d5b2581e042-text/javascript">
+			jQuery(document).on('ready', function(){
+				jQuery.ajax({
+					url: manga.ajax_url,
+					type: 'GET',
+					data: {
+						action: 'guest_histories',
+						count: 3					},
+					success: function(html){
+						if(html && html != "0") {
+							jQuery('#manga-history-id-3 .my-history').html(html);
+						} else {
+							jQuery('#manga-history-id-3 .no-histories').show();
+						}
+					},
+					complete: function(e){
+						
+					}
+				});
+			});
+			</script>
+			<div class="row"><div id="manga-recent-3" class="widget col-12 col-md-12   bordered  no-icon heading-style-1 c-popular manga-widget widget-manga-recent"><div class="widget__inner c-popular manga-widget widget-manga-recent__inner c-widget-wrap">
+            <div class="c-widget-content style-1 with-button">
+				<div class="widget-heading font-nav"><h5 class="heading">TOP DAY</h5></div><div class="widget-content">                        <div class="popular-item-wrap">
+
+							
+    <div class="popular-img widget-thumbnail c-image-hover">
+        <a title="Tears on a Withered Flower" href="https://kunmanga.com/manga/tears-on-a-withered-flower/">
+			<img width="75" height="106"  src="https://kunmanga.com/wp-content/uploads/2024/06/Tears-on-a-Withered-Flower-75x106.webp" class="img-responsive" style=""  alt="Tears on a Withered Flower"/>        </a>
+    </div>
+
+<div class="popular-content">
+    <h5 class="widget-title">
+        <a title="Tears on a Withered Flower" href="https://kunmanga.com/manga/tears-on-a-withered-flower/">Tears on a Withered Flower</a>
+    </h5>
+
+    <div class="list-chapter">
+		                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/tears-on-a-withered-flower/chapter-48/" class="btn-link"> Chapter 48 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/tears-on-a-withered-flower/chapter-48/" title="15 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/tears-on-a-withered-flower/chapter-47/" class="btn-link"> Chapter 47 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									April 5, 2025								</span>
+								                    </div>
+					    </div>
+
+</div>
+                        </div>
+
+						                        <div class="popular-item-wrap">
+
+							
+    <div class="popular-img widget-thumbnail c-image-hover">
+        <a title="I’m a Worthless Stepmother, But I Love My Family Madly!" href="https://kunmanga.com/manga/im-a-worthless-stepmother-but-i-love-my-family-madly/">
+			<img width="75" height="106"  src="https://kunmanga.com/wp-content/uploads/2024/09/Im-a-Worthless-Stepmother-75x106.jpeg" srcset="https://kunmanga.com/wp-content/uploads/2024/09/Im-a-Worthless-Stepmother-75x106.jpeg 75w, https://kunmanga.com/wp-content/uploads/2024/09/Im-a-Worthless-Stepmother-213x300.jpeg 213w, https://kunmanga.com/wp-content/uploads/2024/09/Im-a-Worthless-Stepmother.jpeg 600w" sizes="(max-width: 75px) 100vw, 75px" class="img-responsive" style=""  alt="I’m a Worthless Stepmother"/>        </a>
+    </div>
+
+<div class="popular-content">
+    <h5 class="widget-title">
+        <a title="I’m a Worthless Stepmother, But I Love My Family Madly!" href="https://kunmanga.com/manga/im-a-worthless-stepmother-but-i-love-my-family-madly/">I’m a Worthless Stepmother, But I Love My Family Madly!</a>
+    </h5>
+
+    <div class="list-chapter">
+		                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/im-a-worthless-stepmother-but-i-love-my-family-madly/chapter-82/" class="btn-link"> Chapter 82 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/im-a-worthless-stepmother-but-i-love-my-family-madly/chapter-82/" title="3 days ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/im-a-worthless-stepmother-but-i-love-my-family-madly/chapter-81/" class="btn-link"> Chapter 81 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/im-a-worthless-stepmother-but-i-love-my-family-madly/chapter-81/" title="3 days ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					    </div>
+
+</div>
+                        </div>
+
+						                        <div class="popular-item-wrap">
+
+							
+    <div class="popular-img widget-thumbnail c-image-hover">
+        <a title="How to Be a Dark Hero’s Daughter" href="https://kunmanga.com/manga/how-to-become-a-dark-heros-daughter/">
+			<img width="75" height="106"  src="https://kunmanga.com/wp-content/uploads/2021/07/13-75x106.jpg" srcset="https://kunmanga.com/wp-content/uploads/2021/07/13-75x106.jpg 75w, https://kunmanga.com/wp-content/uploads/2021/07/13-210x300.jpg 210w, https://kunmanga.com/wp-content/uploads/2021/07/13-716x1024.jpg 716w, https://kunmanga.com/wp-content/uploads/2021/07/13-768x1099.jpg 768w, https://kunmanga.com/wp-content/uploads/2021/07/13-1074x1536.jpg 1074w, https://kunmanga.com/wp-content/uploads/2021/07/13-1432x2048.jpg 1432w, https://kunmanga.com/wp-content/uploads/2021/07/13-scaled.jpg 1790w" sizes="(max-width: 75px) 100vw, 75px" class="img-responsive" style=""  alt="13"/>        </a>
+    </div>
+
+<div class="popular-content">
+    <h5 class="widget-title">
+        <a title="How to Be a Dark Hero’s Daughter" href="https://kunmanga.com/manga/how-to-become-a-dark-heros-daughter/">How to Be a Dark Hero’s Daughter</a>
+    </h5>
+
+    <div class="list-chapter">
+		                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/how-to-become-a-dark-heros-daughter/chapter-50/" class="btn-link"> Chapter 50 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/how-to-become-a-dark-heros-daughter/chapter-50/" title="18 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/how-to-become-a-dark-heros-daughter/chapter-49/" class="btn-link"> Chapter 49 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/how-to-become-a-dark-heros-daughter/chapter-49/" title="18 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					    </div>
+
+</div>
+                        </div>
+
+						                        <div class="popular-item-wrap">
+
+							
+    <div class="popular-img widget-thumbnail c-image-hover">
+        <a title="Baby Snow Leopard of the Black Leopard Family" href="https://kunmanga.com/manga/baby-snow-leopard-of-the-black-leopard-family/">
+			<img width="75" height="106"  src="https://kunmanga.com/wp-content/uploads/2025/01/Baby-Snow-Leopard-of-the-Black-Leopard-Family-75x106.jpg" class="img-responsive" style=""  alt="Baby Snow Leopard of the Black Leopard Family"/>        </a>
+    </div>
+
+<div class="popular-content">
+    <h5 class="widget-title">
+        <a title="Baby Snow Leopard of the Black Leopard Family" href="https://kunmanga.com/manga/baby-snow-leopard-of-the-black-leopard-family/">Baby Snow Leopard of the Black Leopard Family</a>
+    </h5>
+
+    <div class="list-chapter">
+		                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/baby-snow-leopard-of-the-black-leopard-family/chapter-31/" class="btn-link"> Chapter 31 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/baby-snow-leopard-of-the-black-leopard-family/chapter-31/" title="8 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/baby-snow-leopard-of-the-black-leopard-family/chapter-30-5/" class="btn-link"> Chapter 30.5 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									April 5, 2025								</span>
+								                    </div>
+					    </div>
+
+</div>
+                        </div>
+
+						                        <div class="popular-item-wrap">
+
+							
+    <div class="popular-img widget-thumbnail c-image-hover">
+        <a title="Selena" href="https://kunmanga.com/manga/selena/">
+			<img width="75" height="106"  src="https://kunmanga.com/wp-content/uploads/2022/10/Selena-kun-75x106.jpg" class="img-responsive" style=""  alt="Selena kun"/>        </a>
+    </div>
+
+<div class="popular-content">
+    <h5 class="widget-title">
+        <a title="Selena" href="https://kunmanga.com/manga/selena/">Selena</a>
+    </h5>
+
+    <div class="list-chapter">
+		                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/selena/chapter-106/" class="btn-link"> Chapter 106 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/selena/chapter-106/" title="18 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/selena/chapter-105/" class="btn-link"> Chapter 105 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									April 5, 2025								</span>
+								                    </div>
+					    </div>
+
+</div>
+                        </div>
+
+						                        <div class="popular-item-wrap">
+
+							
+    <div class="popular-img widget-thumbnail c-image-hover">
+        <a title="The Beginning After The End" href="https://kunmanga.com/manga/the-beginning-after-the-end/">
+			<img width="75" height="106"  src="https://kunmanga.com/wp-content/uploads/17-1583497020-3544-75x106.jpg" srcset="https://kunmanga.com/wp-content/uploads/17-1583497020-3544-75x106.jpg 75w, https://kunmanga.com/wp-content/uploads/17-1583497020-3544-225x320.jpg 225w" sizes="(max-width: 75px) 100vw, 75px" class="img-responsive" style=""  alt="3544"/>        </a>
+    </div>
+
+<div class="popular-content">
+    <h5 class="widget-title">
+        <a title="The Beginning After The End" href="https://kunmanga.com/manga/the-beginning-after-the-end/">The Beginning After The End</a>
+    </h5>
+
+    <div class="list-chapter">
+		                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/the-beginning-after-the-end/chapter-213/" class="btn-link"> Chapter 213 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/the-beginning-after-the-end/chapter-213/" title="2 days ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/the-beginning-after-the-end/chapter-212/" class="btn-link"> Chapter 212 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									April 4, 2025								</span>
+								                    </div>
+					    </div>
+
+</div>
+                        </div>
+
+						                        <div class="popular-item-wrap">
+
+							
+    <div class="popular-img widget-thumbnail c-image-hover">
+        <a title="My Wish Is Two Separate Beds" href="https://kunmanga.com/manga/my-wish-is-two-separate-beds/">
+			<img width="75" height="106"  src="https://kunmanga.com/wp-content/uploads/2025/01/My-Wish-Is-Two-Separate-Beds-75x106.webp" class="img-responsive" style=""  alt="My Wish Is Two Separate Beds"/>        </a>
+    </div>
+
+<div class="popular-content">
+    <h5 class="widget-title">
+        <a title="My Wish Is Two Separate Beds" href="https://kunmanga.com/manga/my-wish-is-two-separate-beds/">My Wish Is Two Separate Beds</a>
+    </h5>
+
+    <div class="list-chapter">
+		                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/my-wish-is-two-separate-beds/chapter-25/" class="btn-link"> Chapter 25 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/my-wish-is-two-separate-beds/chapter-25/" title="8 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/my-wish-is-two-separate-beds/chapter-24/" class="btn-link"> Chapter 24 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									April 4, 2025								</span>
+								                    </div>
+					    </div>
+
+</div>
+                        </div>
+
+						                        <div class="popular-item-wrap">
+
+							
+    <div class="popular-img widget-thumbnail c-image-hover">
+        <a title="The S-Class Hunter Doesn’t Want to Be a Villainous Princess" href="https://kunmanga.com/manga/the-s-class-hunter-doesnt-want-to-be-a-villainous-princess/">
+			<img width="75" height="106"  src="https://kunmanga.com/wp-content/uploads/2024/02/The-S-Class-Hunter-Doesnt-Want-to-Be-a-Villainous-Princess-kun-75x106.jpg" srcset="https://kunmanga.com/wp-content/uploads/2024/02/The-S-Class-Hunter-Doesnt-Want-to-Be-a-Villainous-Princess-kun-75x106.jpg 75w, https://kunmanga.com/wp-content/uploads/2024/02/The-S-Class-Hunter-Doesnt-Want-to-Be-a-Villainous-Princess-kun-210x300.jpg 210w, https://kunmanga.com/wp-content/uploads/2024/02/The-S-Class-Hunter-Doesnt-Want-to-Be-a-Villainous-Princess-kun-716x1024.jpg 716w, https://kunmanga.com/wp-content/uploads/2024/02/The-S-Class-Hunter-Doesnt-Want-to-Be-a-Villainous-Princess-kun.jpg 720w" sizes="(max-width: 75px) 100vw, 75px" class="img-responsive" style=""  alt="The S-Class Hunter Doesn’t Want to Be a Villainous Princess kun"/>        </a>
+    </div>
+
+<div class="popular-content">
+    <h5 class="widget-title">
+        <a title="The S-Class Hunter Doesn’t Want to Be a Villainous Princess" href="https://kunmanga.com/manga/the-s-class-hunter-doesnt-want-to-be-a-villainous-princess/">The S-Class Hunter Doesn’t Want to Be a Villainous Princess</a>
+    </h5>
+
+    <div class="list-chapter">
+		                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/the-s-class-hunter-doesnt-want-to-be-a-villainous-princess/chapter-62/" class="btn-link"> Chapter 62 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/the-s-class-hunter-doesnt-want-to-be-a-villainous-princess/chapter-62/" title="19 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/the-s-class-hunter-doesnt-want-to-be-a-villainous-princess/chapter-61/" class="btn-link"> Chapter 61 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									April 4, 2025								</span>
+								                    </div>
+					    </div>
+
+</div>
+                        </div>
+
+						                        <div class="popular-item-wrap">
+
+							
+    <div class="popular-img widget-thumbnail c-image-hover">
+        <a title="City of Arrogance" href="https://kunmanga.com/manga/city-of-arrogance/">
+			<img width="75" height="106"  src="https://kunmanga.com/wp-content/uploads/2023/08/City-of-Arrogance-KUN-75x106.jpg" class="img-responsive" style=""  alt="City of Arrogance KUN"/>        </a>
+    </div>
+
+<div class="popular-content">
+    <h5 class="widget-title">
+        <a title="City of Arrogance" href="https://kunmanga.com/manga/city-of-arrogance/">City of Arrogance</a>
+    </h5>
+
+    <div class="list-chapter">
+		                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/city-of-arrogance/chapter-91/" class="btn-link"> Chapter 91 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									<a href="https://kunmanga.com/manga/city-of-arrogance/chapter-91/" title="7 hours ago" class="c-new-tag"><!-- --></a>								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/city-of-arrogance/chapter-90/" class="btn-link"> Chapter 90 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									April 3, 2025								</span>
+								                    </div>
+					    </div>
+
+</div>
+                        </div>
+
+						                        <div class="popular-item-wrap">
+
+							
+    <div class="popular-img widget-thumbnail c-image-hover">
+        <a title="I’ll Be The Matriarch In This Life" href="https://kunmanga.com/manga/ill-be-the-matriarch-in-this-life/">
+			<img width="75" height="106"  src="https://kunmanga.com/wp-content/uploads/2021/03/Ill-Be-The-Matriarch-In-This-Life-kun-1-75x106.jpg" srcset="https://kunmanga.com/wp-content/uploads/2021/03/Ill-Be-The-Matriarch-In-This-Life-kun-1-75x106.jpg 75w, https://kunmanga.com/wp-content/uploads/2021/03/Ill-Be-The-Matriarch-In-This-Life-kun-1-210x300.jpg 210w, https://kunmanga.com/wp-content/uploads/2021/03/Ill-Be-The-Matriarch-In-This-Life-kun-1-716x1024.jpg 716w, https://kunmanga.com/wp-content/uploads/2021/03/Ill-Be-The-Matriarch-In-This-Life-kun-1.jpg 720w" sizes="(max-width: 75px) 100vw, 75px" class="img-responsive" style=""  alt="I’ll Be The Matriarch In This Life kun"/>        </a>
+    </div>
+
+<div class="popular-content">
+    <h5 class="widget-title">
+        <a title="I’ll Be The Matriarch In This Life" href="https://kunmanga.com/manga/ill-be-the-matriarch-in-this-life/">I’ll Be The Matriarch In This Life</a>
+    </h5>
+
+    <div class="list-chapter">
+		                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/ill-be-the-matriarch-in-this-life/chapter-179/" class="btn-link"> Chapter 179 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									April 8, 2025								</span>
+								                    </div>
+					                    <div class="chapter-item ">
+
+						                        <span class="chapter font-meta">
+							<a href="https://kunmanga.com/manga/ill-be-the-matriarch-in-this-life/chapter-178/" class="btn-link"> Chapter 178 </a>
+						</span>
+												
+														<span class="post-on font-meta">
+									March 31, 2025								</span>
+								                    </div>
+					    </div>
+
+</div>
+                        </div>
+
+										                    <span class="c-wg-button-wrap">
+				        <a class="widget-view-more" href="/manga/?m_orderby=trending">Here for more Popular Manga</a>
+                    </span>
+				
+            </div>
+			</div></div></div></div>        </div>
+		                            </div>
+						                                    </div>
+            </div>
+        </div>
+    </div>
+
+
+        </div><!-- <div class="site-content"> -->
+
+		
+			
+			
+        <footer class="site-footer">
+
+			<div class="ad c-ads custom-code footer-ads col-md-12"><div id="pf-8528-1"><script type="95b6dd6f07ce6d5b2581e042-text/javascript">window.pubfuturetag = window.pubfuturetag || [];window.pubfuturetag.push({unit: "661522a62cb31731c0b67e98", id: "pf-8528-1"})</script></div></div>
+						
+			
+            <div class="bottom-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+							<div class="nav-footer"><ul class="list-inline font-nav"><li id="menu-item-362" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-362"><a href="/" aria-current="page">HOME</a></li>
+</ul></div>
+                            <div class="copyright">
+								<p>© 2022 Kunmanga Inc. All rights reserved</p>                            </div>
+                            
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+		
+		
+        </div> <!-- class="wrap" --></div> <!-- class="body-wrap" -->
+
+	
+
+<!-- Modal -->
+<div class="wp-manga-section">
+    <input type="hidden" name="bookmarking" value="0"/>
+    <div class="modal fade" id="form-login" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div id="login" class="login">
+                        <h3>
+                            <a href="https://kunmanga.com/" title="Kun Manga" tabindex="-1">Sign in</a>
+                        </h3>
+                        <p class="message login"></p>
+						<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="icon" href="https://kunmanga.com/wp-content/uploads/2021/06/cropped-kun-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://kunmanga.com/wp-content/uploads/2021/06/cropped-kun-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://kunmanga.com/wp-content/uploads/2021/06/cropped-kun-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://kunmanga.com/wp-content/uploads/2021/06/cropped-kun-favicon-270x270.png" />
+						                <style type="text/css">
+                    body.login div#login h1 a {
+                        background-image: url(https://kunmanga.com/wp-content/uploads/2021/01/logo-kun-2.png);
+                        width: 320px;
+                        height: 120px;
+                        background-size: auto;
+                        background-position: center;
+                    }
+                </style>
+									                        <form name="loginform" id="loginform" method="post">
+                            <p>
+                                <label>Username or Email Address *                                    <br> <input type="text" name="log" class="input user_login" value="" size="20">
+                                </label>
+                            </p>
+                            <p>
+                                <label>Password *                                    <br> <input type="password" autocomplete="" name="pwd" class="input user_pass" value="" size="20">
+                                </label>
+                            </p>
+                            <p>
+								                                
+                            </p>
+                            <p class="forgetmenot">
+                                <label>
+                                    <input name="rememberme" type="checkbox" id="rememberme" value="forever">Remember Me                                 </label>
+                            </p>
+                            <p class="submit">
+								<input type="submit" name="wp-submit" class="button button-primary button-large wp-submit" value="Log In">                                <input type="hidden" name="redirect_to" value="https://kunmanga.com/wp-admin/">
+                                <input type="hidden" name="testcookie" value="1">
+                            </p>
+                        </form>
+                        <p class="nav">
+                            <a href="javascript:avoid(0)" class="to-reset">Lost your password?</a>
+                        </p>
+                        <p class="backtoblog">
+                            <a href="javascript:void(0)">&larr; Back to Kun Manga</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="form-sign-up" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div id="sign-up" class="login">
+                        <h3>
+                            <a href="https://kunmanga.com/" title="Kun Manga" tabindex="-1">Sign Up</a>
+                        </h3>
+                        <p class="message register">Register For This Site.</p>
+                        <form name="registerform" id="registerform" novalidate="novalidate">
+                            <p>
+                                <label>Username *                                    <br>
+                                    <input type="text" name="user_sign-up" class="input user_login" value="" size="20">
+                                </label>
+                            </p>
+                            <p>
+                                <label>Email Address *                                    <br>
+                                    <input type="email" name="email_sign-up" class="input user_email" value="" size="20">
+                                </label>
+                            </p>
+                            <p>
+                                <label>Password *<br>
+                                    <input type="password" name="pass_sign-up" autocomplete="" class="input user_pass" value="" size="25">
+                                </label>
+                            </p>
+                            <p class="action">
+								                            </p>
+
+                            <input type="hidden" name="redirect_to" value="">
+                            <p class="submit">
+                                <input type="submit" name="wp-submit" class="button button-primary button-large wp-submit" value="Register">
+                            </p>
+                        </form>
+                        <p class="nav">
+                            <a href="javascript:void(0)" class="to-login">Log in</a>
+                            |
+                            <a href="javascript:void(0)" class="to-reset">Lost your password?</a>
+                        </p>
+                        <p class="backtoblog">
+                            <a href="javascript:void(0)">&larr; Back to Kun Manga</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="form-reset" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div id="reset" class="login">
+                        <h3>
+                            <a href="javascript:void(0)" class="to-reset">Lost your password?</a>
+                        </h3>
+                        <p class="message reset">Please enter your username or email address. You will receive a link to create a new password via email.</p>
+                        <form name="resetform" id="resetform" method="post">
+                            <p>
+                                <label>Username or Email Address                                    <br>
+                                    <input type="text" name="user_reset" id="user_reset" class="input" value="" size="20">
+                                </label>
+                            </p>
+                                                        <p class="submit">
+                                <input type="submit" name="wp-submit" class="button button-primary button-large wp-submit" value="Get New Password">
+                                <input type="hidden" name="testcookie" value="1">
+                            </p>
+                        </form>
+                        <p>
+                            <a class="backtoblog" href="javascript:void(0)">&larr; Back to  Kun Manga</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="95b6dd6f07ce6d5b2581e042-text/javascript">
+                                    var gRecaptchas = document.getElementsByClassName('g-recaptcha');
+                                    for (let i = 0; i < gRecaptchas.length; i++) {
+                                        gRecaptchas[i].setAttribute('data-callback', 'wpMangaSubmitSwitch');
+                                        gRecaptchas[i].setAttribute('data-expired-callback', 'wpMangaSubmitSwitch');
+                                        gRecaptchas[i].setAttribute('data-error', 'wpMangaSubmitSwitch');
+                                    }
+                                </script>
+</div>
+            <div class="go-to-top active">
+                <i class="icon ion-md-arrow-up"></i>
+            </div>
+			<script type="95b6dd6f07ce6d5b2581e042-text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+/* ]]> */
+</script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" id="rocket-delay-js-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var e=function(){function n(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(e,t,r){return t&&n(e.prototype,t),r&&n(e,r),e}}();function n(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function r(e,t){n(this,r),this.attrName="data-rocketlazyloadscript",this.browser=t,this.options=this.browser.options,this.triggerEvents=e,this.userEventListener=this.triggerListener.bind(this)}return e(r,[{key:"init",value:function(){this._addEventListener(this)}},{key:"reset",value:function(){this._removeEventListener(this)}},{key:"_addEventListener",value:function(t){this.triggerEvents.forEach(function(e){return window.addEventListener(e,t.userEventListener,t.options)})}},{key:"_removeEventListener",value:function(t){this.triggerEvents.forEach(function(e){return window.removeEventListener(e,t.userEventListener,t.options)})}},{key:"_loadScriptSrc",value:function(){var r=this,e=document.querySelectorAll("script["+this.attrName+"]");0!==e.length&&Array.prototype.slice.call(e).forEach(function(e){var t=e.getAttribute(r.attrName);e.setAttribute("src",t),e.removeAttribute(r.attrName)}),this.reset()}},{key:"triggerListener",value:function(){this._loadScriptSrc(),this._removeEventListener(this)}}],[{key:"run",value:function(){RocketBrowserCompatibilityChecker&&new r(["keydown","mouseover","touchmove","touchstart","wheel"],new RocketBrowserCompatibilityChecker({passive:!0})).init()}}]),r}();t.run();
+}());
+/* ]]> */
+</script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/kunmanga.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+/* ]]> */
+</script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-content/themes/madara/js/core.js?ver=6.4.3" id="madara-core-js"></script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-content/themes/madara/js/bootstrap.min.js?ver=4.6.0" id="bootstrap-js"></script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-content/themes/madara/js/shuffle.min.js?ver=5.3.0" id="shuffle-js"></script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-content/themes/madara/js/aos.js?ver=6.4.3" id="aos-js"></script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" id="madara-js-js-extra">
+/* <![CDATA[ */
+var madara = {"ajaxurl":"https:\/\/kunmanga.com\/wp-admin\/admin-ajax.php","query_vars":{"error":"","m":"","p":"378","post_parent":"","subpost":"","subpost_id":"","attachment":"","attachment_id":0,"name":"","pagename":"","page_id":"378","second":"","minute":"","hour":"","day":0,"monthnum":0,"year":0,"w":0,"category_name":"","tag":"","cat":"","tag_id":"","author":"","author_name":"","feed":"","tb":"","paged":0,"meta_key":"","meta_value":"","preview":"","s":"","sentence":"","title":"","fields":"","menu_order":"","embed":"","category__in":[],"category__not_in":[],"category__and":[],"post__in":[],"post__not_in":[],"post_name__in":[],"tag__in":[],"tag__not_in":[],"tag__and":[],"tag_slug__in":[],"tag_slug__and":[],"post_parent__in":[],"post_parent__not_in":[],"author__in":[],"author__not_in":[],"search_columns":[],"ignore_sticky_posts":false,"suppress_filters":false,"cache_results":true,"update_post_term_cache":true,"update_menu_item_cache":false,"lazy_load_term_meta":true,"update_post_meta_cache":true,"post_type":"","posts_per_page":10,"nopaging":false,"comments_per_page":"20","no_found_rows":false,"order":"DESC","sidebar":"right"},"current_url":"https:\/\/kunmanga.com"};
+/* ]]> */
+</script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-content/themes/madara/js/template.js?ver=1.7.3" id="madara-js-js"></script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-content/themes/madara/js/ajax.js?ver=6.4.3" id="madara-ajax-js"></script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" id="wp-manga-login-ajax-js-extra">
+/* <![CDATA[ */
+var wpMangaLogin = {"admin_ajax":"https:\/\/kunmanga.com\/wp-admin\/admin-ajax.php","home_url":"https:\/\/kunmanga.com","nonce":"3edbcde498","messages":{"please_enter_username":"Please enter username","please_enter_password":"Please enter password","invalid_username_or_password":"Invalid username or password","server_error":"Server Error!","username_or_email_cannot_be_empty":"Username or Email cannot be empty","please_fill_all_fields":"Please fill in all password fields.","password_cannot_less_than_12":"Password cannot have less than 12 characters","password_doesnot_match":"Password does not match. Please try again.","username_cannot_empty":"Username cannot be empty","email_cannot_empty":"Email cannot be empty","password_cannot_empty":"Password cannot be empty"}};
+/* ]]> */
+</script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-content/plugins/madara-core/assets/js/login.js?ver=1.7.2" id="wp-manga-login-ajax-js"></script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-content/plugins/madara-core/assets/slick/slick.min.js?ver=6.4.3" id="wp-manga-slick-js-js"></script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-includes/js/jquery/ui/menu.min.js?ver=1.13.2" id="jquery-ui-menu-js"></script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" id="regenerator-runtime-js"></script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-includes/js/dist/dom-ready.min.js?ver=392bdd43726760d1f3ca" id="wp-dom-ready-js"></script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1" id="wp-hooks-js"></script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef" id="wp-i18n-js"></script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-includes/js/dist/a11y.min.js?ver=7032343a947cfccf5608" id="wp-a11y-js"></script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" id="jquery-ui-autocomplete-js-extra">
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate.","itemSelected":"Item selected."};
+/* ]]> */
+</script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.13.2" id="jquery-ui-autocomplete-js"></script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" id="wp-manga-js-extra">
+/* <![CDATA[ */
+var manga = {"ajax_url":"https:\/\/kunmanga.com\/wp-admin\/admin-ajax.php","home_url":"https:\/\/kunmanga.com","base_url":"https:\/\/kunmanga.com\/","manga_paged_var":"manga-paged","enable_manga_view":"1"};
+/* ]]> */
+</script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-content/plugins/madara-core/assets/js/script.js?ver=1.7.1" id="wp-manga-js"></script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-content/themes/madara/js/slick/slick.min.js?ver=1.9.0" id="slick-js"></script>
+<script type="95b6dd6f07ce6d5b2581e042-text/javascript" src="https://kunmanga.com/wp-content/plugins/madara-shortcodes/shortcodes/js/ct-shortcodes.js?ver=1.5.2.1" id="ct-shortcode-js-js"></script>
+
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="95b6dd6f07ce6d5b2581e042-|49" defer></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'92f2de35aea5ce43',t:'MTc0NDQ2MjQyMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body></html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1744462343 -->
